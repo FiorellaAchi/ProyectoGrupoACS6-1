@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.exe.config
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.exe
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.Form1.resources
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.Properties.Resources.resources
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.exe
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.exe
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.exe.config
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.CopyComplete

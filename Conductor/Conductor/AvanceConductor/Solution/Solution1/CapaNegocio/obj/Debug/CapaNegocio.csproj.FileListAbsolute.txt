@@ -1,0 +1,36 @@
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\5to Semestre y 6to\PROGRAMACION ORIENTADA A EVENTOS\ConexionBD\Solution1\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\LECCIONPOE_ORTIZDOMENICA\Lección\Solution1\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\domeb\OneDrive - Universidad de Guayaquil\6to y 7mo semestre\CONSTRUCCIÓN DE SOFTWARE\PRIMER PARCIAL\Conductor\Lección\Lecci├│n\Solution1\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaNegocio\obj\Debug\CapaNegocio.pdb
