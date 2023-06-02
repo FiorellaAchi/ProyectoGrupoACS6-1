@@ -11,18 +11,30 @@ using System.Windows.Forms;
 
 namespace ProyectoGrupoA_CS
 {
-    public partial class Form1 : Form
+    public partial class FormAdmin : Form
     {
-        public Form1()
+        public FormAdmin()
         {
             InitializeComponent();
         }
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             formLogin Principal = new formLogin();
             Principal.Show();
+        }
+
+        private void btnCliente_Click_1(object sender, EventArgs e)
+        {
+            
+            formLogin Principal = new formLogin();
+            Principal.Show();
+        }
+
+        private void lblSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
