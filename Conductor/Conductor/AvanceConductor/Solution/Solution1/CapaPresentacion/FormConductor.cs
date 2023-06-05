@@ -39,5 +39,30 @@ namespace CapaPresentacion
 
             MessageBox.Show("Los datos del conductor se han guardado correctamente.");
         }
+
+        private void buttonCerrarSesión_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEliminarconductor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonListarconductores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonConsultarconductor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRegistrarconductor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

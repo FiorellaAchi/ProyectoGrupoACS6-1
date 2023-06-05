@@ -1,0 +1,6 @@
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\bin\Debug\Data.dll
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\bin\Debug\Data.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\obj\Debug\Data.dll
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Data\obj\Debug\Data.pdb

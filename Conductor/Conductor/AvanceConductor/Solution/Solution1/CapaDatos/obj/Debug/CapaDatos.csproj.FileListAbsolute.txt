@@ -22,3 +22,9 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Trabajos\ProyectoGrupoACS6-1\Conductor\Conductor\AvanceConductor\Solution\Solution1\CapaDatos\obj\Debug\CapaDatos.pdb

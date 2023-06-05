@@ -1,4 +1,5 @@
-﻿using PrototipoProy;
+﻿using Conductor;
+using PrototipoProy;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,12 @@ namespace ProyectoGrupoA_CS
         private void lblSalir_Click(object sender, EventArgs e)
         {
             this.Close(); //Cierra la pestaña principal
+        }
+
+        private void btnConductor_Click(object sender, EventArgs e)
+        {
+            FrmConductor frm = new FrmConductor();  
+            frm.Show(); //Nos muestra la pestaña de acceso a edicion de conductor.
         }
     }
 }

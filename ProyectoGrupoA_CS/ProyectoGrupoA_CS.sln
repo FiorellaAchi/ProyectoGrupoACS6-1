@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoGrupoA_CS", "Proyec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototipoProy", "..\PrototipoProy\PrototipoProy\PrototipoProy\PrototipoProy.csproj", "{FFF909BD-DACA-4A27-9347-1820F701E234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conductor", "Conductor\Conductor.csproj", "{52C2F861-8AE0-4B4D-BC3B-A59F74A24618}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,14 @@ Global
 		{FFF909BD-DACA-4A27-9347-1820F701E234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF909BD-DACA-4A27-9347-1820F701E234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF909BD-DACA-4A27-9347-1820F701E234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C2F861-8AE0-4B4D-BC3B-A59F74A24618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C2F861-8AE0-4B4D-BC3B-A59F74A24618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C2F861-8AE0-4B4D-BC3B-A59F74A24618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C2F861-8AE0-4B4D-BC3B-A59F74A24618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

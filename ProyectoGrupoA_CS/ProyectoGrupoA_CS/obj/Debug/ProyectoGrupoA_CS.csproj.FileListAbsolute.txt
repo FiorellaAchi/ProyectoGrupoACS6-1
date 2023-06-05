@@ -13,3 +13,23 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.exe.config
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.CopyComplete
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.FormAdmin.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.exe.config
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.exe
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\ProyectoGrupoA_CS.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.exe
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\PrototipoProy.exe.config
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.AssemblyReference.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.SuggestedBindingRedirects.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.FormAdmin.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.Properties.Resources.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.GenerateResource.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.CoreCompileInputs.cache
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.csproj.CopyComplete
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.exe
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.exe
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Data.dll
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.exe.config
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Data.pdb

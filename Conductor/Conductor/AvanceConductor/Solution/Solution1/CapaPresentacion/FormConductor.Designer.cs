@@ -66,6 +66,7 @@
             this.buttonRegistrarconductor.TabIndex = 0;
             this.buttonRegistrarconductor.Text = "Registrar conductor";
             this.buttonRegistrarconductor.UseVisualStyleBackColor = false;
+            this.buttonRegistrarconductor.Click += new System.EventHandler(this.buttonRegistrarconductor_Click);
             // 
             // buttonEditarconductor
             // 
@@ -96,6 +97,7 @@
             this.buttonConsultarconductor.TabIndex = 0;
             this.buttonConsultarconductor.Text = "Consultar Conductor";
             this.buttonConsultarconductor.UseVisualStyleBackColor = false;
+            this.buttonConsultarconductor.Click += new System.EventHandler(this.buttonConsultarconductor_Click);
             // 
             // buttonListarconductores
             // 
@@ -111,6 +113,7 @@
             this.buttonListarconductores.TabIndex = 0;
             this.buttonListarconductores.Text = "Listar Conductor";
             this.buttonListarconductores.UseVisualStyleBackColor = false;
+            this.buttonListarconductores.Click += new System.EventHandler(this.buttonListarconductores_Click);
             // 
             // buttonEliminarconductor
             // 
@@ -126,6 +129,7 @@
             this.buttonEliminarconductor.TabIndex = 0;
             this.buttonEliminarconductor.Text = "Eliminar conductor";
             this.buttonEliminarconductor.UseVisualStyleBackColor = false;
+            this.buttonEliminarconductor.Click += new System.EventHandler(this.buttonEliminarconductor_Click);
             // 
             // buttonCerrarSesión
             // 
@@ -141,6 +145,7 @@
             this.buttonCerrarSesión.TabIndex = 0;
             this.buttonCerrarSesión.Text = "Cerrar Sesión";
             this.buttonCerrarSesión.UseVisualStyleBackColor = false;
+            this.buttonCerrarSesión.Click += new System.EventHandler(this.buttonCerrarSesión_Click);
             // 
             // button2
             // 
