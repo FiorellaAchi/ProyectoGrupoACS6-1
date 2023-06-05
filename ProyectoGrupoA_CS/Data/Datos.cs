@@ -38,6 +38,20 @@ namespace Data
             }
         }
 
+        public void EliminarConductor(int id) {
+            String nombreSp = "sp_eliminar_conductor";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
 
 
     }

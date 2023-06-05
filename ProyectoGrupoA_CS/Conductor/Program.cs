@@ -16,7 +16,7 @@ namespace Conductor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmConductor());
+            Application.Run(new FrmIngresarCond());
         }
     }
 }

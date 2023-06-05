@@ -5,10 +5,11 @@ D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\bin\Debug\Data.dll
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\bin\Debug\Data.pdb
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.AssemblyReference.cache
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.SuggestedBindingRedirects.cache
-D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmConductor.resources
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.Properties.Resources.resources
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.GenerateResource.cache
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.CoreCompileInputs.cache
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.CopyComplete
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.exe
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmIngresarCond.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmEliminarCond.resources

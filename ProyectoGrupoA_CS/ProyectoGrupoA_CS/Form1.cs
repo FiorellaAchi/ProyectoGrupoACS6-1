@@ -40,7 +40,8 @@ namespace ProyectoGrupoA_CS
 
         private void btnConductor_Click(object sender, EventArgs e)
         {
-            FrmConductor frm = new FrmConductor();  
+            FrmEliminarCond frm = new FrmEliminarCond(); //Nos muestra la pestaña de acceso a edicion de conductor.
+            //FrmIngresarCond frm = new FrmIngresarCond();  
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de conductor.
         }
     }

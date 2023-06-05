@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmConductor.cs">
+    <Compile Include="FrmIngresarCond.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConductor.Designer.cs">
-      <DependentUpon>FrmConductor.cs</DependentUpon>
+    <Compile Include="FrmIngresarCond.Designer.cs">
+      <DependentUpon>FrmIngresarCond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEliminarCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEliminarCond.Designer.cs">
+      <DependentUpon>FrmEliminarCond.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmConductor.resx">
-      <DependentUpon>FrmConductor.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEliminarCond.resx">
+      <DependentUpon>FrmEliminarCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarCond.resx">
+      <DependentUpon>FrmIngresarCond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -84,6 +94,21 @@
       <Project>{40744a50-9c38-4c1d-b8ad-fcea2c5a370b}</Project>
       <Name>Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

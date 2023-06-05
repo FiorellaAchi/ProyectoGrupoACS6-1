@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Conductor
 {
-    public partial class FrmConductor : Form
+    public partial class FrmIngresarCond : Form
     {
         Datos datos = new Datos();
-        public FrmConductor()
+        public FrmIngresarCond()
         {
             InitializeComponent();
         }
@@ -22,6 +22,11 @@ namespace Conductor
         private void button1_Click(object sender, EventArgs e)
         {
             datos.InsertarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
