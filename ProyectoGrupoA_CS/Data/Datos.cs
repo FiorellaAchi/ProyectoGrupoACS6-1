@@ -52,7 +52,116 @@ namespace Data
             }
         }
 
+        public void ActualizarConductor(int id, String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
+        {
+            String nombreSp = "sp_modificar_conductor";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@licencia", licencia);
+                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.Parameters.AddWithValue("@unidad", unidad);
+                    command.Parameters.AddWithValue("@diasLaborados", diasLaborados);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
 
+        //Listar conductores usando sp llamado sp_listar_conductores
+        public DataTable ListarConductores()
+        {
+            String nombreSp = "sp_listar_conductores";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
 
+        public void InsertarAmbulancia(int codigo,String marca, String numero_placa, int anio,int id_conductor)
+        {
+            String nombreSp = "sp_crear_ambulancia";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@marca", marca);
+                    command.Parameters.AddWithValue("@numero_placa", numero_placa);
+                    command.Parameters.AddWithValue("@anio", anio);
+                    command.Parameters.AddWithValue("@id_conductor", id_conductor);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void EliminarAmbulancia(int codigo)
+        {
+            String nombreSp = "sp_eliminar_ambulancia";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        
+        public void ActualizarAmbulancia(int codigo, String marca, String numero_placa, int anio, int id_conductor)
+        {
+            String nombreSp = "sp_modificar_ambulancia";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@marca", marca);
+                    command.Parameters.AddWithValue("@numero_placa", numero_placa);
+                    command.Parameters.AddWithValue("@anio", anio);
+                    command.Parameters.AddWithValue("@id_conductor", id_conductor);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        //Listar ambulancias usando sp llamado sp_listar_ambulancias
+        public DataTable ListarAmbulancias()
+        {
+            String nombreSp = "sp_listar_ambulancias";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,22 +10,28 @@ using System.Windows.Forms;
 
 namespace Conductor
 {
-    public partial class FrmEliminarCond : Form
+    public partial class FrmMenuCond : Form
     {
-        Datos datos = new Datos();
-        public FrmEliminarCond()
+        public FrmMenuCond()
         {
             InitializeComponent();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            datos.EliminarConductor(int.Parse(txtId.Text));
+            FrmIngresarCond frmIngresarCond = new FrmIngresarCond();
+            frmIngresarCond.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FrmEliminarCond frmEliminarCond = new FrmEliminarCond();
+            frmEliminarCond.Show();
         }
     }
 }

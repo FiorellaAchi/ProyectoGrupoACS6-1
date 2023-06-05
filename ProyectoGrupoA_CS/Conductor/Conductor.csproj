@@ -58,6 +58,12 @@
     <Compile Include="FrmEliminarCond.Designer.cs">
       <DependentUpon>FrmEliminarCond.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenuCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuCond.Designer.cs">
+      <DependentUpon>FrmMenuCond.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmEliminarCond.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarCond.resx">
       <DependentUpon>FrmIngresarCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuCond.resx">
+      <DependentUpon>FrmMenuCond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,6 +118,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Listar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

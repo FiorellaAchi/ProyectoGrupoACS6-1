@@ -13,3 +13,4 @@ D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.pdb
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmIngresarCond.resources
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmEliminarCond.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmMenuCond.resources
