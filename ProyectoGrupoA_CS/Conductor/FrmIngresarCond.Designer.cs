@@ -54,12 +54,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(383, 9);
+            this.label1.Location = new System.Drawing.Point(344, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 28);
+            this.label1.Size = new System.Drawing.Size(224, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Conductor";
+            this.label1.Text = "Ingresar Conductor";
             // 
             // label2
             // 

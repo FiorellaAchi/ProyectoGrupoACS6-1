@@ -12,7 +12,6 @@ namespace Data
     {
         //Creacion de conexion para base de datos en sql server
         //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
-
         String connectionString = "Data Source=DESKTOP-8LBI3IO;Initial Catalog=BaseDatos_GrupoA_Proyecto;Integrated Security=True";
         
 
@@ -74,10 +73,9 @@ namespace Data
             }
         }
 
-        //Listar conductores usando sp llamado sp_listar_conductores
         public DataTable ListarConductores()
         {
-            String nombreSp = "sp_listar_conductores";
+            String nombreSp = "sp_listar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -146,10 +144,9 @@ namespace Data
             }
         }
 
-        //Listar ambulancias usando sp llamado sp_listar_ambulancias
         public DataTable ListarAmbulancias()
         {
-            String nombreSp = "sp_listar_ambulancias";
+            String nombreSp = "sp_listar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))

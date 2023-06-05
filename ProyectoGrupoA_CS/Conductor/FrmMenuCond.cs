@@ -33,5 +33,11 @@ namespace Conductor
             FrmEliminarCond frmEliminarCond = new FrmEliminarCond();
             frmEliminarCond.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmListarCond frmListarCond = new FrmListarCond();
+            frmListarCond.Show();
+        }
     }
 }

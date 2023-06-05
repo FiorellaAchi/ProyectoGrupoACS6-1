@@ -1,4 +1,5 @@
-﻿using Conductor;
+﻿using Ambulancia;
+using Conductor;
 using PrototipoProy;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,12 @@ namespace ProyectoGrupoA_CS
         {
             FrmMenuCond frm = new FrmMenuCond();
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de conductor.
+        }
+
+        private void btnAmbulancia_Click(object sender, EventArgs e)
+        {
+            FrmMenuAmb frm = new FrmMenuAmb();
+            frm.Show(); //Nos muestra la pestaña de acceso a edicion de ambulancia.
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormModificarCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarCond.Designer.cs">
+      <DependentUpon>FormModificarCond.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIngresarCond.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     <Compile Include="FrmEliminarCond.Designer.cs">
       <DependentUpon>FrmEliminarCond.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListarCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarCond.Designer.cs">
+      <DependentUpon>FrmListarCond.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuCond.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormModificarCond.resx">
+      <DependentUpon>FormModificarCond.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarCond.resx">
       <DependentUpon>FrmEliminarCond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarCond.resx">
       <DependentUpon>FrmIngresarCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarCond.resx">
+      <DependentUpon>FrmListarCond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuCond.resx">
       <DependentUpon>FrmMenuCond.cs</DependentUpon>

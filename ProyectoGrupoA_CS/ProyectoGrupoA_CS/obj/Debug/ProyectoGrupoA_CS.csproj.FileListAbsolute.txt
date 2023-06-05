@@ -33,3 +33,6 @@ D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Da
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.pdb
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.exe.config
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Data.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Ambulancia.exe
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Ambulancia.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Ambulancia.exe.config

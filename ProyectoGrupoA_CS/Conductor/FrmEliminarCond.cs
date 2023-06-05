@@ -28,5 +28,10 @@ namespace Conductor
         {
             this.Close();
         }
+
+        private void FrmEliminarCond_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

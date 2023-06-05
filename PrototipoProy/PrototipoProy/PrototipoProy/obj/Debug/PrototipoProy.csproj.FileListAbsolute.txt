@@ -30,3 +30,19 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.exe
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\bin\Debug\PrototipoProy.exe.config
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\bin\Debug\PrototipoProy.exe
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\bin\Debug\PrototipoProy.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.AssemblyReference.cache
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.SuggestedBindingRedirects.cache
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formLogin.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.FormInicio.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formInsertar.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.frmListar.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.frmEditar.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.frmEliminar.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.Properties.Resources.resources
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.GenerateResource.cache
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.CoreCompileInputs.cache
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.exe
+D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.pdb

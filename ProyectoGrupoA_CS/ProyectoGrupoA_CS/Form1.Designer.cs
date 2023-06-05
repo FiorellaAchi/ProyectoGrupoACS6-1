@@ -118,7 +118,7 @@
             this.btnConductor.FlatAppearance.BorderSize = 0;
             this.btnConductor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConductor.Image = ((System.Drawing.Image)(resources.GetObject("btnConductor.Image")));
-            this.btnConductor.Location = new System.Drawing.Point(67, 216);
+            this.btnConductor.Location = new System.Drawing.Point(75, 216);
             this.btnConductor.Margin = new System.Windows.Forms.Padding(2);
             this.btnConductor.Name = "btnConductor";
             this.btnConductor.Size = new System.Drawing.Size(68, 65);
@@ -131,12 +131,13 @@
             this.btnAmbulancia.FlatAppearance.BorderSize = 0;
             this.btnAmbulancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmbulancia.Image = ((System.Drawing.Image)(resources.GetObject("btnAmbulancia.Image")));
-            this.btnAmbulancia.Location = new System.Drawing.Point(241, 110);
+            this.btnAmbulancia.Location = new System.Drawing.Point(247, 111);
             this.btnAmbulancia.Margin = new System.Windows.Forms.Padding(2);
             this.btnAmbulancia.Name = "btnAmbulancia";
-            this.btnAmbulancia.Size = new System.Drawing.Size(56, 58);
+            this.btnAmbulancia.Size = new System.Drawing.Size(71, 58);
             this.btnAmbulancia.TabIndex = 3;
             this.btnAmbulancia.UseVisualStyleBackColor = true;
+            this.btnAmbulancia.Click += new System.EventHandler(this.btnAmbulancia_Click);
             // 
             // btnCliente
             // 
