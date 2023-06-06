@@ -39,5 +39,15 @@ namespace Conductor
             FrmListarCond frmListarCond = new FrmListarCond();
             frmListarCond.Show();
         }
+
+        private void FrmMenuCond_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public Button Button1 { get => button1; set => button1 = value; }
+        public Button Button2 { get => button2; set => button2 = value; }
+        public Button Button3 { get => button3; set => button3 = value; }
+        public Button Button4 { get => button4; set => button4 = value; }
     }
 }
