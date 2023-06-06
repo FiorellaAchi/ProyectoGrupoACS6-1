@@ -21,5 +21,29 @@ namespace Ambulancia
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmIngresarAmb ingreso = new FrmIngresarAmb(); //Ingreso de datos 
+            ingreso.Show();
+        }
+
+        private void ListarAmbulancias_Click(object sender, EventArgs e)
+        {
+            FrmListarAmb listar = new FrmListarAmb(); //Listar las ambulancias que hay en el sistema
+            listar.Show();
+        }
+
+        private void ModificarAmbulancia_Click(object sender, EventArgs e)
+        {
+            FrmModificarAmb modificar = new FrmModificarAmb(); //Muestra el formulario de modificar los datos de las ambulancias
+            modificar.Show();
+        }
+
+        private void EliminarDatosAmbulancia_Click(object sender, EventArgs e)
+        {
+            FrmEliminarAmb eliminar = new FrmEliminarAmb(); //Permite eliminar los datos de las ambulancias.
+            eliminar.Show();
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace PrototipoProy
 {
     internal class DBHelper
     {
-        private static string connectionString = "Data Source=DESKTOP-8LBI3IO;Initial Catalog=BaseDatos_GrupoA_Proyecto;Integrated Security=True";
+        private static string connectionString = "Data Source=DESKTOP-3SRGPP9;Initial Catalog=ProyectoAmbulancia1;Integrated Security=True";
 
         public static SqlConnection GetConnection()
         {
