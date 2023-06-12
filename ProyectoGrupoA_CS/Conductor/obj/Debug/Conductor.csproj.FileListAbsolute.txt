@@ -15,7 +15,6 @@ D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmEliminarCond.resources
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmMenuCond.resources
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmListarCond.resources
-D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FormModificarCond.resources
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\bin\Debug\Conductor.exe.config
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\bin\Debug\Conductor.exe
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\bin\Debug\Conductor.pdb
@@ -34,3 +33,4 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.csproj.CopyComplete
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.exe
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.pdb
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\Conductor\obj\Debug\Conductor.FrmModificarCond.resources

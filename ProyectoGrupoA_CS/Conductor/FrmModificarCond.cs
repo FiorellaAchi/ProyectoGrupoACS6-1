@@ -9,40 +9,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ambulancia
+namespace Conductor
 {
-    public partial class FrmIngresarAmb : Form
+    public partial class FrmModificarCond : Form
     {
         Datos datos = new Datos();
-        public FrmIngresarAmb()
+        public FrmModificarCond()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                datos.InsertarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
+                datos.ActualizarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
             }
             catch(FormatException)
             {
                 MessageBox.Show("Ingrese correctamente la informacion");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            MessageBox.Show("Modificado correctamente");
         }
 
         private void button2_Click(object sender, EventArgs e)

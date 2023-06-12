@@ -21,7 +21,18 @@ namespace Conductor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            datos.EliminarConductor(int.Parse(txtId.Text));
+            try
+            {
+                datos.EliminarConductor(int.Parse(txtId.Text));
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("El id debe ser un numero entero");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

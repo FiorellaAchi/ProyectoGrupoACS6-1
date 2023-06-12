@@ -20,36 +20,47 @@ namespace PrototipoProy
         //evento que modifica el usuario en la base de datos
         private void btnModificarUsuario_Click(object sender, EventArgs e)
         {
-            //Se establece la conexión con la base de datos.
-            using (SqlConnection connection = DBHelper.GetConnection())
+            try
             {
-                //Se crea un comando SQL para ejecutar el procedimiento almacenado "sp_modificar_usuario".
-                using (SqlCommand command = new SqlCommand("sp_modificar_usuario", connection))
+                //Se establece la conexión con la base de datos.
+                using (SqlConnection connection = DBHelper.GetConnection())
                 {
-                    //Se asignan los valores de los campos de texto a los parámetros del comando.
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", txtCodigo.Text);
-                    command.Parameters.AddWithValue("@nombre", txtNombre.Text);
-                    command.Parameters.AddWithValue("@cedula", txtCedula.Text);
-                    command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                    command.Parameters.AddWithValue("@email", txtEmail.Text);
-
-                    //Se abre la conexión a la base de datos.
-                    connection.Open();
-                    //Se ejecuta el comando y se obtiene el número de filas afectadas por la modificación.
-                    int rowsAffected = command.ExecuteNonQuery();
-
-                    //Se muestra un mensaje de éxito si se modificó al menos una fila
-                    //o un mensaje de que no se encontró el usuario si no se modificó ninguna fila.
-                    if (rowsAffected > 0)
+                    //Se crea un comando SQL para ejecutar el procedimiento almacenado "sp_modificar_usuario".
+                    using (SqlCommand command = new SqlCommand("sp_modificar_usuario", connection))
                     {
-                        MessageBox.Show("Usuario modificado con éxito.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se encontró el usuario con el código especificado.");
+                        //Se asignan los valores de los campos de texto a los parámetros del comando.
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@codigo", txtCodigo.Text);
+                        command.Parameters.AddWithValue("@nombre", txtNombre.Text);
+                        command.Parameters.AddWithValue("@cedula", txtCedula.Text);
+                        command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                        command.Parameters.AddWithValue("@email", txtEmail.Text);
+
+                        //Se abre la conexión a la base de datos.
+                        connection.Open();
+                        //Se ejecuta el comando y se obtiene el número de filas afectadas por la modificación.
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        //Se muestra un mensaje de éxito si se modificó al menos una fila
+                        //o un mensaje de que no se encontró el usuario si no se modificó ninguna fila.
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Usuario modificado con éxito.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el usuario con el código especificado.");
+                        }
                     }
                 }
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Ingrese correctamente la informacion");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

@@ -17,7 +17,15 @@ namespace Ambulancia
         public FrmListarAmb()
         {
             InitializeComponent();
-            dataGridView1.DataSource = datos.ListarAmbulancias();
+            try
+            {
+                dataGridView1.DataSource = datos.ListarAmbulancias();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void FrmListarAmb_Load(object sender, EventArgs e)
@@ -28,6 +36,11 @@ namespace Ambulancia
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Conductor
 {
-    partial class FormModificarCond
+    partial class FrmModificarCond
     {
         /// <summary>
         /// Required designer variable.
@@ -60,6 +60,7 @@
             this.button2.Size = new System.Drawing.Size(41, 37);
             this.button2.TabIndex = 39;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label10
             // 
@@ -247,7 +248,7 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Modificar Conductores";
             // 
-            // FormModificarCond
+            // FrmModificarCond
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -274,7 +275,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormModificarCond";
+            this.Name = "FrmModificarCond";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormModificarCond";
             this.ResumeLayout(false);

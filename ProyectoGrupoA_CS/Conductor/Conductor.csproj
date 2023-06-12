@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormModificarCond.cs">
+    <Compile Include="FrmModificarCond.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormModificarCond.Designer.cs">
-      <DependentUpon>FormModificarCond.cs</DependentUpon>
+    <Compile Include="FrmModificarCond.Designer.cs">
+      <DependentUpon>FrmModificarCond.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmIngresarCond.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormModificarCond.resx">
-      <DependentUpon>FormModificarCond.cs</DependentUpon>
+    <EmbeddedResource Include="FrmModificarCond.resx">
+      <DependentUpon>FrmModificarCond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarCond.resx">
       <DependentUpon>FrmEliminarCond.cs</DependentUpon>

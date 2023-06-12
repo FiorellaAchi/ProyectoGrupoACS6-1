@@ -17,7 +17,14 @@ namespace Conductor
         public FrmListarCond()
         {
             InitializeComponent();
-            dataGridView1.DataSource =datos.ListarConductores();
+            try
+            {
+                dataGridView1.DataSource = datos.ListarConductores();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
            
         }
 

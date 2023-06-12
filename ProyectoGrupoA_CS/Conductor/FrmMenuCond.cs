@@ -49,5 +49,11 @@ namespace Conductor
         public Button Button2 { get => button2; set => button2 = value; }
         public Button Button3 { get => button3; set => button3 = value; }
         public Button Button4 { get => button4; set => button4 = value; }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmModificarCond frm = new FrmModificarCond();
+            frm.Show();
+        }
     }
 }

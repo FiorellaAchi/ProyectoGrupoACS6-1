@@ -21,28 +21,39 @@ namespace PrototipoProy
         //btnCrearUsuario_Click: Es el evento de clic del botón "guardar"..
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
-            // Crea una conexión a la base de datos utilizando la clase DBHelper
-            // El método GetConnection() devuelve una nueva instancia de SqlConnection que representa una conexión a la base de datos.
-            using (SqlConnection connection = DBHelper.GetConnection())
+            try
             {
-                //Crea un comando SQL para ejecutar el procedimiento almacenado sp_crear_usuario en la base de datos.
-                using (SqlCommand command = new SqlCommand("sp_crear_usuario", connection))
+                // Crea una conexión a la base de datos utilizando la clase DBHelper
+                // El método GetConnection() devuelve una nueva instancia de SqlConnection que representa una conexión a la base de datos.
+                using (SqlConnection connection = DBHelper.GetConnection())
                 {
-                    // command.CommandType = CommandType.StoredProcedure nos Indica que el comando es un procedimiento almacenado.
-                    command.CommandType = CommandType.StoredProcedure;
-                    // Agrega el valor del campo txtCodigoUsuario, como parámetro @codigo en el comando. y asi sucesivamente 
-                    command.Parameters.AddWithValue("@codigo", txtCodigo.Text);
-                    command.Parameters.AddWithValue("@nombre", txtNombre.Text);
-                    command.Parameters.AddWithValue("@cedula", txtCedula.Text);
-                    command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
-                    command.Parameters.AddWithValue("@email", txtEmail.Text);
-                    // con connection.Open();: Se abre la conexión a la base de datos.
-                    connection.Open();
-                    //command.ExecuteNonQuery() nos ejecuta el comando en la base de datos sin esperar un resultado.
-                    command.ExecuteNonQuery();
-                    //este ultimo comando nos muestra un mensaje al usuario indicando que el usuario se ha creado correctamente.
-                    MessageBox.Show("Usuario creado con éxito.");
+                    //Crea un comando SQL para ejecutar el procedimiento almacenado sp_crear_usuario en la base de datos.
+                    using (SqlCommand command = new SqlCommand("sp_crear_usuario", connection))
+                    {
+                        // command.CommandType = CommandType.StoredProcedure nos Indica que el comando es un procedimiento almacenado.
+                        command.CommandType = CommandType.StoredProcedure;
+                        // Agrega el valor del campo txtCodigoUsuario, como parámetro @codigo en el comando. y asi sucesivamente 
+                        command.Parameters.AddWithValue("@codigo", txtCodigo.Text);
+                        command.Parameters.AddWithValue("@nombre", txtNombre.Text);
+                        command.Parameters.AddWithValue("@cedula", txtCedula.Text);
+                        command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                        command.Parameters.AddWithValue("@email", txtEmail.Text);
+                        // con connection.Open();: Se abre la conexión a la base de datos.
+                        connection.Open();
+                        //command.ExecuteNonQuery() nos ejecuta el comando en la base de datos sin esperar un resultado.
+                        command.ExecuteNonQuery();
+                        //este ultimo comando nos muestra un mensaje al usuario indicando que el usuario se ha creado correctamente.
+                        MessageBox.Show("Usuario creado con éxito.");
+                    }
                 }
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Ingrese correctamente la informacion");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
         }

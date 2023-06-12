@@ -31,6 +31,10 @@ namespace PrototipoProy
                 FormInicio Principal = new FormInicio();
                 Principal.Show();
             }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
         }
     }
 }

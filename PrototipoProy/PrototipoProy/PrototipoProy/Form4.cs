@@ -20,31 +20,37 @@ namespace PrototipoProy
        //muestra todos los usuarios en un datagridview
         private void btnListarUsuarios_Click(object sender, EventArgs e)
         {
-
-            //Se establece la conexión con la base de datos.
-            using (SqlConnection connection = DBHelper.GetConnection())
+            try
             {
-                //Se crea un comando SQL para ejecutar el procedimiento almacenado "sp_listar_usuario".
-                using (SqlCommand command = new SqlCommand("sp_listar_usuario", connection))
+                //Se establece la conexión con la base de datos.
+                using (SqlConnection connection = DBHelper.GetConnection())
                 {
-                    
-                    command.CommandType = CommandType.StoredProcedure;
+                    //Se crea un comando SQL para ejecutar el procedimiento almacenado "sp_listar_usuario".
+                    using (SqlCommand command = new SqlCommand("sp_listar_usuario", connection))
+                    {
 
-                    //Se abre la conexión a la base de datos.
-                    connection.Open();
+                        command.CommandType = CommandType.StoredProcedure;
 
-                    //Se crea un DataTable para almacenar los resultados de la consulta.
-                    DataTable dataTable = new DataTable();
+                        //Se abre la conexión a la base de datos.
+                        connection.Open();
 
-                    //Se utiliza un SqlDataAdapter para llenar el DataTable con los resultados de la consulta.
+                        //Se crea un DataTable para almacenar los resultados de la consulta.
+                        DataTable dataTable = new DataTable();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                   
-                    adapter.Fill(dataTable);
+                        //Se utiliza un SqlDataAdapter para llenar el DataTable con los resultados de la consulta.
 
-                    //Se asigna el DataTable como origen de datos del DataGridView.
-                    dgvUsuarios.DataSource = dataTable;
+                        SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+                        adapter.Fill(dataTable);
+
+                        //Se asigna el DataTable como origen de datos del DataGridView.
+                        dgvUsuarios.DataSource = dataTable;
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 

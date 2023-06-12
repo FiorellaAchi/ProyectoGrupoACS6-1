@@ -26,7 +26,18 @@ namespace Ambulancia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            datos.EliminarAmbulancia(int.Parse(txtCodigo.Text));
+            try
+            {
+                datos.EliminarAmbulancia(int.Parse(txtCodigo.Text));
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("El codigo debe ser un numero entero");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

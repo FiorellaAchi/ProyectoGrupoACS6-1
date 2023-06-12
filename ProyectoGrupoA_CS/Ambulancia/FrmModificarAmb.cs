@@ -21,7 +21,18 @@ namespace Ambulancia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            datos.ActualizarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
+            try
+            {
+                datos.ActualizarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Ingrese correctamente la informacion");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
