@@ -35,7 +35,6 @@ D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\bin\De
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\bin\Debug\PrototipoProy.pdb
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.AssemblyReference.cache
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.SuggestedBindingRedirects.cache
-D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formLogin.resources
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.FormInicio.resources
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formInsertar.resources
 D:\Trabajos\ProyectoGrupoACS6-1\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.frmListar.resources

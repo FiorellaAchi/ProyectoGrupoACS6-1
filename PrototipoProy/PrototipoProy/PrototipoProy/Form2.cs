@@ -25,10 +25,7 @@ namespace PrototipoProy
         private void button1_Click(object sender, EventArgs e)
         {
             //Comando que oculta la ventana actual
-            this.Hide();
-            //Crea una instancia para q nos muestre el formulario de login
-            formLogin Principal = new formLogin();
-            Principal.Show();
+            this.Close();
         }
 
         private void modificarUsuarioDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)

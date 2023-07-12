@@ -20,23 +20,18 @@ namespace ProyectoGrupoA_CS
             InitializeComponent();
         }
 
-        private void btnCliente_Click(object sender, EventArgs e)
-        {
-            
-            formLogin Principal = new formLogin();
-            Principal.Show(); //Lo mismo de abajo pero no utilizado
-        }
-
         private void btnCliente_Click_1(object sender, EventArgs e)
         {
-            
-            formLogin Principal = new formLogin();
+
+            FormInicio Principal = new FormInicio();
             Principal.Show(); //Nos muestra la pestaña de acceso a edicion de cliente.
         }
 
         private void lblSalir_Click(object sender, EventArgs e)
         {
-            this.Close(); //Cierra la pestaña principal
+            frmLogin frm = new frmLogin();
+            frm.Show(); //Nos muestra la ventana de acceso
+            this.Close(); //Nos cierra la ventana actual
         }
 
         private void btnConductor_Click(object sender, EventArgs e)
