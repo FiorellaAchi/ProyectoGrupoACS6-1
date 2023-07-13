@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmCrearListarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmCrearListarFactura.Designer.cs">
+      <DependentUpon>FrmCrearListarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarFactura.Designer.cs">
+      <DependentUpon>FrmEditarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuFactura.Designer.cs">
+      <DependentUpon>FrmMenuFactura.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCrearListarFactura.resx">
+      <DependentUpon>FrmCrearListarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarFactura.resx">
+      <DependentUpon>FrmEditarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuFactura.resx">
+      <DependentUpon>FrmMenuFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
