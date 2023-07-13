@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Insumos
 {
-    public partial class Form1 : Form
+    public partial class FrmMenuInsumos : Form
     {
-        public Form1()
+        public FrmMenuInsumos()
         {
             InitializeComponent();
         }
