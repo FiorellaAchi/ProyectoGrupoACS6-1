@@ -19,7 +19,6 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\bin\Debug\PrototipoProy.pdb
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.csproj.SuggestedBindingRedirects.cache
-C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formLogin.resources
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.FormInicio.resources
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.formInsertar.resources
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\PrototipoProy\PrototipoProy\PrototipoProy\obj\Debug\PrototipoProy.frmListar.resources
