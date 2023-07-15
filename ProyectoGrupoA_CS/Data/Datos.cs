@@ -303,6 +303,75 @@ namespace Data
                 }
             }
         }
+        public void InsertarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado) 
+        {
+            String nombreSp = "sp_crear_insumos";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@insumo", insumo);
+                    command.Parameters.AddWithValue("@fecha", fecha);
+                    command.Parameters.AddWithValue("@proveedor", proveedor);
+                    command.Parameters.AddWithValue("@estado", estado);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void EliminarInsumos(String codigo)
+        {
+            String nombreSp = "sp_eliminar_insumos";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void ActualizarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado)
+        {
+            String nombreSp = "sp_modificar_insumos";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@insumo", insumo);
+                    command.Parameters.AddWithValue("@fecha", fecha);
+                    command.Parameters.AddWithValue("@proveedor", proveedor);
+                    command.Parameters.AddWithValue("@estado", estado);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public DataTable ListarInsumos()
+        {
+            String nombreSp = "sp_listar_insumos";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
 
     }
 }

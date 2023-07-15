@@ -49,10 +49,9 @@
             this.lblLABEL.AutoSize = true;
             this.lblLABEL.Font = new System.Drawing.Font("Book Antiqua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLABEL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblLABEL.Location = new System.Drawing.Point(182, 37);
-            this.lblLABEL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLABEL.Location = new System.Drawing.Point(243, 46);
             this.lblLABEL.Name = "lblLABEL";
-            this.lblLABEL.Size = new System.Drawing.Size(201, 32);
+            this.lblLABEL.Size = new System.Drawing.Size(246, 41);
             this.lblLABEL.TabIndex = 0;
             this.lblLABEL.Text = "Menu Principal";
             // 
@@ -61,10 +60,9 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsuario.Location = new System.Drawing.Point(64, 171);
-            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsuario.Location = new System.Drawing.Point(85, 210);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(78, 23);
+            this.lblUsuario.Size = new System.Drawing.Size(95, 28);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -73,10 +71,9 @@
             this.lblAmbulancia.AutoSize = true;
             this.lblAmbulancia.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmbulancia.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAmbulancia.Location = new System.Drawing.Point(222, 171);
-            this.lblAmbulancia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAmbulancia.Location = new System.Drawing.Point(296, 210);
             this.lblAmbulancia.Name = "lblAmbulancia";
-            this.lblAmbulancia.Size = new System.Drawing.Size(123, 23);
+            this.lblAmbulancia.Size = new System.Drawing.Size(148, 28);
             this.lblAmbulancia.TabIndex = 4;
             this.lblAmbulancia.Text = "Ambulancias";
             // 
@@ -85,10 +82,9 @@
             this.lblConductor.AutoSize = true;
             this.lblConductor.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConductor.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblConductor.Location = new System.Drawing.Point(62, 284);
-            this.lblConductor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblConductor.Location = new System.Drawing.Point(83, 350);
             this.lblConductor.Name = "lblConductor";
-            this.lblConductor.Size = new System.Drawing.Size(99, 23);
+            this.lblConductor.Size = new System.Drawing.Size(122, 28);
             this.lblConductor.TabIndex = 6;
             this.lblConductor.Text = "Conductor";
             // 
@@ -97,10 +93,9 @@
             this.Salir2.AutoSize = true;
             this.Salir2.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Salir2.Location = new System.Drawing.Point(401, 287);
-            this.Salir2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Salir2.Location = new System.Drawing.Point(535, 353);
             this.Salir2.Name = "Salir2";
-            this.Salir2.Size = new System.Drawing.Size(50, 23);
+            this.Salir2.Size = new System.Drawing.Size(59, 28);
             this.Salir2.TabIndex = 8;
             this.Salir2.Text = "Salir";
             // 
@@ -109,10 +104,10 @@
             this.lblSalir.FlatAppearance.BorderSize = 0;
             this.lblSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSalir.Image = ((System.Drawing.Image)(resources.GetObject("lblSalir.Image")));
-            this.lblSalir.Location = new System.Drawing.Point(376, 218);
-            this.lblSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblSalir.Location = new System.Drawing.Point(501, 268);
+            this.lblSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSalir.Name = "lblSalir";
-            this.lblSalir.Size = new System.Drawing.Size(90, 65);
+            this.lblSalir.Size = new System.Drawing.Size(120, 80);
             this.lblSalir.TabIndex = 7;
             this.lblSalir.UseVisualStyleBackColor = true;
             this.lblSalir.Click += new System.EventHandler(this.lblSalir_Click);
@@ -122,10 +117,10 @@
             this.btnConductor.FlatAppearance.BorderSize = 0;
             this.btnConductor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConductor.Image = ((System.Drawing.Image)(resources.GetObject("btnConductor.Image")));
-            this.btnConductor.Location = new System.Drawing.Point(75, 216);
-            this.btnConductor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConductor.Location = new System.Drawing.Point(100, 266);
+            this.btnConductor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConductor.Name = "btnConductor";
-            this.btnConductor.Size = new System.Drawing.Size(68, 65);
+            this.btnConductor.Size = new System.Drawing.Size(91, 80);
             this.btnConductor.TabIndex = 5;
             this.btnConductor.UseVisualStyleBackColor = true;
             this.btnConductor.Click += new System.EventHandler(this.btnConductor_Click);
@@ -135,10 +130,10 @@
             this.btnAmbulancia.FlatAppearance.BorderSize = 0;
             this.btnAmbulancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmbulancia.Image = ((System.Drawing.Image)(resources.GetObject("btnAmbulancia.Image")));
-            this.btnAmbulancia.Location = new System.Drawing.Point(247, 111);
-            this.btnAmbulancia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAmbulancia.Location = new System.Drawing.Point(329, 137);
+            this.btnAmbulancia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAmbulancia.Name = "btnAmbulancia";
-            this.btnAmbulancia.Size = new System.Drawing.Size(71, 58);
+            this.btnAmbulancia.Size = new System.Drawing.Size(95, 71);
             this.btnAmbulancia.TabIndex = 3;
             this.btnAmbulancia.UseVisualStyleBackColor = true;
             this.btnAmbulancia.Click += new System.EventHandler(this.btnAmbulancia_Click);
@@ -148,10 +143,10 @@
             this.btnCliente.FlatAppearance.BorderSize = 0;
             this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
-            this.btnCliente.Location = new System.Drawing.Point(66, 103);
-            this.btnCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCliente.Location = new System.Drawing.Point(88, 127);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(70, 72);
+            this.btnCliente.Size = new System.Drawing.Size(93, 89);
             this.btnCliente.TabIndex = 1;
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click_1);
@@ -161,22 +156,22 @@
             this.BtnInsumos.FlatAppearance.BorderSize = 0;
             this.BtnInsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnInsumos.Image = ((System.Drawing.Image)(resources.GetObject("BtnInsumos.Image")));
-            this.BtnInsumos.Location = new System.Drawing.Point(226, 216);
-            this.BtnInsumos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnInsumos.Location = new System.Drawing.Point(301, 266);
+            this.BtnInsumos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnInsumos.Name = "BtnInsumos";
-            this.BtnInsumos.Size = new System.Drawing.Size(93, 68);
+            this.BtnInsumos.Size = new System.Drawing.Size(124, 84);
             this.BtnInsumos.TabIndex = 9;
             this.BtnInsumos.UseVisualStyleBackColor = true;
+            this.BtnInsumos.Click += new System.EventHandler(this.BtnInsumos_Click);
             // 
             // LblInsumos
             // 
             this.LblInsumos.AutoSize = true;
             this.LblInsumos.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblInsumos.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblInsumos.Location = new System.Drawing.Point(234, 287);
-            this.LblInsumos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblInsumos.Location = new System.Drawing.Point(312, 353);
             this.LblInsumos.Name = "LblInsumos";
-            this.LblInsumos.Size = new System.Drawing.Size(81, 23);
+            this.LblInsumos.Size = new System.Drawing.Size(100, 28);
             this.LblInsumos.TabIndex = 10;
             this.LblInsumos.Text = "Insumos";
             // 
@@ -185,10 +180,10 @@
             this.BtnFacturas.FlatAppearance.BorderSize = 0;
             this.BtnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFacturas.Image = ((System.Drawing.Image)(resources.GetObject("BtnFacturas.Image")));
-            this.BtnFacturas.Location = new System.Drawing.Point(391, 105);
-            this.BtnFacturas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnFacturas.Location = new System.Drawing.Point(521, 129);
+            this.BtnFacturas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnFacturas.Name = "BtnFacturas";
-            this.BtnFacturas.Size = new System.Drawing.Size(75, 73);
+            this.BtnFacturas.Size = new System.Drawing.Size(100, 90);
             this.BtnFacturas.TabIndex = 11;
             this.BtnFacturas.UseVisualStyleBackColor = true;
             // 
@@ -197,19 +192,18 @@
             this.LblFacturas.AutoSize = true;
             this.LblFacturas.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFacturas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblFacturas.Location = new System.Drawing.Point(391, 178);
-            this.LblFacturas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblFacturas.Location = new System.Drawing.Point(521, 219);
             this.LblFacturas.Name = "LblFacturas";
-            this.LblFacturas.Size = new System.Drawing.Size(82, 23);
+            this.LblFacturas.Size = new System.Drawing.Size(100, 28);
             this.LblFacturas.TabIndex = 12;
             this.LblFacturas.Text = "Facturas";
             // 
             // FormAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(525, 381);
+            this.ClientSize = new System.Drawing.Size(700, 469);
             this.Controls.Add(this.LblFacturas);
             this.Controls.Add(this.BtnFacturas);
             this.Controls.Add(this.LblInsumos);
@@ -225,7 +219,7 @@
             this.Controls.Add(this.lblLABEL);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";

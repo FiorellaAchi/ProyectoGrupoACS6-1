@@ -16,5 +16,18 @@ namespace Insumos
         {
             InitializeComponent();
         }
+
+        private void BtnIngresarInsumos_Click(object sender, EventArgs e)
+        {
+            Form formulario = new CrearInsumos();
+            Form formularioC = new FrmMenuInsumos();
+            formulario.Show();
+            formularioC.Hide();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

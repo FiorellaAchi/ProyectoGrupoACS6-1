@@ -35,9 +35,10 @@
             this.LblEditar = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.LblEliminar = new System.Windows.Forms.Label();
-            this.LblSalir = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LblListarInsumos = new System.Windows.Forms.Label();
+            this.BtnListar = new System.Windows.Forms.Button();
             this.LblParaMenu = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnIngresarInsumos
@@ -50,6 +51,7 @@
             this.BtnIngresarInsumos.Size = new System.Drawing.Size(77, 75);
             this.BtnIngresarInsumos.TabIndex = 0;
             this.BtnIngresarInsumos.UseVisualStyleBackColor = true;
+            this.BtnIngresarInsumos.Click += new System.EventHandler(this.BtnIngresarInsumos_Click);
             // 
             // LblIngresarInsumos
             // 
@@ -103,26 +105,26 @@
             this.LblEliminar.TabIndex = 5;
             this.LblEliminar.Text = "Eliminar Insumos";
             // 
-            // LblSalir
+            // LblListarInsumos
             // 
-            this.LblSalir.AutoSize = true;
-            this.LblSalir.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.LblSalir.Location = new System.Drawing.Point(321, 378);
-            this.LblSalir.Name = "LblSalir";
-            this.LblSalir.Size = new System.Drawing.Size(51, 23);
-            this.LblSalir.TabIndex = 6;
-            this.LblSalir.Text = "Salir";
+            this.LblListarInsumos.AutoSize = true;
+            this.LblListarInsumos.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
+            this.LblListarInsumos.Location = new System.Drawing.Point(286, 378);
+            this.LblListarInsumos.Name = "LblListarInsumos";
+            this.LblListarInsumos.Size = new System.Drawing.Size(139, 23);
+            this.LblListarInsumos.TabIndex = 6;
+            this.LblListarInsumos.Text = "Listar Insumos";
             // 
-            // button1
+            // BtnListar
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(290, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 73);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnListar.FlatAppearance.BorderSize = 0;
+            this.BtnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnListar.Image = ((System.Drawing.Image)(resources.GetObject("BtnListar.Image")));
+            this.BtnListar.Location = new System.Drawing.Point(290, 292);
+            this.BtnListar.Name = "BtnListar";
+            this.BtnListar.Size = new System.Drawing.Size(102, 73);
+            this.BtnListar.TabIndex = 7;
+            this.BtnListar.UseVisualStyleBackColor = true;
             // 
             // LblParaMenu
             // 
@@ -134,15 +136,29 @@
             this.LblParaMenu.TabIndex = 8;
             this.LblParaMenu.Text = "MENU DE INSUMOS";
             // 
+            // btnRegresar
+            // 
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.Location = new System.Drawing.Point(31, 36);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(68, 72);
+            this.btnRegresar.TabIndex = 37;
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // FrmMenuInsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(469, 460);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.LblParaMenu);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.LblSalir);
+            this.Controls.Add(this.BtnListar);
+            this.Controls.Add(this.LblListarInsumos);
             this.Controls.Add(this.LblEliminar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.LblEditar);
@@ -165,8 +181,9 @@
         private System.Windows.Forms.Label LblEditar;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Label LblEliminar;
-        private System.Windows.Forms.Label LblSalir;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label LblListarInsumos;
+        private System.Windows.Forms.Button BtnListar;
         private System.Windows.Forms.Label LblParaMenu;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

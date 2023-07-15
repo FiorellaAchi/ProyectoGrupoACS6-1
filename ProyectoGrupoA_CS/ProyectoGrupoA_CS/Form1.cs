@@ -1,5 +1,6 @@
 ﻿using Ambulancia;
 using Conductor;
+using Insumos;
 using PrototipoProy;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,13 @@ namespace ProyectoGrupoA_CS
         {
             FrmMenuAmb frm = new FrmMenuAmb();
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de ambulancia.
+        }
+
+        private void BtnInsumos_Click(object sender, EventArgs e)
+        {
+            FrmMenuInsumos frm = new FrmMenuInsumos();
+            frm.Show(); //Nos muestra la pestaña de acceso a edicion de insumos.
+
         }
     }
 }

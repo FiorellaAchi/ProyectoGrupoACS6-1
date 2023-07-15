@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrearInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearInsumos.Designer.cs">
+      <DependentUpon>CrearInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuInsumos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrearInsumos.resx">
+      <DependentUpon>CrearInsumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInsumos.resx">
       <DependentUpon>FrmMenuInsumos.cs</DependentUpon>
     </EmbeddedResource>
