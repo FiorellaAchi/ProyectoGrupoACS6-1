@@ -322,7 +322,7 @@ namespace Data
             }
         }
 
-        public void EliminarInsumos(String codigo)
+        public void EliminarInsumos(String insumo)
         {
             String nombreSp = "sp_eliminar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -330,7 +330,7 @@ namespace Data
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@insumo", insumo);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }

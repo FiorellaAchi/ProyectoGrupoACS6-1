@@ -13,3 +13,5 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Insumos\obj\Debug\Insumos.csproj.CopyComplete
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Insumos\obj\Debug\Insumos.exe
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Insumos\obj\Debug\Insumos.pdb
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Insumos\obj\Debug\Insumos.ListarInsumos.resources
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\Insumos\obj\Debug\Insumos.EliminarInsumo.resources

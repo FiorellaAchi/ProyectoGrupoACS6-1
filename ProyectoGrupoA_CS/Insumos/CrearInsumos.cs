@@ -21,10 +21,9 @@ namespace Insumos
 
         private void BtnRegresar_Click(object sender, EventArgs e)
         {
-            Form formulario2 = new CrearInsumos();
-            formulario2.Close();
-            Form formulario = new FrmMenuInsumos();
-            formulario.Show();
+            this.Close();
+            Form formularioC = new FrmMenuInsumos();
+            formularioC.Show();
         }
 
         private void BtnAgregarInsumo_Click(object sender, EventArgs e)
@@ -45,6 +44,8 @@ namespace Insumos
             {
                 MessageBox.Show(ex.Message);
             }
+
+            MessageBox.Show("Insumo agregado correctamente");
         }
     }
 }

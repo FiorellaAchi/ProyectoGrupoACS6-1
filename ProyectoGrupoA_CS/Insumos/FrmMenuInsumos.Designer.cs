@@ -94,6 +94,7 @@
             this.BtnEliminar.Size = new System.Drawing.Size(75, 83);
             this.BtnEliminar.TabIndex = 4;
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // LblEliminar
             // 
@@ -125,6 +126,7 @@
             this.BtnListar.Size = new System.Drawing.Size(102, 73);
             this.BtnListar.TabIndex = 7;
             this.BtnListar.UseVisualStyleBackColor = true;
+            this.BtnListar.Click += new System.EventHandler(this.BtnListar_Click);
             // 
             // LblParaMenu
             // 

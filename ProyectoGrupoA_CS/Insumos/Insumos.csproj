@@ -52,19 +52,37 @@
     <Compile Include="CrearInsumos.Designer.cs">
       <DependentUpon>CrearInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="EliminarInsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarInsumo.Designer.cs">
+      <DependentUpon>EliminarInsumo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuInsumos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMenuInsumos.Designer.cs">
       <DependentUpon>FrmMenuInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarInsumos.Designer.cs">
+      <DependentUpon>ListarInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearInsumos.resx">
       <DependentUpon>CrearInsumos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarInsumo.resx">
+      <DependentUpon>EliminarInsumo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuInsumos.resx">
       <DependentUpon>FrmMenuInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarInsumos.resx">
+      <DependentUpon>ListarInsumos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
