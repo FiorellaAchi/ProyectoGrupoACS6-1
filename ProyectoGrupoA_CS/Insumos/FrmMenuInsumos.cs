@@ -42,5 +42,12 @@ namespace Insumos
             Eliminan2.Show();
             this.Hide();
         }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+            Form EditandoAndo = new EditarInsumos();
+            EditandoAndo.Show();
+            this.Hide();
+        }
     }
 }

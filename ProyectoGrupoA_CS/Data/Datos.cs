@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -373,5 +374,82 @@ namespace Data
             }
         }
 
+        public void CrearFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String direccion, String descripcion)
+        {
+            String nombreSp = "sp_crear_factura";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@emision", emision);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+
+        }
+
+        public void EliminarFacturas(String codigo)
+        {
+            String nombreSp = "sp_eliminar_factura";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+       public void ActualizarFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String direccion, String descripcion)
+       {
+            String nombreSp = "sp_modificar_factura";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@emision", emision);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }   
+        }
+
+        public DataTable ListarFacturas()
+        {
+            String nombreSp = "sp_listar_factura";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+         
+
+        }
     }
-}
+

@@ -52,6 +52,12 @@
     <Compile Include="CrearInsumos.Designer.cs">
       <DependentUpon>CrearInsumos.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarInsumos.Designer.cs">
+      <DependentUpon>EditarInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="EliminarInsumo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearInsumos.resx">
       <DependentUpon>CrearInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarInsumos.resx">
+      <DependentUpon>EditarInsumos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarInsumo.resx">
       <DependentUpon>EliminarInsumo.cs</DependentUpon>

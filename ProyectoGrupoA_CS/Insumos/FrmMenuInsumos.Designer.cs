@@ -73,6 +73,7 @@
             this.BtnEditar.Size = new System.Drawing.Size(97, 90);
             this.BtnEditar.TabIndex = 2;
             this.BtnEditar.UseVisualStyleBackColor = true;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // LblEditar
             // 
