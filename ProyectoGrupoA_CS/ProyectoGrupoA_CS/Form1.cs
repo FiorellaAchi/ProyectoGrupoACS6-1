@@ -1,5 +1,6 @@
 ﻿using Ambulancia;
 using Conductor;
+using Facturas;
 using Insumos;
 using PrototipoProy;
 using System;
@@ -52,6 +53,13 @@ namespace ProyectoGrupoA_CS
             FrmMenuInsumos frm = new FrmMenuInsumos();
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de insumos.
 
+        }
+
+        private void BtnFacturas_Click(object sender, EventArgs e)
+        {
+            FrmMenuFactura frm = new FrmMenuFactura();
+            frm.Show(); //Nos muestra la pestaña de acceso a edicion de facturas.
+          
         }
     }
 }

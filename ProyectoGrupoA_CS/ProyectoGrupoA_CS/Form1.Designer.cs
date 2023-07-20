@@ -186,6 +186,7 @@
             this.BtnFacturas.Size = new System.Drawing.Size(100, 90);
             this.BtnFacturas.TabIndex = 11;
             this.BtnFacturas.UseVisualStyleBackColor = true;
+            this.BtnFacturas.Click += new System.EventHandler(this.BtnFacturas_Click);
             // 
             // LblFacturas
             // 

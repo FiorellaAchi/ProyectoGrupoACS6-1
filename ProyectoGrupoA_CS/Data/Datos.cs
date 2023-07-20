@@ -374,7 +374,7 @@ namespace Data
             }
         }
 
-        public void CrearFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String direccion, String descripcion)
+        public void CrearFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
         {
             String nombreSp = "sp_crear_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -387,7 +387,7 @@ namespace Data
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@emision", emision);
                     command.Parameters.AddWithValue("@telefono", telefono);
-                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.Parameters.AddWithValue("@domicilio", domicilio);
                     command.Parameters.AddWithValue("@descripcion", descripcion);
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -411,7 +411,7 @@ namespace Data
             }
         }
 
-       public void ActualizarFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String direccion, String descripcion)
+       public void ActualizarFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
        {
             String nombreSp = "sp_modificar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -424,7 +424,7 @@ namespace Data
                     command.Parameters.AddWithValue("@nombre", nombre);
                     command.Parameters.AddWithValue("@emision", emision);
                     command.Parameters.AddWithValue("@telefono", telefono);
-                    command.Parameters.AddWithValue("@direccion", direccion);
+                    command.Parameters.AddWithValue("@domicilio", domicilio);
                     command.Parameters.AddWithValue("@descripcion", descripcion);
                     connection.Open();
                     command.ExecuteNonQuery();

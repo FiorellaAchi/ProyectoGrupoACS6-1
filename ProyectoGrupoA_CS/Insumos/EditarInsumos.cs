@@ -35,7 +35,7 @@ namespace Insumos
                 DateTime fechaSeleccionada = DTPFecha.Value;
                 string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
                 datos.ActualizarInsumos(txtCodigoNew.Text, txtInsumo.Text, fechaFormateada, txtProveedor.Text, estado);
-
+                MessageBox.Show("Insumo editado correctamente");
             }
             catch (FormatException)
             {
@@ -46,7 +46,7 @@ namespace Insumos
                 MessageBox.Show(ex.Message);
             }
 
-            MessageBox.Show("Insumo agregado correctamente");
+            
             DgvListadoEditar.DataSource = datos.ListarInsumos();
         }
 

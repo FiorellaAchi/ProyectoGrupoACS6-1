@@ -1,6 +1,6 @@
 ﻿namespace Facturas
 {
-    partial class FrmCrearListarFactura
+    partial class FrmCrearFactura
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCrearListarFactura));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCrearFactura));
             this.BtnIngresar = new System.Windows.Forms.Button();
             this.LblCodigo = new System.Windows.Forms.Label();
             this.lblGenerarFacturas = new System.Windows.Forms.Label();
@@ -38,6 +38,14 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblDomicilio = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
+            this.TxtCodigo = new System.Windows.Forms.TextBox();
+            this.TxtCedula = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.DTPEmision = new System.Windows.Forms.DateTimePicker();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
+            this.TxtDomicilio = new System.Windows.Forms.TextBox();
+            this.TxtDescripcion = new System.Windows.Forms.TextBox();
+            this.BtnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnIngresar
@@ -45,11 +53,12 @@
             this.BtnIngresar.FlatAppearance.BorderSize = 0;
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnIngresar.Image")));
-            this.BtnIngresar.Location = new System.Drawing.Point(482, 201);
+            this.BtnIngresar.Location = new System.Drawing.Point(335, 230);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(91, 76);
             this.BtnIngresar.TabIndex = 0;
             this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // LblCodigo
             // 
@@ -131,12 +140,86 @@
             this.lblDescripcion.TabIndex = 10;
             this.lblDescripcion.Text = "Descripción";
             // 
-            // FrmCrearListarFactura
+            // TxtCodigo
+            // 
+            this.TxtCodigo.Location = new System.Drawing.Point(111, 97);
+            this.TxtCodigo.Name = "TxtCodigo";
+            this.TxtCodigo.Size = new System.Drawing.Size(147, 22);
+            this.TxtCodigo.TabIndex = 11;
+            this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
+            // 
+            // TxtCedula
+            // 
+            this.TxtCedula.Location = new System.Drawing.Point(111, 148);
+            this.TxtCedula.Name = "TxtCedula";
+            this.TxtCedula.Size = new System.Drawing.Size(147, 22);
+            this.TxtCedula.TabIndex = 12;
+            this.TxtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCedula_KeyPress);
+            // 
+            // TxtNombre
+            // 
+            this.TxtNombre.Location = new System.Drawing.Point(120, 203);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(147, 22);
+            this.TxtNombre.TabIndex = 13;
+            this.TxtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
+            // 
+            // DTPEmision
+            // 
+            this.DTPEmision.Location = new System.Drawing.Point(120, 255);
+            this.DTPEmision.Name = "DTPEmision";
+            this.DTPEmision.Size = new System.Drawing.Size(182, 22);
+            this.DTPEmision.TabIndex = 14;
+            // 
+            // TxtTelefono
+            // 
+            this.TxtTelefono.Location = new System.Drawing.Point(129, 316);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(147, 22);
+            this.TxtTelefono.TabIndex = 15;
+            this.TxtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefono_KeyPress);
+            // 
+            // TxtDomicilio
+            // 
+            this.TxtDomicilio.Location = new System.Drawing.Point(145, 371);
+            this.TxtDomicilio.Name = "TxtDomicilio";
+            this.TxtDomicilio.Size = new System.Drawing.Size(147, 22);
+            this.TxtDomicilio.TabIndex = 16;
+            // 
+            // TxtDescripcion
+            // 
+            this.TxtDescripcion.Location = new System.Drawing.Point(29, 449);
+            this.TxtDescripcion.Multiline = true;
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.Size = new System.Drawing.Size(359, 117);
+            this.TxtDescripcion.TabIndex = 17;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.FlatAppearance.BorderSize = 0;
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
+            this.BtnSalir.Location = new System.Drawing.Point(12, 14);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(46, 40);
+            this.BtnSalir.TabIndex = 18;
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // FrmCrearFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(674, 581);
+            this.ClientSize = new System.Drawing.Size(440, 608);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.TxtDescripcion);
+            this.Controls.Add(this.TxtDomicilio);
+            this.Controls.Add(this.TxtTelefono);
+            this.Controls.Add(this.DTPEmision);
+            this.Controls.Add(this.TxtNombre);
+            this.Controls.Add(this.TxtCedula);
+            this.Controls.Add(this.TxtCodigo);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblDomicilio);
             this.Controls.Add(this.lblTelefono);
@@ -147,7 +230,7 @@
             this.Controls.Add(this.LblCodigo);
             this.Controls.Add(this.BtnIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmCrearListarFactura";
+            this.Name = "FrmCrearFactura";
             this.Text = "FrmCrearFactura";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,5 +248,13 @@
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblDomicilio;
         private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.TextBox TxtCodigo;
+        private System.Windows.Forms.TextBox TxtCedula;
+        private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.DateTimePicker DTPEmision;
+        private System.Windows.Forms.TextBox TxtTelefono;
+        private System.Windows.Forms.TextBox TxtDomicilio;
+        private System.Windows.Forms.TextBox TxtDescripcion;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }
