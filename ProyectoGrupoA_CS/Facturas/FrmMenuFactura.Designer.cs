@@ -127,6 +127,7 @@
             this.BtnEliminarFactura.Size = new System.Drawing.Size(94, 87);
             this.BtnEliminarFactura.TabIndex = 10;
             this.BtnEliminarFactura.UseVisualStyleBackColor = true;
+            this.BtnEliminarFactura.Click += new System.EventHandler(this.BtnEliminarFactura_Click);
             // 
             // lblEliminar
             // 

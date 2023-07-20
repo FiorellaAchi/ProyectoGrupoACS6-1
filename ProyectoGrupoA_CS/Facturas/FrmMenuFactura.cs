@@ -43,5 +43,12 @@ namespace Facturas
             frmEditarFactura.Show();
             this.Hide();
         }
+
+        private void BtnEliminarFactura_Click(object sender, EventArgs e)
+        {
+            EliminarFacturas eliminarFacturas = new EliminarFacturas();
+            eliminarFacturas.Show();
+            this.Hide();
+        }
     }
 }
