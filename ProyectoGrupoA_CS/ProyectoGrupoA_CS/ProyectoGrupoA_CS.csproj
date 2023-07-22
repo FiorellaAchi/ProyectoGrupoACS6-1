@@ -101,6 +101,10 @@
       <Project>{52c2f861-8ae0-4b4d-bc3b-a59f74a24618}</Project>
       <Name>Conductor</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{40744A50-9C38-4C1D-B8AD-FCEA2C5A370B}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

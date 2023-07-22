@@ -12,7 +12,7 @@ namespace Data
     {
         //Creacion de conexion para base de datos en sql server
         //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
-        String connectionString = "Data Source=DESKTOP-3SRGPP9;Initial Catalog=ProyectoAmbulancia1;Integrated Security=True";
+        String connectionString = "Data Source=DESKTOP-8LBI3IO;Initial Catalog=BaseDatos_GrupoA_Proyecto;Integrated Security=True";
         
 
         public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
@@ -304,5 +304,70 @@ namespace Data
             }
         }
 
+        public bool Login(string usuario, string password)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("sp_login", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@usuario", usuario);
+                    command.Parameters.AddWithValue("@password", password);
+                    connection.Open();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    SqlParameter returnValueParam = new SqlParameter("@RETURN_VALUE", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.ReturnValue
+                    };
+                    command.Parameters.Add(returnValueParam);
+
+                    // Ejecuta el procedimiento almacenado
+                    command.ExecuteNonQuery();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    int returnValue = Convert.ToInt32(command.Parameters["@RETURN_VALUE"].Value);
+
+                    // Comprueba si el valor de retorno es 1 (inicio de sesión exitoso)
+                    if (returnValue == 1)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            // El inicio de sesión del usuario falló
+            return false;
+        }
+
+
+
+        public int CheckUserType(string usuario, string password)
+        {
+            int userType = -1;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("sp_check_user_type", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@usuario", usuario);
+                    command.Parameters.AddWithValue("@password", password);
+                    connection.Open();
+
+                    SqlParameter returnValueParam = new SqlParameter("@RETURN_VALUE", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.ReturnValue
+                    };
+                    command.Parameters.Add(returnValueParam);
+
+                    // Ejecuta el procedimiento almacenado
+                    command.ExecuteNonQuery();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    userType = Convert.ToInt32(command.Parameters["@RETURN_VALUE"].Value);
+                }
+            }
+            return userType;
+        }
     }
 }

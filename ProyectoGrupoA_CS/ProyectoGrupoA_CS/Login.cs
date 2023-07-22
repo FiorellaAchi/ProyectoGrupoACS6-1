@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ProyectoGrupoA_CS
 {
     public partial class frmLogin : Form
     {
+
+        Datos data= new Datos();
         public frmLogin()
         {
             InitializeComponent();
@@ -31,17 +34,26 @@ namespace ProyectoGrupoA_CS
         {
             String usuario = txtUser.Text;
             String password = txtPassword.Text;
-
-            if (usuario.Equals("admin") && password.Equals("admin"))
+            if (data.Login(usuario, password))
             {
-                FormAdmin frm = new FormAdmin();
-                frm.Show();
-                this.Hide();
+                if(data.CheckUserType(usuario, password)==1)
+                {
+                    FormAdmin frm = new FormAdmin();
+                    frm.Show();
+                    this.Hide();
+                    return;
+                }
+                if (data.CheckUserType(usuario, password) == 0)
+                {
+                    MessageBox.Show("usuario");
+                    return;
+                }
+                MessageBox.Show("El usuario no tiene asignado un rol actualmente");
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos");
-            }   
+            } 
         }
 
         private void button2_Click(object sender, EventArgs e)
