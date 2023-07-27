@@ -61,5 +61,11 @@ namespace ProyectoGrupoA_CS
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de facturas.
           
         }
+
+        private void BtnListarServicios_Click(object sender, EventArgs e)
+        {
+            ListarServicios frm = new ListarServicios();
+            frm.Show(); //Muestra los datos de los servicios
+        }
     }
 }

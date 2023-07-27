@@ -14,7 +14,15 @@ namespace Data
         //Creacion de conexion para base de datos en sql server
         //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
         String connectionString = "Data Source=DESKTOP-3SRGPP9;Initial Catalog=ProyectoAmbulancia1;Integrated Security=True";
-        
+
+        private static Datos datos = new Datos();
+        public Datos() { }
+
+        private String userName;
+        public static Datos getObject()
+        {
+            return datos;
+        }
 
         public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
         {
@@ -237,73 +245,6 @@ namespace Data
             }
         }
 
-        public void InsertarServicio(String codigo, String nombre, String descripcion, String precio)
-        {
-            String nombreSp = "sp_crear_servicio";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
-                    command.Parameters.AddWithValue("@nombre", nombre);
-                    command.Parameters.AddWithValue("@descripcion", descripcion);
-                    command.Parameters.AddWithValue("@precio", precio);
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
-        public void EliminarServicio(String codigo)
-        {
-            String nombreSp = "sp_eliminar_servicio";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
-        public void ActualizarServicio(String codigo, String nombre, String descripcion, String precio)
-        {
-            String nombreSp = "sp_modificar_servicio";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
-                    command.Parameters.AddWithValue("@nombre", nombre);
-                    command.Parameters.AddWithValue("@descripcion", descripcion);
-                    command.Parameters.AddWithValue("@precio", precio);
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
-        public DataTable ListarServicios()
-        {
-            String nombreSp = "sp_listar_servicio";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    connection.Open();
-                    SqlDataAdapter da = new SqlDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    return dt;
-                }
-            }
-        }
         public void InsertarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado) 
         {
             String nombreSp = "sp_crear_insumos";
@@ -448,8 +389,150 @@ namespace Data
                 }
             }
         }
-         
 
+        public void InsertarServicio()
+        {
+            String nombre = userName + "";
+            String descripcion = "Servicio de ambulancias";
+            /*precio ramdon en un margen de 25 a 70*/
+            Random rnd = new Random();
+            int preciot = rnd.Next(25, 70);
+            String precio = preciot.ToString();
+            String codigo = nombre + "_SA" + precio;
+            String nombreSp = "sp_crear_servicios";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+                    command.Parameters.AddWithValue("@precio", precio);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
         }
+
+        public void EliminarServicio()
+        {
+            String nombre = userName;
+            String nombreSp = "sp_eliminar_servicios";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void ActualizarServicio(String codigo, String nombre, String descripcion, String precio)
+        {
+            String nombreSp = "sp_modificar_servicios";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@descripcion", descripcion);
+                    command.Parameters.AddWithValue("@precio", precio);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public DataTable ListarServicios()
+        {
+            String nombreSp = "sp_listar_servicios";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+
+        public bool Login(string usuario, string password)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("sp_login", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@usuario", usuario);
+                    command.Parameters.AddWithValue("@password", password);
+                    connection.Open();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    SqlParameter returnValueParam = new SqlParameter("@RETURN_VALUE", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.ReturnValue
+                    };
+                    command.Parameters.Add(returnValueParam);
+
+                    // Ejecuta el procedimiento almacenado
+                    command.ExecuteNonQuery();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    int returnValue = Convert.ToInt32(command.Parameters["@RETURN_VALUE"].Value);
+
+                    // Comprueba si el valor de retorno es 1 (inicio de sesión exitoso)
+                    if (returnValue == 1)
+                    {
+                        userName = usuario;
+                        return true;
+                    }
+                }
+            }
+
+            // El inicio de sesión del usuario falló
+            return false;
+        }
+
+
+
+        public int CheckUserType(string usuario, string password)
+        {
+            int userType = -1;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand("sp_check_user_type", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@usuario", usuario);
+                    command.Parameters.AddWithValue("@password", password);
+                    connection.Open();
+
+                    SqlParameter returnValueParam = new SqlParameter("@RETURN_VALUE", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.ReturnValue
+                    };
+                    command.Parameters.Add(returnValueParam);
+
+                    // Ejecuta el procedimiento almacenado
+                    command.ExecuteNonQuery();
+
+                    // Obtiene el valor de retorno del procedimiento almacenado
+                    userType = Convert.ToInt32(command.Parameters["@RETURN_VALUE"].Value);
+                }
+            }
+            return userType;
+        }
+
+    }
     }
 

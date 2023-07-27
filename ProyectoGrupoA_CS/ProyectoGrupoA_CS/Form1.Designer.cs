@@ -42,6 +42,8 @@
             this.LblInsumos = new System.Windows.Forms.Label();
             this.BtnFacturas = new System.Windows.Forms.Button();
             this.LblFacturas = new System.Windows.Forms.Label();
+            this.BtnListarServicios = new System.Windows.Forms.Button();
+            this.lblListar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblLABEL
@@ -93,7 +95,7 @@
             this.Salir2.AutoSize = true;
             this.Salir2.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Salir2.Location = new System.Drawing.Point(535, 353);
+            this.Salir2.Location = new System.Drawing.Point(710, 292);
             this.Salir2.Name = "Salir2";
             this.Salir2.Size = new System.Drawing.Size(59, 28);
             this.Salir2.TabIndex = 8;
@@ -104,7 +106,7 @@
             this.lblSalir.FlatAppearance.BorderSize = 0;
             this.lblSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSalir.Image = ((System.Drawing.Image)(resources.GetObject("lblSalir.Image")));
-            this.lblSalir.Location = new System.Drawing.Point(501, 268);
+            this.lblSalir.Location = new System.Drawing.Point(681, 210);
             this.lblSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(120, 80);
@@ -199,12 +201,38 @@
             this.LblFacturas.TabIndex = 12;
             this.LblFacturas.Text = "Facturas";
             // 
+            // BtnListarServicios
+            // 
+            this.BtnListarServicios.FlatAppearance.BorderSize = 0;
+            this.BtnListarServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnListarServicios.Image = ((System.Drawing.Image)(resources.GetObject("BtnListarServicios.Image")));
+            this.BtnListarServicios.Location = new System.Drawing.Point(501, 270);
+            this.BtnListarServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnListarServicios.Name = "BtnListarServicios";
+            this.BtnListarServicios.Size = new System.Drawing.Size(120, 80);
+            this.BtnListarServicios.TabIndex = 13;
+            this.BtnListarServicios.UseVisualStyleBackColor = true;
+            this.BtnListarServicios.Click += new System.EventHandler(this.BtnListarServicios_Click);
+            // 
+            // lblListar
+            // 
+            this.lblListar.AutoSize = true;
+            this.lblListar.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblListar.Location = new System.Drawing.Point(469, 352);
+            this.lblListar.Name = "lblListar";
+            this.lblListar.Size = new System.Drawing.Size(170, 28);
+            this.lblListar.TabIndex = 14;
+            this.lblListar.Text = "Listar Servicios";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(700, 469);
+            this.ClientSize = new System.Drawing.Size(794, 432);
+            this.Controls.Add(this.lblListar);
+            this.Controls.Add(this.BtnListarServicios);
             this.Controls.Add(this.LblFacturas);
             this.Controls.Add(this.BtnFacturas);
             this.Controls.Add(this.LblInsumos);
@@ -244,6 +272,8 @@
         private System.Windows.Forms.Label LblInsumos;
         private System.Windows.Forms.Button BtnFacturas;
         private System.Windows.Forms.Label LblFacturas;
+        private System.Windows.Forms.Button BtnListarServicios;
+        private System.Windows.Forms.Label lblListar;
     }
 }
 
