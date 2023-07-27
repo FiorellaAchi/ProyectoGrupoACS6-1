@@ -14,7 +14,7 @@ namespace ProyectoGrupoA_CS
     public partial class frmLogin : Form
     {
 
-        Datos data= new Datos();
+        Datos data= Datos.getObject();
         public frmLogin()
         {
             InitializeComponent();
@@ -45,7 +45,9 @@ namespace ProyectoGrupoA_CS
                 }
                 if (data.CheckUserType(usuario, password) == 0)
                 {
-                    MessageBox.Show("usuario");
+                    frmServicios frm = new frmServicios();
+                    frm.Show();
+                    this.Hide();
                     return;
                 }
                 MessageBox.Show("El usuario no tiene asignado un rol actualmente");

@@ -13,7 +13,15 @@ namespace Data
         //Creacion de conexion para base de datos en sql server
         //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
         String connectionString = "Data Source=DESKTOP-8LBI3IO;Initial Catalog=BaseDatos_GrupoA_Proyecto;Integrated Security=True";
-        
+
+        private static Datos datos = new Datos();
+        public Datos() { }
+        public static Datos getObject()
+        {
+            return datos;
+        }
+
+        private String userName; 
 
         public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
         {
@@ -236,9 +244,16 @@ namespace Data
             }
         }
 
-        public void InsertarServicio(String codigo, String nombre, String descripcion, String precio)
+        public void InsertarServicio()
         {
-            String nombreSp = "sp_crear_servicio";
+            String nombre = userName+"";
+            String descripcion = "Servicio de ambulancias";
+            /*precio ramdon en un margen de 25 a 70*/
+            Random rnd = new Random();
+            int preciot = rnd.Next(25, 70);
+            String precio= preciot.ToString();
+            String codigo = nombre +"_SA"+precio;
+            String nombreSp = "sp_crear_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -254,15 +269,16 @@ namespace Data
             }
         }
 
-        public void EliminarServicio(String codigo)
+        public void EliminarServicio()
         {
-            String nombreSp = "sp_eliminar_servicio";
+            String nombre = userName;
+            String nombreSp = "sp_eliminar_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -271,7 +287,7 @@ namespace Data
 
         public void ActualizarServicio(String codigo, String nombre, String descripcion, String precio)
         {
-            String nombreSp = "sp_modificar_servicio";
+            String nombreSp = "sp_modificar_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -289,7 +305,7 @@ namespace Data
 
         public DataTable ListarServicios()
         {
-            String nombreSp = "sp_listar_servicio";
+            String nombreSp = "sp_listar_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -331,6 +347,7 @@ namespace Data
                     // Comprueba si el valor de retorno es 1 (inicio de sesión exitoso)
                     if (returnValue == 1)
                     {
+                        userName = usuario;
                         return true;
                     }
                 }
@@ -369,5 +386,7 @@ namespace Data
             }
             return userType;
         }
+
+
     }
 }

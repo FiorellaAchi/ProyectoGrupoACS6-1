@@ -45,3 +45,5 @@ C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\Pr
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Conductor.exe.config
 C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\ProyectoGrupoA_CS\bin\Debug\Data.pdb
 D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.frmLogin.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.frmServicios.resources
+D:\Trabajos\ProyectoGrupoACS6-1\ProyectoGrupoA_CS\ProyectoGrupoA_CS\obj\Debug\ProyectoGrupoA_CS.ListServicios.resources

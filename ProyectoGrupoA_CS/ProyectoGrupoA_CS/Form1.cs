@@ -29,9 +29,8 @@ namespace ProyectoGrupoA_CS
 
         private void lblSalir_Click(object sender, EventArgs e)
         {
-            frmLogin frm = new frmLogin();
-            frm.Show(); //Nos muestra la ventana de acceso
-            this.Close(); //Nos cierra la ventana actual
+            ListServicios frm = new ListServicios();
+            frm.Show(); 
         }
 
         private void btnConductor_Click(object sender, EventArgs e)
@@ -44,6 +43,18 @@ namespace ProyectoGrupoA_CS
         {
             FrmMenuAmb frm = new FrmMenuAmb();
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de ambulancia.
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.Show(); //Nos muestra la ventana de acceso
+            this.Close(); //Nos cierra la ventana actual
+        }
+
+        private void BtnInsumos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
