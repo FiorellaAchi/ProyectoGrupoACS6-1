@@ -12,8 +12,8 @@ namespace Data
     {
         //Creacion de conexion para base de datos en sql server
         //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
-        String connectionString = "Data Source=DESKTOP-8LBI3IO;Initial CataloIntegrated Security=True";
-
+        String connectionString = "Data Source=DESKTOP-8LBI3IO;Initial Catalog=BaseDatos_GrupoA_Proyecto;Integrated Security=True";
+        //Prueba de conexion
         private static Datos datos = new Datos();
         public Datos() { }
         public static Datos getObject()
