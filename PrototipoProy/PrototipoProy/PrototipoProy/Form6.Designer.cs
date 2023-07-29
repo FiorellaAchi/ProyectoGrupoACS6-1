@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEliminar));
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,59 +38,72 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(142, 84);
+            this.txtNombre.Location = new System.Drawing.Point(213, 152);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(228, 36);
             this.txtNombre.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 92);
+            this.label2.Location = new System.Drawing.Point(50, 160);
+            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(97, 28);
             this.label2.TabIndex = 6;
             this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 40);
+            this.label1.Location = new System.Drawing.Point(36, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 13);
+            this.label1.Size = new System.Drawing.Size(429, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "Ingrese el nombre del usuario a eliminar";
             // 
             // btnEliminarUsuario
             // 
-            this.btnEliminarUsuario.Location = new System.Drawing.Point(127, 145);
+            this.btnEliminarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarUsuario.Image")));
+            this.btnEliminarUsuario.Location = new System.Drawing.Point(65, 274);
+            this.btnEliminarUsuario.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnEliminarUsuario.Name = "btnEliminarUsuario";
-            this.btnEliminarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarUsuario.Size = new System.Drawing.Size(82, 74);
             this.btnEliminarUsuario.TabIndex = 14;
-            this.btnEliminarUsuario.Text = "eliminar";
             this.btnEliminarUsuario.UseVisualStyleBackColor = true;
             this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(230, 145);
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.Location = new System.Drawing.Point(345, 274);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(96, 74);
             this.btnSalir.TabIndex = 27;
-            this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmEliminar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 246);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(513, 424);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminarUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
+            this.Font = new System.Drawing.Font("Book Antiqua", 13.8F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.Name = "frmEliminar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";

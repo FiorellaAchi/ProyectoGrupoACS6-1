@@ -42,18 +42,21 @@
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(651, 635);
-            this.button1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(727, 535);
+            this.button1.Margin = new System.Windows.Forms.Padding(7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(453, 76);
+            this.button1.Size = new System.Drawing.Size(83, 76);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Salir del sistema";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertarUsuarioNuevoAlSistemaToolStripMenuItem,
@@ -63,12 +66,13 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(14, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1724, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1437, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // insertarUsuarioNuevoAlSistemaToolStripMenuItem
             // 
+            this.insertarUsuarioNuevoAlSistemaToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.insertarUsuarioNuevoAlSistemaToolStripMenuItem.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insertarUsuarioNuevoAlSistemaToolStripMenuItem.Name = "insertarUsuarioNuevoAlSistemaToolStripMenuItem";
             this.insertarUsuarioNuevoAlSistemaToolStripMenuItem.Size = new System.Drawing.Size(370, 32);
@@ -77,6 +81,7 @@
             // 
             // modificarUsuarioDelSistemaToolStripMenuItem
             // 
+            this.modificarUsuarioDelSistemaToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.modificarUsuarioDelSistemaToolStripMenuItem.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarUsuarioDelSistemaToolStripMenuItem.Name = "modificarUsuarioDelSistemaToolStripMenuItem";
             this.modificarUsuarioDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(303, 32);
@@ -85,6 +90,7 @@
             // 
             // listarUsuariosEnElSistemaToolStripMenuItem
             // 
+            this.listarUsuariosEnElSistemaToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.listarUsuariosEnElSistemaToolStripMenuItem.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listarUsuariosEnElSistemaToolStripMenuItem.Name = "listarUsuariosEnElSistemaToolStripMenuItem";
             this.listarUsuariosEnElSistemaToolStripMenuItem.Size = new System.Drawing.Size(361, 32);
@@ -93,6 +99,7 @@
             // 
             // eliminarUsuariosEnElSistemaToolStripMenuItem
             // 
+            this.eliminarUsuariosEnElSistemaToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.eliminarUsuariosEnElSistemaToolStripMenuItem.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminarUsuariosEnElSistemaToolStripMenuItem.Name = "eliminarUsuariosEnElSistemaToolStripMenuItem";
             this.eliminarUsuariosEnElSistemaToolStripMenuItem.Size = new System.Drawing.Size(348, 32);
@@ -103,9 +110,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(28, 58);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1668, 376);
+            this.pictureBox1.Size = new System.Drawing.Size(1393, 412);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -114,14 +121,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1724, 737);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1437, 660);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido al sistema";

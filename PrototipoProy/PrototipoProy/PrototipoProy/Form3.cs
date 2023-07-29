@@ -64,5 +64,30 @@ namespace PrototipoProy
             FormInicio Principal = new FormInicio();
             Principal.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formInsertar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
