@@ -48,7 +48,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(235, 509);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(7);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(228, 36);
             this.txtEmail.TabIndex = 21;
@@ -66,7 +66,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(235, 449);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(7);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(228, 36);
             this.txtTelefono.TabIndex = 19;
@@ -84,7 +84,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(235, 380);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(7);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(228, 36);
             this.txtCedula.TabIndex = 17;
@@ -102,7 +102,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(235, 317);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(7);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(228, 36);
             this.txtNombre.TabIndex = 15;
@@ -120,7 +120,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(235, 136);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(7);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(228, 36);
             this.txtCodigo.TabIndex = 13;
@@ -161,7 +161,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.Location = new System.Drawing.Point(391, 606);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 96);
             this.btnSalir.TabIndex = 26;
@@ -173,10 +173,10 @@
             this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarUsuario.Image")));
-            this.btnModificarUsuario.Location = new System.Drawing.Point(74, 606);
-            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(113, 618);
+            this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(7);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
-            this.btnModificarUsuario.Size = new System.Drawing.Size(95, 96);
+            this.btnModificarUsuario.Size = new System.Drawing.Size(68, 73);
             this.btnModificarUsuario.TabIndex = 25;
             this.btnModificarUsuario.UseVisualStyleBackColor = true;
             this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
@@ -203,10 +203,11 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Book Antiqua", 13.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "frmEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditar";
+            this.Load += new System.EventHandler(this.frmEditar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

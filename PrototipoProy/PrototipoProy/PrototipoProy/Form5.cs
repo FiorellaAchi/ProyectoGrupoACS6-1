@@ -70,5 +70,10 @@ namespace PrototipoProy
             FormInicio Principal = new FormInicio();
             Principal.Show();
         }
+
+        private void frmEditar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

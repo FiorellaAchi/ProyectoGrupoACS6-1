@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,23 @@ namespace PrototipoProy
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);
+        }
+
+        public DataTable ListarUsuarios() //Proceso mediante el cual se muestran todos los usuarios en un datagridview
+        {
+            String nombreSp = "sp_listar_usuario";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
         }
     }
 }

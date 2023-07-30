@@ -17,41 +17,11 @@ namespace PrototipoProy
         {
             InitializeComponent();
         }
-       //muestra todos los usuarios en un datagridview
+        //muestra todos los usuarios en un datagridview
         private void btnListarUsuarios_Click(object sender, EventArgs e)
         {
-            try
-            {
-                //Se establece la conexión con la base de datos.
-                using (SqlConnection connection = DBHelper.GetConnection())
-                {
-                    //Se crea un comando SQL para ejecutar el procedimiento almacenado "sp_listar_usuario".
-                    using (SqlCommand command = new SqlCommand("sp_listar_usuario", connection))
-                    {
-
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        //Se abre la conexión a la base de datos.
-                        connection.Open();
-
-                        //Se crea un DataTable para almacenar los resultados de la consulta.
-                        DataTable dataTable = new DataTable();
-
-                        //Se utiliza un SqlDataAdapter para llenar el DataTable con los resultados de la consulta.
-
-                        SqlDataAdapter adapter = new SqlDataAdapter(command);
-
-                        adapter.Fill(dataTable);
-
-                        //Se asigna el DataTable como origen de datos del DataGridView.
-                        dgvUsuarios.DataSource = dataTable;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            DBHelper db = new DBHelper();
+            dgvUsuarios.DataSource = db.ListarUsuarios();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
