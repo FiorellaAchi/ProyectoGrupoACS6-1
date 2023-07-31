@@ -48,6 +48,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.dgvConductores = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConductores)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +59,7 @@
             this.label1.Location = new System.Drawing.Point(344, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 28);
+            this.label1.Size = new System.Drawing.Size(282, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingresar Conductor";
             // 
@@ -68,7 +70,7 @@
             this.label2.Location = new System.Drawing.Point(32, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 19);
+            this.label2.Size = new System.Drawing.Size(28, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "id";
             // 
@@ -79,7 +81,7 @@
             this.label3.Location = new System.Drawing.Point(32, 124);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre";
             // 
@@ -90,7 +92,7 @@
             this.label4.Location = new System.Drawing.Point(28, 177);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 19);
+            this.label4.Size = new System.Drawing.Size(74, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cedula";
             // 
@@ -101,7 +103,7 @@
             this.label5.Location = new System.Drawing.Point(26, 239);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 19);
+            this.label5.Size = new System.Drawing.Size(90, 23);
             this.label5.TabIndex = 4;
             this.label5.Text = "Telefono";
             // 
@@ -112,7 +114,7 @@
             this.label6.Location = new System.Drawing.Point(478, 70);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 19);
+            this.label6.Size = new System.Drawing.Size(82, 23);
             this.label6.TabIndex = 5;
             this.label6.Text = "Licencia";
             // 
@@ -123,7 +125,7 @@
             this.label7.Location = new System.Drawing.Point(468, 124);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 19);
+            this.label7.Size = new System.Drawing.Size(94, 23);
             this.label7.TabIndex = 6;
             this.label7.Text = "Direccion";
             // 
@@ -134,7 +136,7 @@
             this.label8.Location = new System.Drawing.Point(484, 177);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 19);
+            this.label8.Size = new System.Drawing.Size(77, 23);
             this.label8.TabIndex = 7;
             this.label8.Text = "Unidad";
             // 
@@ -145,80 +147,80 @@
             this.label9.Location = new System.Drawing.Point(431, 239);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 19);
+            this.label9.Size = new System.Drawing.Size(143, 23);
             this.label9.TabIndex = 8;
             this.label9.Text = "DiasLaborados";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(106, 67);
+            this.txtId.Location = new System.Drawing.Point(125, 67);
             this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(298, 26);
+            this.txtId.Size = new System.Drawing.Size(298, 30);
             this.txtId.TabIndex = 9;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(106, 121);
+            this.txtNombre.Location = new System.Drawing.Point(125, 121);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(298, 26);
+            this.txtNombre.Size = new System.Drawing.Size(298, 30);
             this.txtNombre.TabIndex = 10;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(106, 174);
+            this.txtCedula.Location = new System.Drawing.Point(125, 174);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(4);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(298, 26);
+            this.txtCedula.Size = new System.Drawing.Size(298, 30);
             this.txtCedula.TabIndex = 11;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(106, 236);
+            this.txtTelefono.Location = new System.Drawing.Point(125, 236);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(298, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(298, 30);
             this.txtTelefono.TabIndex = 12;
             // 
             // txtLicencia
             // 
-            this.txtLicencia.Location = new System.Drawing.Point(553, 63);
+            this.txtLicencia.Location = new System.Drawing.Point(588, 67);
             this.txtLicencia.Margin = new System.Windows.Forms.Padding(4);
             this.txtLicencia.Name = "txtLicencia";
-            this.txtLicencia.Size = new System.Drawing.Size(298, 26);
+            this.txtLicencia.Size = new System.Drawing.Size(298, 30);
             this.txtLicencia.TabIndex = 13;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(553, 121);
+            this.txtDireccion.Location = new System.Drawing.Point(588, 125);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(298, 26);
+            this.txtDireccion.Size = new System.Drawing.Size(298, 30);
             this.txtDireccion.TabIndex = 14;
             // 
             // txtUnidad
             // 
-            this.txtUnidad.Location = new System.Drawing.Point(553, 174);
+            this.txtUnidad.Location = new System.Drawing.Point(588, 178);
             this.txtUnidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtUnidad.Name = "txtUnidad";
-            this.txtUnidad.Size = new System.Drawing.Size(298, 26);
+            this.txtUnidad.Size = new System.Drawing.Size(298, 30);
             this.txtUnidad.TabIndex = 15;
             // 
             // txtDiasLaborados
             // 
-            this.txtDiasLaborados.Location = new System.Drawing.Point(553, 236);
+            this.txtDiasLaborados.Location = new System.Drawing.Point(588, 240);
             this.txtDiasLaborados.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiasLaborados.Name = "txtDiasLaborados";
-            this.txtDiasLaborados.Size = new System.Drawing.Size(298, 26);
+            this.txtDiasLaborados.Size = new System.Drawing.Size(298, 30);
             this.txtDiasLaborados.TabIndex = 16;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(392, 374);
+            this.label10.Location = new System.Drawing.Point(957, 160);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 19);
+            this.label10.Size = new System.Drawing.Size(89, 23);
             this.label10.TabIndex = 18;
             this.label10.Text = "Registrar";
             // 
@@ -239,7 +241,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Conductor.Properties.Resources.Registrar;
-            this.button1.Location = new System.Drawing.Point(397, 291);
+            this.button1.Location = new System.Drawing.Point(978, 67);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 79);
@@ -247,12 +249,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dgvConductores
+            // 
+            this.dgvConductores.BackgroundColor = System.Drawing.Color.White;
+            this.dgvConductores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConductores.Location = new System.Drawing.Point(102, 303);
+            this.dgvConductores.Name = "dgvConductores";
+            this.dgvConductores.RowHeadersWidth = 51;
+            this.dgvConductores.RowTemplate.Height = 24;
+            this.dgvConductores.Size = new System.Drawing.Size(826, 283);
+            this.dgvConductores.TabIndex = 20;
+            // 
             // FrmIngresarCond
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(871, 410);
+            this.ClientSize = new System.Drawing.Size(1121, 643);
+            this.Controls.Add(this.dgvConductores);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
@@ -278,6 +292,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmIngresarCond";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConductores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,6 +320,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgvConductores;
     }
 }
 

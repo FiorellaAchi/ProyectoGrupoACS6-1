@@ -16,7 +16,7 @@ namespace Ambulancia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMenuAmb());
+            Application.Run(new FrmMenuAmb()); //Aqui se ejecuta el formulario principal
         }
     }
 }

@@ -13,10 +13,11 @@ namespace Conductor
 {
     public partial class FrmModificarCond : Form
     {
-        Datos datos = new Datos();
+        Datos datos = new Datos(); //Crea una instancia de la clase Datos para usar sus metodos
         public FrmModificarCond()
         {
             InitializeComponent();
+            dgvConductores.DataSource = datos.ListarConductores(); //Lista a los conductores disponibles
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,16 +25,21 @@ namespace Conductor
             try
             {
                 datos.ActualizarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
+                //Se utiliza el metodo de la clase Datos para actualizar los datos del conductor
             }
             catch(FormatException)
             {
-                MessageBox.Show("Ingrese correctamente la informacion");
+                MessageBox.Show("Ingrese correctamente la informacion"); //Se muestra un mensaje de error en caso de que ocurra una excepcion
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); //Se muestra un mensaje de error en caso de que ocurra una excepcion
             }
-            MessageBox.Show("Modificado correctamente");
+            MessageBox.Show("Modificado correctamente"); //Se muestra un mensaje de exito
+            finally
+            { 
+                dgvConductores.DataSource = datos.ListarConductores(); //Se actualiza el DGV
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

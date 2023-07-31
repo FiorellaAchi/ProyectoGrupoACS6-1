@@ -19,11 +19,11 @@ namespace Conductor
             InitializeComponent();
             try
             {
-                dataGridView1.DataSource = datos.ListarConductores();
+                dataGridView1.DataSource = datos.ListarConductores(); //listar los conductores
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); //Muestra un mensaje en caso de hallar error
             }
            
         }
@@ -40,7 +40,7 @@ namespace Conductor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //cierra el formulario
         }
     }
 }

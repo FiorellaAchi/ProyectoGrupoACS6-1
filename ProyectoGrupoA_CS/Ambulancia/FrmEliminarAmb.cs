@@ -14,13 +14,14 @@ namespace Ambulancia
 {
     public partial class FrmEliminarAmb : Form
     {
-        // Crear una instancia de la clase Datos, que contiene los metodos
+        // Crear una instancia de la clase Datos, que contiene los metodos para poder acceder a la base de datos.
         Datos datos = new Datos();
 
         
         public FrmEliminarAmb()
         {
             InitializeComponent();
+            DGVAmbulancias.DataSource = datos.ListarAmbulancias(); //Presenta los datos almacenados sobre las ambulancias en la base de datos ProyectoAmbulancias1 
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,6 +49,10 @@ namespace Ambulancia
             {
                 // Si ocurre alguna otra excepción diferente de FormatException, se muestra un mensaje de error con el mensaje de la excepción.
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DGVAmbulancias.DataSource = datos.ListarAmbulancias(); //Actualiza los datos de la tabla de ambulancias.
             }
         }
     }

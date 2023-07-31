@@ -13,7 +13,7 @@ namespace Ambulancia
 {
     public partial class FrmIngresarAmb : Form
     {
-        Datos datos = new Datos();
+        Datos datos = new Datos(); //Se llama a la clase datos en donde estan los metodos y la conexion a la base de datos
         public FrmIngresarAmb()
         {
             InitializeComponent();
@@ -34,12 +34,13 @@ namespace Ambulancia
             try
             {
                 datos.InsertarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
+                //Se "atrapa" el metodo de la clase datos y se le pasan los parametros
             }
-            catch(FormatException)
+            catch(FormatException) //Si todo esta correcto, se ejecuta el metodo y el programa continua
             {
-                MessageBox.Show("Ingrese correctamente la informacion");
+                MessageBox.Show("Ingrese correctamente la informacion"); // Se presenta el mensaje de que la ambulancia esta correctamente ingresada
             }
-            catch(Exception ex)
+            catch(Exception ex) //Si ocurre un error, se muestra el mensaje de error
             {
                 MessageBox.Show(ex.Message);
             }
@@ -47,7 +48,7 @@ namespace Ambulancia
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); //Esto cierra el formulario
         }
     }
 }
