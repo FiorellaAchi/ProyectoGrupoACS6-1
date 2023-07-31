@@ -44,6 +44,8 @@
             this.LblFacturas = new System.Windows.Forms.Label();
             this.BtnListarServicios = new System.Windows.Forms.Button();
             this.lblListar = new System.Windows.Forms.Label();
+            this.BtnPacientes = new System.Windows.Forms.Button();
+            this.lblPacientes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblLABEL
@@ -95,7 +97,7 @@
             this.Salir2.AutoSize = true;
             this.Salir2.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Salir2.Location = new System.Drawing.Point(710, 292);
+            this.Salir2.Location = new System.Drawing.Point(701, 363);
             this.Salir2.Name = "Salir2";
             this.Salir2.Size = new System.Drawing.Size(59, 28);
             this.Salir2.TabIndex = 8;
@@ -106,7 +108,7 @@
             this.lblSalir.FlatAppearance.BorderSize = 0;
             this.lblSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSalir.Image = ((System.Drawing.Image)(resources.GetObject("lblSalir.Image")));
-            this.lblSalir.Location = new System.Drawing.Point(681, 210);
+            this.lblSalir.Location = new System.Drawing.Point(672, 266);
             this.lblSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(120, 80);
@@ -225,12 +227,38 @@
             this.lblListar.TabIndex = 14;
             this.lblListar.Text = "Listar Servicios";
             // 
+            // BtnPacientes
+            // 
+            this.BtnPacientes.FlatAppearance.BorderSize = 0;
+            this.BtnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPacientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnPacientes.Image")));
+            this.BtnPacientes.Location = new System.Drawing.Point(689, 139);
+            this.BtnPacientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnPacientes.Name = "BtnPacientes";
+            this.BtnPacientes.Size = new System.Drawing.Size(91, 69);
+            this.BtnPacientes.TabIndex = 15;
+            this.BtnPacientes.UseVisualStyleBackColor = true;
+            this.BtnPacientes.Click += new System.EventHandler(this.BtnPacientes_Click);
+            // 
+            // lblPacientes
+            // 
+            this.lblPacientes.AutoSize = true;
+            this.lblPacientes.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPacientes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPacientes.Location = new System.Drawing.Point(684, 219);
+            this.lblPacientes.Name = "lblPacientes";
+            this.lblPacientes.Size = new System.Drawing.Size(108, 28);
+            this.lblPacientes.TabIndex = 16;
+            this.lblPacientes.Text = "Pacientes";
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(794, 432);
+            this.ClientSize = new System.Drawing.Size(934, 440);
+            this.Controls.Add(this.lblPacientes);
+            this.Controls.Add(this.BtnPacientes);
             this.Controls.Add(this.lblListar);
             this.Controls.Add(this.BtnListarServicios);
             this.Controls.Add(this.LblFacturas);
@@ -274,6 +302,8 @@
         private System.Windows.Forms.Label LblFacturas;
         private System.Windows.Forms.Button BtnListarServicios;
         private System.Windows.Forms.Label lblListar;
+        private System.Windows.Forms.Button BtnPacientes;
+        private System.Windows.Forms.Label lblPacientes;
     }
 }
 

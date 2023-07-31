@@ -2,6 +2,7 @@
 using Conductor;
 using Facturas;
 using Insumos;
+using Pacientes;
 using PrototipoProy;
 using System;
 using System.Collections.Generic;
@@ -66,6 +67,12 @@ namespace ProyectoGrupoA_CS
         {
             ListarServicios frm = new ListarServicios();
             frm.Show(); //Muestra los datos de los servicios
+        }
+
+        private void BtnPacientes_Click(object sender, EventArgs e)
+        {
+            FrmMenuPacientes frm = new FrmMenuPacientes();
+            frm.Show(); //Nos muestra la pestaña de acceso a edicion de pacientes.
         }
     }
 }

@@ -26,6 +26,7 @@ namespace Conductor
             {
                 datos.ActualizarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
                 //Se utiliza el metodo de la clase Datos para actualizar los datos del conductor
+                MessageBox.Show("Conductor actualizado correctamente"); //Se muestra un mensaje de exito
             }
             catch(FormatException)
             {
@@ -34,8 +35,9 @@ namespace Conductor
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message); //Se muestra un mensaje de error en caso de que ocurra una excepcion
+
             }
-            MessageBox.Show("Modificado correctamente"); //Se muestra un mensaje de exito
+           
             finally
             { 
                 dgvConductores.DataSource = datos.ListarConductores(); //Se actualiza el DGV

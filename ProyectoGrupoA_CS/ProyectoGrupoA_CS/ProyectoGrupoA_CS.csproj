@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Excepciones.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +131,10 @@
     <ProjectReference Include="..\Insumos\Insumos.csproj">
       <Project>{5fd4bad5-fba3-469f-ba12-96e0607b52ee}</Project>
       <Name>Insumos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pacientes\Pacientes.csproj">
+      <Project>{02afb0a6-2d34-4eb6-b213-c7c2723c010b}</Project>
+      <Name>Pacientes</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

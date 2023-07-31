@@ -30,30 +30,40 @@ namespace ProyectoGrupoA_CS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String usuario = txtUser.Text;
-            String password = txtPassword.Text;
-            if (data.Login(usuario, password))
+            try
             {
-                if (data.CheckUserType(usuario, password) == 1)
+                String usuario = txtUser.Text;
+                String password = txtPassword.Text;
+
+                if (data.Login(usuario, password))
                 {
-                    FormAdmin frm = new FormAdmin();
-                    frm.Show();
-                    this.Hide();
-                    return;
+                    if (data.CheckUserType(usuario, password) == 1)
+                    {
+                        FormAdmin frm = new FormAdmin();
+                        frm.Show();
+                        this.Hide();
+                        return;
+                    }
+                    if (data.CheckUserType(usuario, password) == 0)
+                    {
+                        Servicios frm = new Servicios();
+                        frm.Show();
+                        this.Hide();
+                        return;
+                    }
+
                 }
-                if (data.CheckUserType(usuario, password) == 0)
+                else
                 {
-                    Servicios frm = new Servicios();
-                    frm.Show();
-                    this.Hide();
-                    return;
+                    throw new CredencialesIncorrectasException("Usuario o contraseña incorrectos");
                 }
-                MessageBox.Show("El usuario no tiene asignado un rol actualmente");
-            }
-            else
+      
+            }catch(CredencialesIncorrectasException ex)
             {
-                MessageBox.Show("Usuario o contraseña incorrectos");
+                MessageBox.Show(ex.Message);
             }
+           
+           
         }
 
         private void button2_Click(object sender, EventArgs e)

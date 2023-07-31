@@ -56,7 +56,7 @@
             this.DGVListadoServicios.Margin = new System.Windows.Forms.Padding(4);
             this.DGVListadoServicios.Name = "DGVListadoServicios";
             this.DGVListadoServicios.RowHeadersWidth = 51;
-            this.DGVListadoServicios.Size = new System.Drawing.Size(996, 398);
+            this.DGVListadoServicios.Size = new System.Drawing.Size(1007, 324);
             this.DGVListadoServicios.TabIndex = 4;
             // 
             // label1
@@ -76,7 +76,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1066, 518);
+            this.ClientSize = new System.Drawing.Size(1066, 429);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DGVListadoServicios);
             this.Controls.Add(this.label1);

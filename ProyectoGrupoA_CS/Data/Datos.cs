@@ -12,41 +12,40 @@ namespace Data
     public class Datos
     {
         //Creacion de conexion para base de datos en sql server
-        //public SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-8Q4QJ8I;Initial Catalog=Prueba;Integrated Security=True");
         String connectionString = "Data Source=DESKTOP-3SRGPP9;Initial Catalog=ProyectoAmbulancia1;Integrated Security=True";
 
-        private static Datos datos = new Datos();
-        public Datos() { }
+        private static Datos datos = new Datos(); //Se crea un metodo estatico para poder acceder a los metodos de la clase
+        public Datos() { } // Constructor vacìo de la clase
 
-        private String userName;
-        public static Datos getObject()
+        private String userName; //Variable username para hacer el login
+        public static Datos getObject() //Metodo para obtener la clase como objeto
         {
             return datos;
         }
 
-        public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
+        public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados) //Metodo insertar conductor
         {
             String nombreSp = "sp_crear_conductor";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString)) //Se crea una conexion con la base de datos
             {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))//Se crea un comando para ejecutar el procedimiento almacenado
                 {
-                    command.CommandType = CommandType.StoredProcedure;
+                    command.CommandType = CommandType.StoredProcedure; //Se especifica que el comando es un procedimiento almacenado
                     command.Parameters.AddWithValue("@id", id);
-                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@nombre", nombre); //Se agregan los parametros del procedimiento almacenado
                     command.Parameters.AddWithValue("@cedula", cedula);
                     command.Parameters.AddWithValue("@telefono", telefono);
                     command.Parameters.AddWithValue("@licencia", licencia);
                     command.Parameters.AddWithValue("@direccion", direccion);
                     command.Parameters.AddWithValue("@unidad", unidad);
                     command.Parameters.AddWithValue("@diasLaborados", diasLaborados);
-                    connection.Open();
-                    command.ExecuteNonQuery();
+                    connection.Open(); //Se abre la conexion
+                    command.ExecuteNonQuery(); //Se ejecuta el comando
                 }
             }
         }
 
-        public void EliminarConductor(int id) {
+        public void EliminarConductor(int id) { //Metodo eliminar conductor
             String nombreSp = "sp_eliminar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -61,7 +60,7 @@ namespace Data
         }
 
         public void ActualizarConductor(int id, String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
-        {
+        { //Metodo actualizar conductor
             String nombreSp = "sp_modificar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -82,7 +81,7 @@ namespace Data
             }
         }
 
-        public DataTable ListarConductores()
+        public DataTable ListarConductores() //Metodo listar conductores
         {
             String nombreSp = "sp_listar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -99,7 +98,7 @@ namespace Data
             }
         }
 
-        public void InsertarAmbulancia(int codigo,String marca, String numero_placa, int anio,int id_conductor)
+        public void InsertarAmbulancia(int codigo,String marca, String numero_placa, int anio,int id_conductor) //insertar ambulancia
         {
             String nombreSp = "sp_crear_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -118,7 +117,7 @@ namespace Data
             }
         }
 
-        public void EliminarAmbulancia(int codigo)
+        public void EliminarAmbulancia(int codigo) //eliminar ambulancia
         {
             String nombreSp = "sp_eliminar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -134,7 +133,7 @@ namespace Data
         }
 
         
-        public void ActualizarAmbulancia(int codigo, String marca, String numero_placa, int anio, int id_conductor)
+        public void ActualizarAmbulancia(int codigo, String marca, String numero_placa, int anio, int id_conductor) //actualizar ambulancia
         {
             String nombreSp = "sp_modificar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -153,7 +152,7 @@ namespace Data
             }
         }
 
-        public DataTable ListarAmbulancias()
+        public DataTable ListarAmbulancias() //Presenta las ambulancias creadas
         {
             String nombreSp = "sp_listar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -172,7 +171,7 @@ namespace Data
 
         public void InsertarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor)
         {
-            String nombreSp = "sp_crear_paciente";
+            String nombreSp = "sp_crear_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -192,15 +191,15 @@ namespace Data
 
         }
 
-        public void EliminarPaciente(String codigo)
+        public void EliminarPaciente(String nombre)
         {
-            String nombreSp = "sp_eliminar_paciente";
+            String nombreSp = "sp_eliminar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -209,7 +208,7 @@ namespace Data
 
         public void ActualizarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor)
         {
-            String nombreSp = "sp_modificar_paciente";
+            String nombreSp = "sp_modificar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -230,7 +229,7 @@ namespace Data
 
         public DataTable ListarPacientes()
         {
-            String nombreSp = "sp_listar_paciente";
+            String nombreSp = "sp_listar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -496,6 +495,7 @@ namespace Data
                         userName = usuario;
                         return true;
                     }
+                    
                 }
             }
 
