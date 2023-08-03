@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usuario", "Usuario\Usuario.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacientes", "Pacientes\Pacientes.csproj", "{02AFB0A6-2D34-4EB6-B213-C7C2723C010B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerandoFacturas", "GenerandoFacturas\GenerandoFacturas.csproj", "{F16B7396-8751-4126-B72A-EA7A6350D6AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{02AFB0A6-2D34-4EB6-B213-C7C2723C010B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02AFB0A6-2D34-4EB6-B213-C7C2723C010B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02AFB0A6-2D34-4EB6-B213-C7C2723C010B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16B7396-8751-4126-B72A-EA7A6350D6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16B7396-8751-4126-B72A-EA7A6350D6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16B7396-8751-4126-B72A-EA7A6350D6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16B7396-8751-4126-B72A-EA7A6350D6AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

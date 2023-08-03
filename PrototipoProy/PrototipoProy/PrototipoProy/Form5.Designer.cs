@@ -43,6 +43,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -160,7 +162,7 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(391, 606);
+            this.btnSalir.Location = new System.Drawing.Point(385, 665);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 96);
@@ -173,7 +175,7 @@
             this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarUsuario.Image")));
-            this.btnModificarUsuario.Location = new System.Drawing.Point(113, 618);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(107, 677);
             this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(7);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(68, 73);
@@ -181,12 +183,32 @@
             this.btnModificarUsuario.UseVisualStyleBackColor = true;
             this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
             // 
+            // txtContrasena
+            // 
+            this.txtContrasena.Location = new System.Drawing.Point(235, 574);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(7);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(228, 36);
+            this.txtContrasena.TabIndex = 28;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(74, 582);
+            this.label8.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(129, 28);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Contraseña";
+            // 
             // frmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(617, 744);
+            this.ClientSize = new System.Drawing.Size(617, 777);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnModificarUsuario);
             this.Controls.Add(this.label7);
@@ -229,5 +251,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnModificarUsuario;
+        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -46,6 +46,7 @@
             this.TxtDomicilio = new System.Windows.Forms.TextBox();
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.BtnSalir = new System.Windows.Forms.Button();
+            this.lblFechaSeleccionada = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnIngresar
@@ -114,7 +115,7 @@
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblTelefono.Location = new System.Drawing.Point(27, 314);
+            this.lblTelefono.Location = new System.Drawing.Point(28, 344);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(95, 23);
             this.lblTelefono.TabIndex = 8;
@@ -124,7 +125,7 @@
             // 
             this.lblDomicilio.AutoSize = true;
             this.lblDomicilio.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDomicilio.Location = new System.Drawing.Point(27, 371);
+            this.lblDomicilio.Location = new System.Drawing.Point(28, 401);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(97, 23);
             this.lblDomicilio.TabIndex = 9;
@@ -134,7 +135,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDescripcion.Location = new System.Drawing.Point(27, 423);
+            this.lblDescripcion.Location = new System.Drawing.Point(28, 453);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(114, 23);
             this.lblDescripcion.TabIndex = 10;
@@ -173,7 +174,7 @@
             // 
             // TxtTelefono
             // 
-            this.TxtTelefono.Location = new System.Drawing.Point(129, 316);
+            this.TxtTelefono.Location = new System.Drawing.Point(130, 346);
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(147, 22);
             this.TxtTelefono.TabIndex = 15;
@@ -181,14 +182,14 @@
             // 
             // TxtDomicilio
             // 
-            this.TxtDomicilio.Location = new System.Drawing.Point(145, 371);
+            this.TxtDomicilio.Location = new System.Drawing.Point(146, 401);
             this.TxtDomicilio.Name = "TxtDomicilio";
             this.TxtDomicilio.Size = new System.Drawing.Size(147, 22);
             this.TxtDomicilio.TabIndex = 16;
             // 
             // TxtDescripcion
             // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(29, 449);
+            this.TxtDescripcion.Location = new System.Drawing.Point(30, 479);
             this.TxtDescripcion.Multiline = true;
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(359, 117);
@@ -206,12 +207,23 @@
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
+            // lblFechaSeleccionada
+            // 
+            this.lblFechaSeleccionada.AutoSize = true;
+            this.lblFechaSeleccionada.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblFechaSeleccionada.Location = new System.Drawing.Point(28, 306);
+            this.lblFechaSeleccionada.Name = "lblFechaSeleccionada";
+            this.lblFechaSeleccionada.Size = new System.Drawing.Size(15, 23);
+            this.lblFechaSeleccionada.TabIndex = 19;
+            this.lblFechaSeleccionada.Text = ".";
+            // 
             // FrmCrearFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(440, 608);
+            this.Controls.Add(this.lblFechaSeleccionada);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.TxtDescripcion);
             this.Controls.Add(this.TxtDomicilio);
@@ -231,6 +243,7 @@
             this.Controls.Add(this.BtnIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCrearFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCrearFactura";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,5 +269,6 @@
         private System.Windows.Forms.TextBox TxtDomicilio;
         private System.Windows.Forms.TextBox TxtDescripcion;
         private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Label lblFechaSeleccionada;
     }
 }

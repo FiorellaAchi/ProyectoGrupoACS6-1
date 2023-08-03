@@ -147,7 +147,7 @@
             this.btnRegresar.Location = new System.Drawing.Point(31, 36);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(68, 72);
+            this.btnRegresar.Size = new System.Drawing.Size(50, 46);
             this.btnRegresar.TabIndex = 37;
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);

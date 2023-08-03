@@ -17,6 +17,7 @@ namespace Ambulancia
         public FrmIngresarAmb()
         {
             InitializeComponent();
+            dgvAmbulancias.DataSource = datos.ListarAmbulancias(); //Se muestra la informacion de las ambulancias en el datagridview
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace Ambulancia
             {
                 datos.InsertarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
                 //Se "atrapa" el metodo de la clase datos y se le pasan los parametros
+                dgvAmbulancias.DataSource = datos.ListarAmbulancias(); //Se muestra la nueva ambulancia en el datagridview
             }
             catch(FormatException) //Si todo esta correcto, se ejecuta el metodo y el programa continua
             {

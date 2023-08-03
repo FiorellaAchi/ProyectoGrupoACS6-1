@@ -18,7 +18,7 @@ namespace Facturas
             InitializeComponent();
         }
 
-        Datos datos = new Datos();
+        Datos datos = new Datos(); // Instancia de la clase Datos para utilizar los metodos
         private void TxtCodigo_TextChanged(object sender, EventArgs e)
         {
            
@@ -26,21 +26,24 @@ namespace Facturas
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            try
+            try // Try para capturar errores de formato
             {
-                DateTime fechaSeleccionada = DTPEmision.Value;
+                DateTime fechaSeleccionada = DTPEmision.Value; //Aqui dentro obtenemos lo que es la transformacion de datapicker a string
                 string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
+                lblFechaSeleccionada.Text = fechaFormateada; //Aqui se muestra la fecha seleccionada en el DTP
                 datos.CrearFacturas(TxtCodigo.Text, TxtCedula.Text, TxtNombre.Text, fechaFormateada, TxtTelefono.Text, TxtDomicilio.Text, TxtDescripcion.Text);
-                MessageBox.Show("Factura agregada correctamente");
+                MessageBox.Show("Factura agregada correctamente"); // Mensaje de factura guardada con exito
             }
             catch (FormatException)
             {
-                MessageBox.Show("Ingrese correctamente la informacion");
+                MessageBox.Show("Ingrese correctamente la informacion"); // Mensaje de error de formato
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); // Mensaje de error
             }
+
+            // Limpiar los campos
             TxtCedula.Clear();
             TxtCodigo.Clear();
             TxtDescripcion.Clear();

@@ -169,7 +169,7 @@ namespace Data
             }
         }
 
-        public void InsertarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor)
+        public void InsertarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor) //Procedimiento almacenado que registra pacientes
         {
             String nombreSp = "sp_crear_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -191,7 +191,7 @@ namespace Data
 
         }
 
-        public void EliminarPaciente(String nombre)
+        public void EliminarPaciente(String nombre) //Procedimiento que indica que un paciente esta dado de alta
         {
             String nombreSp = "sp_eliminar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -207,7 +207,7 @@ namespace Data
         }
 
         public void ActualizarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor)
-        {
+        { //Permite modificar los datos del paciente
             String nombreSp = "sp_modificar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -227,7 +227,7 @@ namespace Data
             }
         }
 
-        public DataTable ListarPacientes()
+        public DataTable ListarPacientes() //Lista a todos los pacientes
         {
             String nombreSp = "sp_listar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -244,7 +244,7 @@ namespace Data
             }
         }
 
-        public void InsertarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado) 
+        public void InsertarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado) //Procedimiento que registra los insumos
         {
             String nombreSp = "sp_crear_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -263,7 +263,7 @@ namespace Data
             }
         }
 
-        public void EliminarInsumos(String insumo)
+        public void EliminarInsumos(String insumo) // Procedimiento que indica que un insumo es inexistente
         {
             String nombreSp = "sp_eliminar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -279,7 +279,7 @@ namespace Data
         }
 
         public void ActualizarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado)
-        {
+        { //Actualiza los datos de los insumos e indica si los que estan en proceso ya finalizaron
             String nombreSp = "sp_modificar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -297,7 +297,7 @@ namespace Data
             }
         }
 
-        public DataTable ListarInsumos()
+        public DataTable ListarInsumos() //Lista todos los insumos
         {
             String nombreSp = "sp_listar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -315,7 +315,7 @@ namespace Data
         }
 
         public void CrearFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
-        {
+        { //Procedimiento para crear las facturas
             String nombreSp = "sp_crear_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -337,7 +337,7 @@ namespace Data
         }
 
         public void EliminarFacturas(String codigo)
-        {
+        { //Procedimiento para eliminar las facturas
             String nombreSp = "sp_eliminar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -352,7 +352,7 @@ namespace Data
         }
 
        public void ActualizarFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
-       {
+       { //Procedimiento para actualizar las facturas
             String nombreSp = "sp_modificar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -373,7 +373,7 @@ namespace Data
         }
 
         public DataTable ListarFacturas()
-        {
+        { //Procedimiento para listar las facturas
             String nombreSp = "sp_listar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -390,7 +390,7 @@ namespace Data
         }
 
         public void InsertarServicio()
-        {
+        { //Procedimiento para insertar los servicios
             String nombre = userName + "";
             String descripcion = "Servicio de ambulancias";
             /*precio ramdon en un margen de 25 a 70*/
@@ -414,7 +414,7 @@ namespace Data
             }
         }
 
-        public void EliminarServicio()
+        public void EliminarServicio() //Elimina los servicios
         {
             String nombre = userName;
             String nombreSp = "sp_eliminar_servicios";
@@ -431,7 +431,7 @@ namespace Data
         }
 
         public void ActualizarServicio(String codigo, String nombre, String descripcion, String precio)
-        {
+        { //Actualiza los servicios
             String nombreSp = "sp_modificar_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -449,7 +449,7 @@ namespace Data
         }
 
         public DataTable ListarServicios()
-        {
+        { //Lista los servicios
             String nombreSp = "sp_listar_servicios";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -466,7 +466,7 @@ namespace Data
         }
 
         public bool Login(string usuario, string password)
-        {
+        { //Procedimiento para el login
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand("sp_login", connection))
@@ -505,7 +505,7 @@ namespace Data
 
 
 
-        public int CheckUserType(string usuario, string password)
+        public int CheckUserType(string usuario, string password) //Procedimiento para verificar el tipo de usuario
         {
             int userType = -1;
             using (SqlConnection connection = new SqlConnection(connectionString))

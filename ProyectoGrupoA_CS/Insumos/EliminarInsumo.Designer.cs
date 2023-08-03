@@ -65,11 +65,12 @@
             this.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegresar.Image")));
             this.BtnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnRegresar.Location = new System.Drawing.Point(13, 13);
+            this.BtnRegresar.Location = new System.Drawing.Point(38, 23);
             this.BtnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnRegresar.Name = "BtnRegresar";
-            this.BtnRegresar.Size = new System.Drawing.Size(73, 76);
+            this.BtnRegresar.Size = new System.Drawing.Size(33, 33);
             this.BtnRegresar.TabIndex = 41;
+            this.BtnRegresar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnRegresar.UseVisualStyleBackColor = true;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
@@ -119,6 +120,7 @@
             this.Controls.Add(this.DgvListadoEliminar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminarInsumo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarInsumo";
             this.Load += new System.EventHandler(this.EliminarInsumo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvListadoEliminar)).EndInit();

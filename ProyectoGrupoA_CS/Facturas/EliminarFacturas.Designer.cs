@@ -114,6 +114,7 @@
             this.Controls.Add(this.lblIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminarFacturas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarFacturas";
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.ResumeLayout(false);

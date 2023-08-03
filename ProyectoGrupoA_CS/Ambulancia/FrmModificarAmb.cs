@@ -17,6 +17,7 @@ namespace Ambulancia
         public FrmModificarAmb()
         {
             InitializeComponent();
+            DGVAmbulancias.DataSource = datos.ListarAmbulancias(); //Se muestra la informacion de las ambulancias en el datagridview
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +26,7 @@ namespace Ambulancia
             {
                 datos.ActualizarAmbulancia(int.Parse(txtCodigo.Text), txtMarca.Text, txtNumeroPlaca.Text, int.Parse(txtAño.Text), int.Parse(txtId.Text));
                 //Se "atrapa" el metodo de la clase datos y se le pasan los parametros para poder actualizar la informacion
+                DGVAmbulancias.DataSource = datos.ListarAmbulancias(); //Se muestra la actualizacion de la informacion
             }
             catch(FormatException)
             {

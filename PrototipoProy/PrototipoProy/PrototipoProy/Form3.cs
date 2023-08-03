@@ -38,6 +38,8 @@ namespace PrototipoProy
                         command.Parameters.AddWithValue("@cedula", txtCedula.Text);
                         command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
                         command.Parameters.AddWithValue("@email", txtEmail.Text);
+                        command.Parameters.AddWithValue("@contrasena", txtContrasena.Text);
+                        command.Parameters.AddWithValue("@tipo", txtUserType.Text);
                         // con connection.Open();: Se abre la conexión a la base de datos.
                         connection.Open();
                         //command.ExecuteNonQuery() nos ejecuta el comando en la base de datos sin esperar un resultado.

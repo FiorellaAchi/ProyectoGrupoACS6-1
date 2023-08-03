@@ -115,8 +115,9 @@
             this.Controls.Add(this.lblEliminar);
             this.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EliminarPacientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarPacientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.ResumeLayout(false);

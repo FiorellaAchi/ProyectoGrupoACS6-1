@@ -25,28 +25,28 @@ namespace Facturas
 
         private void BtnCrear_Click(object sender, EventArgs e)
         {
-            FrmCrearFactura frm = new FrmCrearFactura();
+            FrmCrearFactura frm = new FrmCrearFactura(); //Nos lleva al formulario de crear factura
             frm.Show();
             this.Hide();
         }
 
         private void BtnListar_Click(object sender, EventArgs e)
         {
-            ListarFacturas listarFacturas = new ListarFacturas();
+            ListarFacturas listarFacturas = new ListarFacturas(); //Nos lleva al formulario de listar facturas
             listarFacturas.Show();
             this.Hide();
         }
 
         private void BtnEditarFactura_Click(object sender, EventArgs e)
         {
-            FrmEditarFactura frmEditarFactura = new FrmEditarFactura();
+            FrmEditarFactura frmEditarFactura = new FrmEditarFactura(); //Nos lleva al formulario de editar facturas
             frmEditarFactura.Show();
             this.Hide();
         }
 
         private void BtnEliminarFactura_Click(object sender, EventArgs e)
         {
-            EliminarFacturas eliminarFacturas = new EliminarFacturas();
+            EliminarFacturas eliminarFacturas = new EliminarFacturas(); //Nos lleva al formulario de eliminar facturas
             eliminarFacturas.Show();
             this.Hide();
         }

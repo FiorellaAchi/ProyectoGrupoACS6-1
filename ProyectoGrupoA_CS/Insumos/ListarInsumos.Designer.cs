@@ -61,10 +61,10 @@
             this.BtnRegresar.FlatAppearance.BorderSize = 0;
             this.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegresar.Image")));
-            this.BtnRegresar.Location = new System.Drawing.Point(30, 2);
+            this.BtnRegresar.Location = new System.Drawing.Point(39, 19);
             this.BtnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnRegresar.Name = "BtnRegresar";
-            this.BtnRegresar.Size = new System.Drawing.Size(78, 78);
+            this.BtnRegresar.Size = new System.Drawing.Size(60, 52);
             this.BtnRegresar.TabIndex = 7;
             this.BtnRegresar.UseVisualStyleBackColor = true;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
@@ -80,6 +80,7 @@
             this.Controls.Add(this.DgvListado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListarInsumos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarInsumos";
             this.Load += new System.EventHandler(this.ListarInsumos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();

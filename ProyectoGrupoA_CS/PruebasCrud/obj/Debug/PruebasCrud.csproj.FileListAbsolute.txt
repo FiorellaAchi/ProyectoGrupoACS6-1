@@ -1,0 +1,2 @@
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\PruebasCrud\obj\Debug\PruebasCrud.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\FIORELLA ACHI\SEXTO SEMESTRE\CONTRUCCION DE SOFTWARE\ProyectoGrupoACS6-1\ProyectoGrupoA\ProyectoGrupoA_CS\PruebasCrud\obj\Debug\PruebasCrud.csproj.CoreCompileInputs.cache

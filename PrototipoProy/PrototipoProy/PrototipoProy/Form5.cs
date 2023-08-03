@@ -35,6 +35,7 @@ namespace PrototipoProy
                         command.Parameters.AddWithValue("@cedula", txtCedula.Text);
                         command.Parameters.AddWithValue("@telefono", txtTelefono.Text);
                         command.Parameters.AddWithValue("@email", txtEmail.Text);
+                        command.Parameters.AddWithValue("@contrasena", txtContrasena.Text);
 
                         //Se abre la conexión a la base de datos.
                         connection.Open();

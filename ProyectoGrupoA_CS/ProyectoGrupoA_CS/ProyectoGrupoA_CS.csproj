@@ -128,6 +128,10 @@
       <Project>{dc92122d-064d-4728-9ecc-9b9d380c5c96}</Project>
       <Name>Facturas</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GenerandoFacturas\GenerandoFacturas.csproj">
+      <Project>{f16b7396-8751-4126-b72a-ea7a6350d6ab}</Project>
+      <Name>GenerandoFacturas</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Insumos\Insumos.csproj">
       <Project>{5fd4bad5-fba3-469f-ba12-96e0607b52ee}</Project>
       <Name>Insumos</Name>

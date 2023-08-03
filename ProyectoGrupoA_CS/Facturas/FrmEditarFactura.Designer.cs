@@ -47,6 +47,7 @@
             this.TxtCodigo = new System.Windows.Forms.TextBox();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
+            this.lblFechaSeleccionada = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListarFacturas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblTelefono.Location = new System.Drawing.Point(52, 317);
+            this.lblTelefono.Location = new System.Drawing.Point(52, 327);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(95, 23);
             this.lblTelefono.TabIndex = 15;
@@ -158,7 +159,7 @@
             // 
             // TxtTelefono
             // 
-            this.TxtTelefono.Location = new System.Drawing.Point(156, 319);
+            this.TxtTelefono.Location = new System.Drawing.Point(156, 329);
             this.TxtTelefono.Name = "TxtTelefono";
             this.TxtTelefono.Size = new System.Drawing.Size(147, 22);
             this.TxtTelefono.TabIndex = 23;
@@ -215,12 +216,22 @@
             this.BtnEditar.UseVisualStyleBackColor = true;
             this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
+            // lblFechaSeleccionada
+            // 
+            this.lblFechaSeleccionada.AutoSize = true;
+            this.lblFechaSeleccionada.Location = new System.Drawing.Point(53, 295);
+            this.lblFechaSeleccionada.Name = "lblFechaSeleccionada";
+            this.lblFechaSeleccionada.Size = new System.Drawing.Size(10, 16);
+            this.lblFechaSeleccionada.TabIndex = 28;
+            this.lblFechaSeleccionada.Text = ".";
+            // 
             // FrmEditarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(914, 618);
+            this.Controls.Add(this.lblFechaSeleccionada);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.TxtDescripcion);
@@ -268,5 +279,6 @@
         private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnEditar;
+        private System.Windows.Forms.Label lblFechaSeleccionada;
     }
 }

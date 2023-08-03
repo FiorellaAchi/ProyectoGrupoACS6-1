@@ -11,7 +11,7 @@ namespace PruebasCrud
         public void TestMethod1()
         {
             Datos datos = new Datos();
-            int info = datos.ListarAmbulancias(.Rows.Count;
+            int info = datos.ListarAmbulancias(Rows.Count);
             Assert.IsTrue(info > 0);
         }
     }

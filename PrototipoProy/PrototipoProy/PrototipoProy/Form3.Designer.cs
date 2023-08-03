@@ -43,12 +43,16 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtUserType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(264, 338);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(7);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(228, 36);
             this.txtEmail.TabIndex = 21;
@@ -66,7 +70,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(264, 275);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(7);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(228, 36);
             this.txtTelefono.TabIndex = 19;
@@ -84,7 +88,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(264, 190);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(7);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(228, 36);
             this.txtCedula.TabIndex = 17;
@@ -102,7 +106,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(264, 108);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(7);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(228, 36);
             this.txtNombre.TabIndex = 15;
@@ -122,7 +126,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(264, 40);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(7);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(228, 36);
             this.txtCodigo.TabIndex = 13;
@@ -144,8 +148,8 @@
             this.btnCrearUsuario.FlatAppearance.BorderSize = 0;
             this.btnCrearUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearUsuario.Image")));
-            this.btnCrearUsuario.Location = new System.Drawing.Point(112, 439);
-            this.btnCrearUsuario.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(130, 523);
+            this.btnCrearUsuario.Margin = new System.Windows.Forms.Padding(7);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(83, 70);
             this.btnCrearUsuario.TabIndex = 22;
@@ -158,8 +162,8 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(350, 439);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnSalir.Location = new System.Drawing.Point(388, 523);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 70);
             this.btnSalir.TabIndex = 23;
@@ -169,7 +173,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 525);
+            this.label6.Location = new System.Drawing.Point(411, 609);
             this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 28);
@@ -179,19 +183,59 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(107, 525);
+            this.label7.Location = new System.Drawing.Point(125, 609);
             this.label7.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 28);
             this.label7.TabIndex = 25;
             this.label7.Text = "Agregar";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(107, 408);
+            this.label8.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(253, 28);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Contraseña provicional";
+            // 
+            // txtContrasena
+            // 
+            this.txtContrasena.Location = new System.Drawing.Point(374, 400);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(7);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(228, 36);
+            this.txtContrasena.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(107, 453);
+            this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(176, 28);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Tipo de usuario";
+            // 
+            // txtUserType
+            // 
+            this.txtUserType.Location = new System.Drawing.Point(297, 445);
+            this.txtUserType.Margin = new System.Windows.Forms.Padding(7);
+            this.txtUserType.Name = "txtUserType";
+            this.txtUserType.Size = new System.Drawing.Size(228, 36);
+            this.txtUserType.TabIndex = 29;
+            // 
             // formInsertar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(602, 574);
+            this.ClientSize = new System.Drawing.Size(621, 643);
+            this.Controls.Add(this.txtUserType);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtContrasena);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalir);
@@ -209,7 +253,7 @@
             this.Font = new System.Drawing.Font("Book Antiqua", 13.8F);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "formInsertar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Insertar usuarios nuevos";
@@ -235,5 +279,9 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtUserType;
     }
 }

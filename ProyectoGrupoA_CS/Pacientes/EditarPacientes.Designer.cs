@@ -53,7 +53,7 @@
             // txtEdad
             // 
             this.txtEdad.Location = new System.Drawing.Point(236, 267);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(6);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(445, 30);
             this.txtEdad.TabIndex = 53;
@@ -72,7 +72,7 @@
             // DateIngreso
             // 
             this.DateIngreso.Location = new System.Drawing.Point(258, 332);
-            this.DateIngreso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DateIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.DateIngreso.Name = "DateIngreso";
             this.DateIngreso.Size = new System.Drawing.Size(423, 30);
             this.DateIngreso.TabIndex = 51;
@@ -80,7 +80,7 @@
             // txtTutor
             // 
             this.txtTutor.Location = new System.Drawing.Point(258, 387);
-            this.txtTutor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTutor.Margin = new System.Windows.Forms.Padding(6);
             this.txtTutor.Name = "txtTutor";
             this.txtTutor.Size = new System.Drawing.Size(423, 30);
             this.txtTutor.TabIndex = 50;
@@ -110,7 +110,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(258, 445);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(6);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(423, 30);
             this.txtDireccion.TabIndex = 47;
@@ -118,7 +118,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(236, 215);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(6);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(445, 30);
             this.txtApellido.TabIndex = 46;
@@ -126,7 +126,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(236, 158);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(445, 30);
             this.txtNombre.TabIndex = 45;
@@ -134,7 +134,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(236, 113);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(6);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(445, 30);
             this.txtCodigo.TabIndex = 44;
@@ -222,11 +222,11 @@
             // 
             this.dgvPacientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPacientes.Location = new System.Drawing.Point(740, 187);
+            this.dgvPacientes.Location = new System.Drawing.Point(706, 187);
             this.dgvPacientes.Name = "dgvPacientes";
             this.dgvPacientes.RowHeadersWidth = 51;
             this.dgvPacientes.RowTemplate.Height = 24;
-            this.dgvPacientes.Size = new System.Drawing.Size(641, 230);
+            this.dgvPacientes.Size = new System.Drawing.Size(641, 193);
             this.dgvPacientes.TabIndex = 57;
             // 
             // EditarPacientes
@@ -255,8 +255,9 @@
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditarPacientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarPacientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.ResumeLayout(false);

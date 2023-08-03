@@ -205,6 +205,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EditarInsumos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarInsumos";
             ((System.ComponentModel.ISupportInitialize)(this.DgvListadoEditar)).EndInit();
             this.ResumeLayout(false);

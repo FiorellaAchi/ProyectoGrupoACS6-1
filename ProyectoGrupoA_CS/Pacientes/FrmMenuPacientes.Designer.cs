@@ -169,6 +169,7 @@
             this.Controls.Add(this.lblIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMenuPacientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuPacientes";
             this.ResumeLayout(false);
             this.PerformLayout();
