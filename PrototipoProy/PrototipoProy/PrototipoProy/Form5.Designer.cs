@@ -45,6 +45,9 @@
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.DGVUsuarios = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -140,12 +143,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(78, 34);
+            this.label6.Location = new System.Drawing.Point(205, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(524, 28);
+            this.label6.Size = new System.Drawing.Size(180, 28);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Ingrese el codigo del usuario que desea modificar";
+            this.label6.Text = "Menu Modificar";
             // 
             // label7
             // 
@@ -162,10 +165,10 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(385, 665);
+            this.btnSalir.Location = new System.Drawing.Point(74, 44);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(104, 96);
+            this.btnSalir.Size = new System.Drawing.Size(41, 41);
             this.btnSalir.TabIndex = 26;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -175,7 +178,7 @@
             this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnModificarUsuario.Image")));
-            this.btnModificarUsuario.Location = new System.Drawing.Point(107, 677);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(265, 648);
             this.btnModificarUsuario.Margin = new System.Windows.Forms.Padding(7);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(68, 73);
@@ -201,12 +204,35 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Contraseña";
             // 
+            // DGVUsuarios
+            // 
+            this.DGVUsuarios.BackgroundColor = System.Drawing.Color.White;
+            this.DGVUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVUsuarios.Location = new System.Drawing.Point(505, 237);
+            this.DGVUsuarios.Name = "DGVUsuarios";
+            this.DGVUsuarios.RowHeadersWidth = 51;
+            this.DGVUsuarios.RowTemplate.Height = 24;
+            this.DGVUsuarios.Size = new System.Drawing.Size(939, 373);
+            this.DGVUsuarios.TabIndex = 29;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(248, 728);
+            this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 28);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Modificar";
+            // 
             // frmEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(617, 777);
+            this.ClientSize = new System.Drawing.Size(1504, 777);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.DGVUsuarios);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSalir);
@@ -230,6 +256,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditar";
             this.Load += new System.EventHandler(this.frmEditar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,5 +280,7 @@
         private System.Windows.Forms.Button btnModificarUsuario;
         private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView DGVUsuarios;
+        private System.Windows.Forms.Label label9;
     }
 }

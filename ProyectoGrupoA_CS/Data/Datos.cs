@@ -23,7 +23,7 @@ namespace Data
             return datos;
         }
 
-        public void InsertarConductor(int id,String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados) //Metodo insertar conductor
+        public void InsertarConductor(string id, string nombre, string cedula, string telefono, string licencia, string direccion, string unidad, int diasLaborados) //Metodo insertar conductor
         {
             String nombreSp = "sp_crear_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString)) //Se crea una conexion con la base de datos
@@ -45,7 +45,7 @@ namespace Data
             }
         }
 
-        public void EliminarConductor(int id) { //Metodo eliminar conductor
+        public void EliminarConductor(string id) { //Metodo eliminar conductor
             String nombreSp = "sp_eliminar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -59,7 +59,7 @@ namespace Data
             }
         }
 
-        public void ActualizarConductor(int id, String nombre, String cedula, String telefono, String licencia, String direccion, String unidad, int diasLaborados)
+        public void ActualizarConductor(string id, string nombre, string cedula, string telefono, string licencia, string direccion, string unidad, int diasLaborados)
         { //Metodo actualizar conductor
             String nombreSp = "sp_modificar_conductor";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -98,7 +98,7 @@ namespace Data
             }
         }
 
-        public void InsertarAmbulancia(int codigo,String marca, String numero_placa, int anio,int id_conductor) //insertar ambulancia
+        public void InsertarAmbulancia(string codigo,string marca, string numero_placa, string anio,string  id_Conductor) //insertar ambulancia
         {
             String nombreSp = "sp_crear_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -110,14 +110,14 @@ namespace Data
                     command.Parameters.AddWithValue("@marca", marca);
                     command.Parameters.AddWithValue("@numero_placa", numero_placa);
                     command.Parameters.AddWithValue("@anio", anio);
-                    command.Parameters.AddWithValue("@id_conductor", id_conductor);
+                    command.Parameters.AddWithValue("@id_conductor", id_Conductor);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-        public void EliminarAmbulancia(int codigo) //eliminar ambulancia
+        public void EliminarAmbulancia(string codigo) //eliminar ambulancia
         {
             String nombreSp = "sp_eliminar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -133,7 +133,7 @@ namespace Data
         }
 
         
-        public void ActualizarAmbulancia(int codigo, String marca, String numero_placa, int anio, int id_conductor) //actualizar ambulancia
+        public void ActualizarAmbulancia(string codigo, string marca, string numero_placa, int anio, string id_conductor) //actualizar ambulancia
         {
             String nombreSp = "sp_modificar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -169,7 +169,7 @@ namespace Data
             }
         }
 
-        public void InsertarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor) //Procedimiento almacenado que registra pacientes
+        public void InsertarPaciente(string codigo, string nombre, string apellido, string edad, string direccion, string fechaIngreso, string tutor) //Procedimiento almacenado que registra pacientes
         {
             String nombreSp = "sp_crear_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -244,9 +244,9 @@ namespace Data
             }
         }
 
-        public void InsertarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado) //Procedimiento que registra los insumos
+        public void InsertarInsumos(string codigo, string insumo, string fecha, string proveedor, string estado) //Procedimiento que registra los insumos
         {
-            String nombreSp = "sp_crear_insumos";
+            string nombreSp = "sp_crear_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -263,9 +263,9 @@ namespace Data
             }
         }
 
-        public void EliminarInsumos(String insumo) // Procedimiento que indica que un insumo es inexistente
+        public void EliminarInsumos(string insumo) // Procedimiento que indica que un insumo es inexistente
         {
-            String nombreSp = "sp_eliminar_insumos";
+            string nombreSp = "sp_eliminar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -278,9 +278,9 @@ namespace Data
             }
         }
 
-        public void ActualizarInsumos(String codigo, String insumo, String fecha, String proveedor, String estado)
+        public void ActualizarInsumos(string codigo, string insumo, string fecha, string proveedor, string estado)
         { //Actualiza los datos de los insumos e indica si los que estan en proceso ya finalizaron
-            String nombreSp = "sp_modificar_insumos";
+            string nombreSp = "sp_modificar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -299,7 +299,7 @@ namespace Data
 
         public DataTable ListarInsumos() //Lista todos los insumos
         {
-            String nombreSp = "sp_listar_insumos";
+            string nombreSp = "sp_listar_insumos";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -314,9 +314,9 @@ namespace Data
             }
         }
 
-        public void CrearFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
+        public void CrearFacturas(string codigo, string cedula, string nombre, string emision, string telefono, string domicilio, string descripcion)
         { //Procedimiento para crear las facturas
-            String nombreSp = "sp_crear_factura";
+            string nombreSp = "sp_crear_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -336,9 +336,9 @@ namespace Data
 
         }
 
-        public void EliminarFacturas(String codigo)
+        public void EliminarFacturas(string codigo)
         { //Procedimiento para eliminar las facturas
-            String nombreSp = "sp_eliminar_factura";
+            string nombreSp = "sp_eliminar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -351,9 +351,9 @@ namespace Data
             }
         }
 
-       public void ActualizarFacturas(String codigo, String cedula, String nombre, String emision, String telefono, String domicilio, String descripcion)
+       public void ActualizarFacturas(string codigo, string cedula, string nombre, string emision, string telefono, string domicilio, string descripcion)
        { //Procedimiento para actualizar las facturas
-            String nombreSp = "sp_modificar_factura";
+            string nombreSp = "sp_modificar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -374,7 +374,7 @@ namespace Data
 
         public DataTable ListarFacturas()
         { //Procedimiento para listar las facturas
-            String nombreSp = "sp_listar_factura";
+            string nombreSp = "sp_listar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -465,7 +465,86 @@ namespace Data
             }
         }
 
-        public bool Login(string usuario, string password)
+        public void CrearUsuario(String codigo, String nombre, String cedula, String telefono, String email, String Contrasena, String tipo)
+        {
+              //Procedimiento para crear usuarios
+            String nombreSp = "sp_crear_usuario";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@email", email);
+                    command.Parameters.AddWithValue("@contrasena", Contrasena);
+                    command.Parameters.AddWithValue("@tipo", tipo);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }   
+        }
+
+        public void EliminarUsuario(String nombre)
+        { 
+            //Procedimiento para eliminar usuarios
+          String nombreSp = "sp_eliminar_usuario";
+          using (SqlConnection connection = new SqlConnection(connectionString))
+          {
+              using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void ActualizarUsuario(String codigo, String nombre, String cedula, String telefono, String email, String Contrasena)
+        {
+            //Procedimiento para actualizar usuarios
+            String nombreSp = "sp_modificar_usuario";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+                    command.Parameters.AddWithValue("@telefono", telefono);
+                    command.Parameters.AddWithValue("@email", email);
+                    command.Parameters.AddWithValue("@contrasena", Contrasena);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public DataTable ListarUsuarios()
+        {
+            //Procedimiento para listar usuarios
+            String nombreSp = "sp_listar_usuario";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(nombreSp, connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    connection.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+    
+
+
+    public bool Login(string usuario, string password)
         { //Procedimiento para el login
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

@@ -24,7 +24,7 @@ namespace Conductor
         {
             try
             {
-                datos.InsertarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
+                datos.InsertarConductor(txtId.Text, txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
                 //Se utiliza el metodo de la clase Datos para insertar un nuevo conductor
             }
             catch (FormatException)

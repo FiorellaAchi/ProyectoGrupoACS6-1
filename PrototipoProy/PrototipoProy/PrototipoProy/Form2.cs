@@ -28,23 +28,9 @@ namespace PrototipoProy
             this.Close();
         }
 
-        private void modificarUsuarioDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Comando que oculta la ventana actual
-            this.Hide();
-            //Crea una instancia para q nos muestre el formulario de listar
-            frmListar Principal = new frmListar();
-            Principal.Show();
-        }
+        
 
-        private void listarUsuariosEnElSistemaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Comando que oculta la ventana actual
-            this.Hide();
-            //Crea una instancia para q nos muestre el formulario de editar
-            frmEditar Principal = new frmEditar();
-            Principal.Show();
-        }
+       
 
         private void eliminarUsuariosEnElSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -59,6 +45,15 @@ namespace PrototipoProy
         {
             this.Hide();
             formInsertar Principal = new formInsertar();
+            Principal.Show();
+        }
+
+        private void modificarUsuarioDelSistema_Click(object sender, EventArgs e)
+        {
+            //comando oculta la ventana actual
+            this.Hide();
+            //crea una instancia para que nos muestre el formulario de editar
+            frmEditar Principal = new frmEditar();
             Principal.Show();
         }
     }

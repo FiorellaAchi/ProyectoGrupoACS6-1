@@ -1,4 +1,4 @@
-﻿using Ambulancia;
+﻿using Ambulancias;
 using Conductor;
 using Facturas;
 using Insumos;
@@ -45,7 +45,7 @@ namespace ProyectoGrupoA_CS
 
         private void btnAmbulancia_Click(object sender, EventArgs e)
         {
-            FrmMenuAmb frm = new FrmMenuAmb();
+            FrmMenuAmbulancia frm = new FrmMenuAmbulancia();
             frm.Show(); //Nos muestra la pestaña de acceso a edicion de ambulancia.
         }
 

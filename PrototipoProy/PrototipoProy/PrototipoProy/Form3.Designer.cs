@@ -41,17 +41,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtUserType = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.DGVUsuario = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(264, 338);
+            this.txtEmail.Location = new System.Drawing.Point(264, 412);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(7);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(228, 36);
@@ -60,7 +62,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(107, 346);
+            this.label5.Location = new System.Drawing.Point(107, 420);
             this.label5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 28);
@@ -69,7 +71,7 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(264, 275);
+            this.txtTelefono.Location = new System.Drawing.Point(264, 333);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(7);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(228, 36);
@@ -78,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(107, 278);
+            this.label4.Location = new System.Drawing.Point(107, 336);
             this.label4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 28);
@@ -87,7 +89,7 @@
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(264, 190);
+            this.txtCedula.Location = new System.Drawing.Point(264, 257);
             this.txtCedula.Margin = new System.Windows.Forms.Padding(7);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(228, 36);
@@ -96,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(107, 198);
+            this.label3.Location = new System.Drawing.Point(107, 265);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 28);
@@ -105,7 +107,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(264, 108);
+            this.txtNombre.Location = new System.Drawing.Point(264, 185);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(7);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(228, 36);
@@ -115,7 +117,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(107, 116);
+            this.label2.Location = new System.Drawing.Point(107, 193);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 28);
@@ -125,7 +127,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(264, 40);
+            this.txtCodigo.Location = new System.Drawing.Point(264, 117);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(7);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(228, 36);
@@ -135,7 +137,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 40);
+            this.label1.Location = new System.Drawing.Point(107, 117);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 28);
@@ -148,7 +150,7 @@
             this.btnCrearUsuario.FlatAppearance.BorderSize = 0;
             this.btnCrearUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearUsuario.Image")));
-            this.btnCrearUsuario.Location = new System.Drawing.Point(130, 523);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(264, 646);
             this.btnCrearUsuario.Margin = new System.Windows.Forms.Padding(7);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(83, 70);
@@ -162,28 +164,18 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(388, 523);
+            this.btnSalir.Location = new System.Drawing.Point(43, 32);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(7);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(104, 70);
+            this.btnSalir.Size = new System.Drawing.Size(46, 44);
             this.btnSalir.TabIndex = 23;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(411, 609);
-            this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 28);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Salir";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(125, 609);
+            this.label7.Location = new System.Drawing.Point(259, 732);
             this.label7.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 28);
@@ -193,7 +185,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(107, 408);
+            this.label8.Location = new System.Drawing.Point(57, 493);
             this.label8.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(253, 28);
@@ -202,7 +194,7 @@
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(374, 400);
+            this.txtContrasena.Location = new System.Drawing.Point(324, 485);
             this.txtContrasena.Margin = new System.Windows.Forms.Padding(7);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(228, 36);
@@ -211,7 +203,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(107, 453);
+            this.label9.Location = new System.Drawing.Point(103, 563);
             this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 28);
@@ -220,24 +212,46 @@
             // 
             // txtUserType
             // 
-            this.txtUserType.Location = new System.Drawing.Point(297, 445);
+            this.txtUserType.Location = new System.Drawing.Point(293, 555);
             this.txtUserType.Margin = new System.Windows.Forms.Padding(7);
             this.txtUserType.Name = "txtUserType";
             this.txtUserType.Size = new System.Drawing.Size(228, 36);
             this.txtUserType.TabIndex = 29;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(152, 48);
+            this.label10.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(299, 28);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "CREACION DE USUARIOS";
+            // 
+            // DGVUsuario
+            // 
+            this.DGVUsuario.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DGVUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVUsuario.Location = new System.Drawing.Point(561, 143);
+            this.DGVUsuario.Name = "DGVUsuario";
+            this.DGVUsuario.RowHeadersWidth = 51;
+            this.DGVUsuario.RowTemplate.Height = 24;
+            this.DGVUsuario.Size = new System.Drawing.Size(727, 269);
+            this.DGVUsuario.TabIndex = 31;
             // 
             // formInsertar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(621, 643);
+            this.ClientSize = new System.Drawing.Size(1340, 780);
+            this.Controls.Add(this.DGVUsuario);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtUserType);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCrearUsuario);
             this.Controls.Add(this.txtEmail);
@@ -258,6 +272,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Insertar usuarios nuevos";
             this.Load += new System.EventHandler(this.formInsertar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DGVUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,11 +292,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCrearUsuario;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtUserType;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView DGVUsuario;
     }
 }

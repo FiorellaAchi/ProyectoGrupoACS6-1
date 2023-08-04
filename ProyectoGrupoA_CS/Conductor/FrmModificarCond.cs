@@ -24,7 +24,7 @@ namespace Conductor
         {
             try
             {
-                datos.ActualizarConductor(int.Parse(txtId.Text), txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
+                datos.ActualizarConductor(txtId.Text, txtNombre.Text, txtCedula.Text, txtTelefono.Text, txtLicencia.Text, txtDireccion.Text, txtUnidad.Text, int.Parse(txtDiasLaborados.Text));
                 //Se utiliza el metodo de la clase Datos para actualizar los datos del conductor
                 MessageBox.Show("Conductor actualizado correctamente"); //Se muestra un mensaje de exito
             }

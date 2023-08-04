@@ -112,9 +112,9 @@
       <Project>{FFF909BD-DACA-4A27-9347-1820F701E234}</Project>
       <Name>PrototipoProy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ambulancia\Ambulancia.csproj">
-      <Project>{62c581da-0b7c-4f50-a1d2-0c39b0be7a54}</Project>
-      <Name>Ambulancia</Name>
+    <ProjectReference Include="..\Ambulancias\Ambulancias.csproj">
+      <Project>{800d34a9-33e8-461e-b1f8-28c3bad53ba2}</Project>
+      <Name>Ambulancias</Name>
     </ProjectReference>
     <ProjectReference Include="..\Conductor\Conductor.csproj">
       <Project>{52c2f861-8ae0-4b4d-bc3b-a59f74a24618}</Project>

@@ -31,7 +31,7 @@ namespace Conductor
         {
             try
             {
-                datos.EliminarConductor(int.Parse(txtId.Text)); //Se procede a utilizar el metodo con el ID correspondiente
+                datos.EliminarConductor(txtId.Text); //Se procede a utilizar el metodo con el ID correspondiente
             }
             catch(FormatException) //Se toma la excepcion en caso de problemas
             {
