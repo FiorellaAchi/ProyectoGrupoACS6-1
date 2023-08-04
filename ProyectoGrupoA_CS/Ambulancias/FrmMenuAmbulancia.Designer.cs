@@ -82,6 +82,7 @@
             this.BtnModificar.Size = new System.Drawing.Size(95, 91);
             this.BtnModificar.TabIndex = 29;
             this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
@@ -94,6 +95,7 @@
             this.BtnEliminar.Size = new System.Drawing.Size(104, 87);
             this.BtnEliminar.TabIndex = 28;
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // label10
             // 

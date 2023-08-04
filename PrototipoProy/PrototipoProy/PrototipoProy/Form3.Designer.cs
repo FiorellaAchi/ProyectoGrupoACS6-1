@@ -221,10 +221,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(152, 48);
+            this.label10.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(154, 32);
             this.label10.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(299, 28);
+            this.label10.Size = new System.Drawing.Size(407, 35);
             this.label10.TabIndex = 30;
             this.label10.Text = "CREACION DE USUARIOS";
             // 

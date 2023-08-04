@@ -32,8 +32,6 @@
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.DateIngreso = new System.Windows.Forms.DateTimePicker();
-            this.txtTutor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -77,25 +75,6 @@
             this.DateIngreso.Size = new System.Drawing.Size(423, 30);
             this.DateIngreso.TabIndex = 51;
             // 
-            // txtTutor
-            // 
-            this.txtTutor.Location = new System.Drawing.Point(258, 387);
-            this.txtTutor.Margin = new System.Windows.Forms.Padding(6);
-            this.txtTutor.Name = "txtTutor";
-            this.txtTutor.Size = new System.Drawing.Size(423, 30);
-            this.txtTutor.TabIndex = 50;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 394);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 23);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Tutor:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -109,7 +88,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(258, 445);
+            this.txtDireccion.Location = new System.Drawing.Point(258, 405);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(6);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(423, 30);
@@ -143,7 +122,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(85, 445);
+            this.label5.Location = new System.Drawing.Point(85, 405);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 23);
@@ -211,7 +190,7 @@
             this.BtnEditarPacientes.FlatAppearance.BorderSize = 0;
             this.BtnEditarPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditarPacientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditarPacientes.Image")));
-            this.BtnEditarPacientes.Location = new System.Drawing.Point(390, 517);
+            this.BtnEditarPacientes.Location = new System.Drawing.Point(393, 484);
             this.BtnEditarPacientes.Name = "BtnEditarPacientes";
             this.BtnEditarPacientes.Size = new System.Drawing.Size(86, 87);
             this.BtnEditarPacientes.TabIndex = 56;
@@ -242,8 +221,6 @@
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DateIngreso);
-            this.Controls.Add(this.txtTutor);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtApellido);
@@ -270,8 +247,6 @@
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker DateIngreso;
-        private System.Windows.Forms.TextBox txtTutor;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtApellido;

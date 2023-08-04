@@ -170,6 +170,7 @@
             this.Controls.Add(this.BtnIngresarInsumos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMenuInsumos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuInsumos";
             this.ResumeLayout(false);
             this.PerformLayout();

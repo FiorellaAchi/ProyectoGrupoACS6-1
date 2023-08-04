@@ -33,7 +33,7 @@ namespace Pacientes
             string IngresoFormateado = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
             try
             {
-                datos.ActualizarPaciente(txtCodigo.Text, txtNombre.Text, txtApellido.Text, txtEdad.Text, txtDireccion.Text, IngresoFormateado, txtTutor.Text);
+                datos.ActualizarPaciente(txtCodigo.Text, txtNombre.Text, txtApellido.Text, txtEdad.Text, txtDireccion.Text, IngresoFormateado);
                 dgvPacientes.DataSource = datos.ListarPacientes(); //Se repite la accion con el objetivo de mostrar cambios
             }
             catch (FormatException)

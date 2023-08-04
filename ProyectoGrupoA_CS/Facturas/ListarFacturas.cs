@@ -19,7 +19,7 @@ namespace Facturas
             InitializeComponent();
             try
             {
-                DGVListarFacturas.DataSource = datos.ListarFacturas();
+                DGVListarFacturas.DataSource = datos.ListarFactura();
             }
             catch (Exception ex)
             {

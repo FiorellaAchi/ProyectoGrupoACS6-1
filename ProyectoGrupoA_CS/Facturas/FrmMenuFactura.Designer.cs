@@ -34,8 +34,6 @@
             this.lblCrearFacturas = new System.Windows.Forms.Label();
             this.BtnListar = new System.Windows.Forms.Button();
             this.lblListarFacturas = new System.Windows.Forms.Label();
-            this.BtnEditarFactura = new System.Windows.Forms.Button();
-            this.lblModificar = new System.Windows.Forms.Label();
             this.BtnEliminarFactura = new System.Windows.Forms.Button();
             this.lblEliminar = new System.Windows.Forms.Label();
             this.BtnReturn = new System.Windows.Forms.Button();
@@ -95,34 +93,12 @@
             this.lblListarFacturas.TabIndex = 7;
             this.lblListarFacturas.Text = "Listar Facturas";
             // 
-            // BtnEditarFactura
-            // 
-            this.BtnEditarFactura.FlatAppearance.BorderSize = 0;
-            this.BtnEditarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEditarFactura.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditarFactura.Image")));
-            this.BtnEditarFactura.Location = new System.Drawing.Point(67, 228);
-            this.BtnEditarFactura.Name = "BtnEditarFactura";
-            this.BtnEditarFactura.Size = new System.Drawing.Size(86, 87);
-            this.BtnEditarFactura.TabIndex = 8;
-            this.BtnEditarFactura.UseVisualStyleBackColor = true;
-            this.BtnEditarFactura.Click += new System.EventHandler(this.BtnEditarFactura_Click);
-            // 
-            // lblModificar
-            // 
-            this.lblModificar.AutoSize = true;
-            this.lblModificar.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblModificar.Location = new System.Drawing.Point(32, 318);
-            this.lblModificar.Name = "lblModificar";
-            this.lblModificar.Size = new System.Drawing.Size(173, 23);
-            this.lblModificar.TabIndex = 9;
-            this.lblModificar.Text = "Modificar Facturas";
-            // 
             // BtnEliminarFactura
             // 
             this.BtnEliminarFactura.FlatAppearance.BorderSize = 0;
             this.BtnEliminarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminarFactura.Image = ((System.Drawing.Image)(resources.GetObject("BtnEliminarFactura.Image")));
-            this.BtnEliminarFactura.Location = new System.Drawing.Point(280, 228);
+            this.BtnEliminarFactura.Location = new System.Drawing.Point(168, 228);
             this.BtnEliminarFactura.Name = "BtnEliminarFactura";
             this.BtnEliminarFactura.Size = new System.Drawing.Size(94, 87);
             this.BtnEliminarFactura.TabIndex = 10;
@@ -133,7 +109,7 @@
             // 
             this.lblEliminar.AutoSize = true;
             this.lblEliminar.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblEliminar.Location = new System.Drawing.Point(246, 318);
+            this.lblEliminar.Location = new System.Drawing.Point(142, 318);
             this.lblEliminar.Name = "lblEliminar";
             this.lblEliminar.Size = new System.Drawing.Size(163, 23);
             this.lblEliminar.TabIndex = 11;
@@ -160,8 +136,6 @@
             this.Controls.Add(this.BtnReturn);
             this.Controls.Add(this.lblEliminar);
             this.Controls.Add(this.BtnEliminarFactura);
-            this.Controls.Add(this.lblModificar);
-            this.Controls.Add(this.BtnEditarFactura);
             this.Controls.Add(this.lblListarFacturas);
             this.Controls.Add(this.BtnListar);
             this.Controls.Add(this.lblCrearFacturas);
@@ -169,6 +143,7 @@
             this.Controls.Add(this.lblIngresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMenuFactura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuFactura";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,8 +157,6 @@
         private System.Windows.Forms.Label lblCrearFacturas;
         private System.Windows.Forms.Button BtnListar;
         private System.Windows.Forms.Label lblListarFacturas;
-        private System.Windows.Forms.Button BtnEditarFactura;
-        private System.Windows.Forms.Label lblModificar;
         private System.Windows.Forms.Button BtnEliminarFactura;
         private System.Windows.Forms.Label lblEliminar;
         private System.Windows.Forms.Button BtnReturn;

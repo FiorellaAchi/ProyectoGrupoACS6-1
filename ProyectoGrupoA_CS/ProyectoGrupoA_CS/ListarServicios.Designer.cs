@@ -76,12 +76,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1066, 429);
+            this.ClientSize = new System.Drawing.Size(1066, 436);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DGVListadoServicios);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListarServicios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListarServicios";
             ((System.ComponentModel.ISupportInitialize)(this.DGVListadoServicios)).EndInit();
             this.ResumeLayout(false);

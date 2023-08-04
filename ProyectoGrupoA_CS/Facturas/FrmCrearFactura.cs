@@ -26,13 +26,14 @@ namespace Facturas
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
+            
             try // Try para capturar errores de formato
             {
                 DateTime fechaSeleccionada = DTPEmision.Value; //Aqui dentro obtenemos lo que es la transformacion de datapicker a string
                 string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
                 lblFechaSeleccionada.Text = fechaFormateada; //Aqui se muestra la fecha seleccionada en el DTP
-                datos.CrearFacturas(TxtCodigo.Text, TxtCedula.Text, TxtNombre.Text, fechaFormateada, TxtTelefono.Text, TxtDomicilio.Text, TxtDescripcion.Text);
-                MessageBox.Show("Factura agregada correctamente"); // Mensaje de factura guardada con exito
+                datos.CrearFactura(TxtCodigo.Text, TxtCedula.Text, txtConductorID.Text, TxtAmbulancia.Text, txtInsumo.Text, 
+                    txtServicio.Text, fechaFormateada, txtDomicilio.Text, txtDescripcion.Text, Convert.ToDouble(txtSubtotal.Text));
             }
             catch (FormatException)
             {
@@ -44,13 +45,7 @@ namespace Facturas
             }
 
             // Limpiar los campos
-            TxtCedula.Clear();
-            TxtCodigo.Clear();
-            TxtDescripcion.Clear();
-            TxtDomicilio.Clear();
-            TxtNombre.Clear();
-            TxtTelefono.Clear();
-                       
+            
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)

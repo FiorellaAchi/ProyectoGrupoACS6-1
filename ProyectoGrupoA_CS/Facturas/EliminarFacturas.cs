@@ -19,7 +19,7 @@ namespace Facturas
             InitializeComponent();
             try
             {
-                DGVListado.DataSource = datos.ListarFacturas();
+                DGVListado.DataSource = datos.ListarFactura();
             }
             catch (Exception ex)
             {
@@ -36,11 +36,11 @@ namespace Facturas
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            datos.EliminarFacturas(TxtCodigo.Text); //Aqui se elimina la factura seleccionada
+            datos.EliminarFactura(TxtCodigo.Text); //Aqui se elimina la factura seleccionada
             MessageBox.Show("Factura eliminada correctamente");
             try
             {
-                DGVListado.DataSource = datos.ListarFacturas(); //Tras eliminar la factura, se actualiza el DGV
+                DGVListado.DataSource = datos.ListarFactura(); //Tras eliminar la factura, se actualiza el DGV
             }
             catch (Exception ex)
             {

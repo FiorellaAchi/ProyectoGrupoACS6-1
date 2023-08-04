@@ -39,8 +39,6 @@
             this.lblApellido = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTutor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.BtnIngresarDatosPacientes = new System.Windows.Forms.Button();
             this.DateIngreso = new System.Windows.Forms.DateTimePicker();
@@ -73,7 +71,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(179, 466);
+            this.txtDireccion.Location = new System.Drawing.Point(169, 427);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(268, 37);
@@ -107,7 +105,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(72, 480);
+            this.label5.Location = new System.Drawing.Point(62, 441);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 23);
@@ -146,25 +144,6 @@
             this.label2.Size = new System.Drawing.Size(80, 23);
             this.label2.TabIndex = 21;
             this.label2.Text = "Codigo:";
-            // 
-            // txtTutor
-            // 
-            this.txtTutor.Location = new System.Drawing.Point(179, 404);
-            this.txtTutor.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTutor.Name = "txtTutor";
-            this.txtTutor.Size = new System.Drawing.Size(268, 37);
-            this.txtTutor.TabIndex = 35;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 418);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 23);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Tutor:";
             // 
             // label7
             // 
@@ -238,8 +217,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DateIngreso);
             this.Controls.Add(this.BtnIngresarDatosPacientes);
-            this.Controls.Add(this.txtTutor);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvPacientes);
             this.Controls.Add(this.txtDireccion);
@@ -275,8 +252,6 @@
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTutor;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BtnIngresarDatosPacientes;
         private System.Windows.Forms.DateTimePicker DateIngreso;

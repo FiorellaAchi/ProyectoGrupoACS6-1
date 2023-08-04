@@ -39,9 +39,7 @@ namespace Facturas
 
         private void BtnEditarFactura_Click(object sender, EventArgs e)
         {
-            FrmEditarFactura frmEditarFactura = new FrmEditarFactura(); //Nos lleva al formulario de editar facturas
-            frmEditarFactura.Show();
-            this.Hide();
+     
         }
 
         private void BtnEliminarFactura_Click(object sender, EventArgs e)

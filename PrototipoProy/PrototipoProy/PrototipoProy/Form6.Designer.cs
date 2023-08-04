@@ -43,26 +43,28 @@
             this.txtNombre.Location = new System.Drawing.Point(213, 152);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(7);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(228, 36);
+            this.txtNombre.Size = new System.Drawing.Size(355, 36);
             this.txtNombre.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(50, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 28);
+            this.label2.Size = new System.Drawing.Size(99, 28);
             this.label2.TabIndex = 6;
             this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(208, 47);
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(207, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 28);
+            this.label1.Size = new System.Drawing.Size(246, 35);
             this.label1.TabIndex = 8;
             this.label1.Text = "Eliminar usuario";
             // 
@@ -100,7 +102,7 @@
             this.DGVUsuarios.Name = "DGVUsuarios";
             this.DGVUsuarios.RowHeadersWidth = 51;
             this.DGVUsuarios.RowTemplate.Height = 24;
-            this.DGVUsuarios.Size = new System.Drawing.Size(658, 212);
+            this.DGVUsuarios.Size = new System.Drawing.Size(639, 212);
             this.DGVUsuarios.TabIndex = 28;
             // 
             // frmEliminar

@@ -133,7 +133,7 @@ namespace Data
         }
 
         
-        public void ActualizarAmbulancia(string codigo, string marca, string numero_placa, int anio, string id_conductor) //actualizar ambulancia
+        public void ActualizarAmbulancia(string codigo, string marca, string numero_placa, string anio, string id_conductor) //actualizar ambulancia
         {
             String nombreSp = "sp_modificar_ambulancia";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -169,7 +169,7 @@ namespace Data
             }
         }
 
-        public void InsertarPaciente(string codigo, string nombre, string apellido, string edad, string direccion, string fechaIngreso, string tutor) //Procedimiento almacenado que registra pacientes
+        public void InsertarPaciente(string codigo, string nombre, string apellido, string edad, string direccion, string fechaIngreso) //Procedimiento almacenado que registra pacientes
         {
             String nombreSp = "sp_crear_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -183,7 +183,6 @@ namespace Data
                     command.Parameters.AddWithValue("@edad", edad);
                     command.Parameters.AddWithValue("@direccion", direccion);
                     command.Parameters.AddWithValue("@fechaIngreso", fechaIngreso);
-                    command.Parameters.AddWithValue("@tutor",tutor);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -206,7 +205,7 @@ namespace Data
             }
         }
 
-        public void ActualizarPaciente(String codigo, String nombre, String apellido, String edad, String direccion, String fechaIngreso, String tutor)
+        public void ActualizarPaciente(string codigo, string nombre, string apellido, string edad, string direccion, string fechaIngreso)
         { //Permite modificar los datos del paciente
             String nombreSp = "sp_modificar_pacientes";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -220,7 +219,6 @@ namespace Data
                     command.Parameters.AddWithValue("@edad", edad);
                     command.Parameters.AddWithValue("@direccion", direccion);
                     command.Parameters.AddWithValue("@fechaIngreso", fechaIngreso);
-                    command.Parameters.AddWithValue("@tutor", tutor);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
@@ -314,67 +312,51 @@ namespace Data
             }
         }
 
-        public void CrearFacturas(string codigo, string cedula, string nombre, string emision, string telefono, string domicilio, string descripcion)
-        { //Procedimiento para crear las facturas
-            string nombreSp = "sp_crear_factura";
+        public void CrearFactura(string id_factura, string cedula, string id_conductor, string codigo_ambulancia, string id_consumo, string codigo_servicio, string emision,
+            string domicilio, string descripcion, double subtotal)
+        {
+            String nombreSp = "sp_crear_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@id_factura", id_factura);
                     command.Parameters.AddWithValue("@cedula", cedula);
-                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@id_conductor", id_conductor);
+                    command.Parameters.AddWithValue("@codigo_ambulancia", codigo_ambulancia);
+                    command.Parameters.AddWithValue("@id_insumo", id_consumo);
+                    command.Parameters.AddWithValue("@codigo_servicio", codigo_servicio);
                     command.Parameters.AddWithValue("@emision", emision);
-                    command.Parameters.AddWithValue("@telefono", telefono);
                     command.Parameters.AddWithValue("@domicilio", domicilio);
                     command.Parameters.AddWithValue("@descripcion", descripcion);
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-
-        }
-
-        public void EliminarFacturas(string codigo)
-        { //Procedimiento para eliminar las facturas
-            string nombreSp = "sp_eliminar_factura";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(nombreSp, connection))
-                {
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@subtotal", subtotal);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
         }
 
-       public void ActualizarFacturas(string codigo, string cedula, string nombre, string emision, string telefono, string domicilio, string descripcion)
-       { //Procedimiento para actualizar las facturas
-            string nombreSp = "sp_modificar_factura";
+        public void EliminarFactura(string id_factura)
+        {
+            String nombreSp = "sp_eliminar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
-                    command.Parameters.AddWithValue("@cedula", cedula);
-                    command.Parameters.AddWithValue("@nombre", nombre);
-                    command.Parameters.AddWithValue("@emision", emision);
-                    command.Parameters.AddWithValue("@telefono", telefono);
-                    command.Parameters.AddWithValue("@domicilio", domicilio);
-                    command.Parameters.AddWithValue("@descripcion", descripcion);
+                    command.Parameters.AddWithValue("@id_factura", id_factura);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
-            }   
+            }
         }
 
-        public DataTable ListarFacturas()
-        { //Procedimiento para listar las facturas
-            string nombreSp = "sp_listar_factura";
+        
+
+        public DataTable ListarFactura()
+        {
+            String nombreSp = "sp_listar_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
@@ -393,7 +375,7 @@ namespace Data
         { //Procedimiento para insertar los servicios
             String nombre = userName + "";
             String descripcion = "Servicio de ambulancias";
-            /*precio ramdon en un margen de 25 a 70*/
+            /*precio random en un margen de 25 a 70*/
             Random rnd = new Random();
             int preciot = rnd.Next(25, 70);
             String precio = preciot.ToString();

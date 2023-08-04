@@ -26,7 +26,7 @@ namespace Pacientes
             string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
             try
             {
-                datos.InsertarPaciente(txtCodigo.Text, txtNombre.Text, txtApellido.Text, txtEdad.Text, txtDireccion.Text, fechaFormateada, txtTutor.Text);
+                datos.InsertarPaciente(txtCodigo.Text, txtNombre.Text, txtApellido.Text, txtEdad.Text, txtDireccion.Text, fechaFormateada);
                 MessageBox.Show("Paciente agregado correctamente");
                 dgvPacientes.DataSource = datos.ListarPacientes();
             }
@@ -43,7 +43,7 @@ namespace Pacientes
             txtNombre.Text = "";
             txtApellido.Text = "";
             txtDireccion.Text = "";
-            txtTutor.Text = "";
+            
         }
 
         private void BtnReturn_Click(object sender, EventArgs e)

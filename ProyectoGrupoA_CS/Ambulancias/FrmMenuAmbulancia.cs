@@ -28,5 +28,19 @@ namespace Ambulancias
             frmRegistrarAmbulancias.Show(); //Muestra el formulario
             this.Hide(); //Oculta el formulario actual
         }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            FrmActualizarAmbulancia frm = new FrmActualizarAmbulancia(); //Abre el formulario para actualizar ambulancias
+            frm.Show(); //Muestra el formulario
+            this.Hide(); //Oculta el formulario actual
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            FrmEliminarAmbulancia frm = new FrmEliminarAmbulancia(); //Abre el formulario para eliminar ambulancias
+            frm.Show(); //Muestra el formulario
+            this.Hide(); //Oculta el formulario actual
+        }
     }
 }

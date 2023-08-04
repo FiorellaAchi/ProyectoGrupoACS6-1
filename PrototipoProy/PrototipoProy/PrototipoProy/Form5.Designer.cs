@@ -143,10 +143,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(205, 50);
+            this.label6.Font = new System.Drawing.Font("Book Antiqua", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(207, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(180, 28);
+            this.label6.Size = new System.Drawing.Size(241, 35);
             this.label6.TabIndex = 22;
             this.label6.Text = "Menu Modificar";
             // 
@@ -212,16 +213,17 @@
             this.DGVUsuarios.Name = "DGVUsuarios";
             this.DGVUsuarios.RowHeadersWidth = 51;
             this.DGVUsuarios.RowTemplate.Height = 24;
-            this.DGVUsuarios.Size = new System.Drawing.Size(939, 373);
+            this.DGVUsuarios.Size = new System.Drawing.Size(762, 373);
             this.DGVUsuarios.TabIndex = 29;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(248, 728);
             this.label9.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 28);
+            this.label9.Size = new System.Drawing.Size(118, 28);
             this.label9.TabIndex = 30;
             this.label9.Text = "Modificar";
             // 
@@ -230,7 +232,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1504, 777);
+            this.ClientSize = new System.Drawing.Size(1353, 787);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.DGVUsuarios);
             this.Controls.Add(this.txtContrasena);
