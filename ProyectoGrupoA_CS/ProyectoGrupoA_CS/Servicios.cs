@@ -23,9 +23,10 @@ namespace ProyectoGrupoA_CS
         {
             datos.InsertarServicio();
             MessageBox.Show("Emergencia Registrada");
+            this.Hide();
             MostrarFactura frm = new MostrarFactura();
             frm.Show();
-            this.Hide();
+            
         }
 
         private void BtnRegresar_Click(object sender, EventArgs e)
