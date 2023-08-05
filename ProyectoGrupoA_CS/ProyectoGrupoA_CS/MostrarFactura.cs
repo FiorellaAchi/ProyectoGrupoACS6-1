@@ -34,8 +34,6 @@ namespace ProyectoGrupoA_CS
         {
             DataGridViewRow selectedRow = dgvFacturas.Rows[rowIndex];
           
-                
-
                 lblFactura.Text = selectedRow.Cells["id_factura"].Value.ToString();
                 lblConductor.Text = selectedRow.Cells["nombre_conductor"].Value.ToString();
                 lblIDConductor.Text = selectedRow.Cells["id_conductor"].Value.ToString();

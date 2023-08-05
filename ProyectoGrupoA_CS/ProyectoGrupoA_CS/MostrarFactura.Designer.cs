@@ -52,7 +52,6 @@
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.dgvFacturas = new System.Windows.Forms.DataGridView();
-            this.BtnGenerar = new System.Windows.Forms.Button();
             this.lblIDConductor = new System.Windows.Forms.Label();
             this.idConductorName = new System.Windows.Forms.Label();
             this.lblCodigoAmbulancia = new System.Windows.Forms.Label();
@@ -289,23 +288,13 @@
             // 
             this.dgvFacturas.BackgroundColor = System.Drawing.Color.White;
             this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(366, 178);
+            this.dgvFacturas.Location = new System.Drawing.Point(424, 178);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.RowHeadersWidth = 51;
             this.dgvFacturas.RowTemplate.Height = 24;
             this.dgvFacturas.Size = new System.Drawing.Size(252, 155);
             this.dgvFacturas.TabIndex = 22;
             this.dgvFacturas.SelectionChanged += new System.EventHandler(this.dgvFacturas_SelectionChanged);
-            // 
-            // BtnGenerar
-            // 
-            this.BtnGenerar.FlatAppearance.BorderSize = 0;
-            this.BtnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGenerar.Location = new System.Drawing.Point(150, 619);
-            this.BtnGenerar.Name = "BtnGenerar";
-            this.BtnGenerar.Size = new System.Drawing.Size(137, 47);
-            this.BtnGenerar.TabIndex = 23;
-            this.BtnGenerar.UseVisualStyleBackColor = true;
             // 
             // lblIDConductor
             // 
@@ -378,7 +367,6 @@
             this.Controls.Add(this.lblCodigoAmbulancia);
             this.Controls.Add(this.idConductorName);
             this.Controls.Add(this.lblIDConductor);
-            this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.dgvFacturas);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.LogoPictureBox);
@@ -440,7 +428,6 @@
         private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.Button BtnRegresar;
         private System.Windows.Forms.DataGridView dgvFacturas;
-        private System.Windows.Forms.Button BtnGenerar;
         private System.Windows.Forms.Label lblIDConductor;
         private System.Windows.Forms.Label idConductorName;
         private System.Windows.Forms.Label lblCodigoAmbulancia;
