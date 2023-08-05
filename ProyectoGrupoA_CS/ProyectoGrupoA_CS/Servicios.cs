@@ -19,20 +19,23 @@ namespace ProyectoGrupoA_CS
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnEmergencia_Click(object sender, EventArgs e)
         {
             datos.InsertarServicio();
             MessageBox.Show("Emergencia Registrada");
+            MostrarFactura frm = new MostrarFactura();
+            frm.Show();
+            this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnRegresar_Click(object sender, EventArgs e)
         {
             frmLogin frm = new frmLogin();
             frm.Show();
             this.Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void BtnEliminarCancelarServicio_Click(object sender, EventArgs e)
         {
             datos.EliminarServicio();
             MessageBox.Show("Servicio Eliminado");
