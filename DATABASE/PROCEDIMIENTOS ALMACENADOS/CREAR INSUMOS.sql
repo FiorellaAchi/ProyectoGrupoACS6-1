@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 create procedure [dbo].[sp_crear_insumos]
-@codigo varchar(5),
+@id_Insumo varchar(5),
 @insumo varchar(80),
 @fecha varchar(50),
 @proveedor varchar(80),
@@ -17,10 +17,10 @@ create procedure [dbo].[sp_crear_insumos]
 as
 begin
 	declare @codnuevo varchar(5), @codmax varchar(5)
-	set @codmax = (select max(codigo) from insumos)
+	set @codmax = (select max(@id_Insumo) from insumos)
 	set @codmax = isnull(@codmax,'A0000')
 	set @codnuevo = 'A'+RIGHT(RIGHT(@codmax,4)+10001,4)
-	insert into insumos(codigo, insumo, fecha, proveedor, estado)
+	insert into insumos(id_Insumos, insumo, fecha, proveedor, estado)
 	values(@codnuevo, @insumo, @fecha, @proveedor, @estado)
 end
 GO
