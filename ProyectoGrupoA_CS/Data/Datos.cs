@@ -312,8 +312,8 @@ namespace Data
             }
         }
 
-        public void CrearFactura(string id_factura, string cedula, string id_conductor,string paciente, string codigo_ambulancia, string id_consumo, string codigo_servicio, string emision,
-            string domicilio, string descripcion, double subtotal)
+        public void CrearFactura(string id_factura, string cedula, string id_conductor, string codigo_ambulancia, string id_insumo, string codigo_servicio, string emision,
+            string domicilio, string descripcion, double subtotal, string paciente)
         {
             String nombreSp = "sp_crear_factura";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -324,14 +324,14 @@ namespace Data
                     command.Parameters.AddWithValue("@id_factura", id_factura);
                     command.Parameters.AddWithValue("@cedula", cedula);
                     command.Parameters.AddWithValue("@id_conductor", id_conductor);
-                    command.Parameters.AddWithValue("@id_paciente", paciente);
                     command.Parameters.AddWithValue("@codigo_ambulancia", codigo_ambulancia);
-                    command.Parameters.AddWithValue("@id_insumo", id_consumo);
+                    command.Parameters.AddWithValue("@id_insumo", id_insumo);
                     command.Parameters.AddWithValue("@codigo_servicio", codigo_servicio);
                     command.Parameters.AddWithValue("@emision", emision);
                     command.Parameters.AddWithValue("@domicilio", domicilio);
                     command.Parameters.AddWithValue("@descripcion", descripcion);
                     command.Parameters.AddWithValue("@subtotal", subtotal);
+                    command.Parameters.AddWithValue("@id_paciente", paciente);
                     connection.Open();
                     command.ExecuteNonQuery();
                 }

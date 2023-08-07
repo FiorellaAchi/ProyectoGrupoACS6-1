@@ -18,6 +18,8 @@ namespace Pacientes
         {
             InitializeComponent();
             dgvPacientes.DataSource = datos.ListarPacientes(); //Se muestra la lista de pacientes en el DataGridView
+            dgvPacientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //Se selecciona toda la fila del DataGridView
+            dgvPacientes.CellClick += dgvPacientes_CellClick; //Se activa el evento CellClick
         }
 
         private void BtnReturn_Click(object sender, EventArgs e)
@@ -39,6 +41,19 @@ namespace Pacientes
             catch (FormatException)
             {
                 MessageBox.Show("Ingrese correctamente la informacion");
+            }
+        }
+
+        private void dgvPacientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya seleccionado una fila válida
+            { 
+                DataGridViewRow row = dgvPacientes.Rows[e.RowIndex];
+                txtCodigo.Text = row.Cells["id_Paciente"].Value.ToString();
+                txtNombre.Text = row.Cells["nombre"].Value.ToString();
+                txtApellido.Text = row.Cells["apellido"].Value.ToString(); 
+                txtEdad.Text = row.Cells["edad"].Value.ToString();
+                txtDireccion.Text = row.Cells["direccion"].Value.ToString(); 
             }
         }
     }

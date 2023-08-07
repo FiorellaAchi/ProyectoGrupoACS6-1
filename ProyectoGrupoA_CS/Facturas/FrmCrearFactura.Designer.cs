@@ -46,7 +46,6 @@
             this.txtInsumo = new System.Windows.Forms.TextBox();
             this.txtServicio = new System.Windows.Forms.TextBox();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.lblFechaSeleccionada = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.lblDomicilio = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -62,7 +61,7 @@
             this.BtnIngresar.FlatAppearance.BorderSize = 0;
             this.BtnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnIngresar.Image")));
-            this.BtnIngresar.Location = new System.Drawing.Point(337, 281);
+            this.BtnIngresar.Location = new System.Drawing.Point(185, 640);
             this.BtnIngresar.Name = "BtnIngresar";
             this.BtnIngresar.Size = new System.Drawing.Size(91, 76);
             this.BtnIngresar.TabIndex = 0;
@@ -82,10 +81,10 @@
             // lblGenerarFacturas
             // 
             this.lblGenerarFacturas.AutoSize = true;
-            this.lblGenerarFacturas.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblGenerarFacturas.Location = new System.Drawing.Point(93, 21);
+            this.lblGenerarFacturas.Font = new System.Drawing.Font("Book Antiqua", 16F, System.Drawing.FontStyle.Bold);
+            this.lblGenerarFacturas.Location = new System.Drawing.Point(81, 14);
             this.lblGenerarFacturas.Name = "lblGenerarFacturas";
-            this.lblGenerarFacturas.Size = new System.Drawing.Size(183, 23);
+            this.lblGenerarFacturas.Size = new System.Drawing.Size(262, 32);
             this.lblGenerarFacturas.TabIndex = 4;
             this.lblGenerarFacturas.Text = "Generando facturas";
             // 
@@ -151,11 +150,10 @@
             // 
             // TxtCodigo
             // 
-            this.TxtCodigo.Location = new System.Drawing.Point(114, 79);
+            this.TxtCodigo.Location = new System.Drawing.Point(120, 79);
             this.TxtCodigo.Name = "TxtCodigo";
             this.TxtCodigo.Size = new System.Drawing.Size(147, 22);
             this.TxtCodigo.TabIndex = 11;
-            this.TxtCodigo.TextChanged += new System.EventHandler(this.TxtCodigo_TextChanged);
             // 
             // TxtCedula
             // 
@@ -163,7 +161,6 @@
             this.TxtCedula.Name = "TxtCedula";
             this.TxtCedula.Size = new System.Drawing.Size(147, 22);
             this.TxtCedula.TabIndex = 12;
-            this.TxtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCedula_KeyPress);
             // 
             // txtConductorID
             // 
@@ -171,7 +168,6 @@
             this.txtConductorID.Name = "txtConductorID";
             this.txtConductorID.Size = new System.Drawing.Size(147, 22);
             this.txtConductorID.TabIndex = 13;
-            this.txtConductorID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombre_KeyPress);
             // 
             // DTPEmision
             // 
@@ -186,18 +182,17 @@
             this.TxtAmbulancia.Name = "TxtAmbulancia";
             this.TxtAmbulancia.Size = new System.Drawing.Size(147, 22);
             this.TxtAmbulancia.TabIndex = 15;
-            this.TxtAmbulancia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefono_KeyPress);
             // 
             // txtInsumo
             // 
-            this.txtInsumo.Location = new System.Drawing.Point(165, 303);
+            this.txtInsumo.Location = new System.Drawing.Point(175, 303);
             this.txtInsumo.Name = "txtInsumo";
             this.txtInsumo.Size = new System.Drawing.Size(147, 22);
             this.txtInsumo.TabIndex = 16;
             // 
             // txtServicio
             // 
-            this.txtServicio.Location = new System.Drawing.Point(165, 356);
+            this.txtServicio.Location = new System.Drawing.Point(175, 356);
             this.txtServicio.Name = "txtServicio";
             this.txtServicio.Size = new System.Drawing.Size(147, 22);
             this.txtServicio.TabIndex = 17;
@@ -214,19 +209,9 @@
             this.BtnSalir.UseVisualStyleBackColor = true;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // lblFechaSeleccionada
-            // 
-            this.lblFechaSeleccionada.AutoSize = true;
-            this.lblFechaSeleccionada.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblFechaSeleccionada.Location = new System.Drawing.Point(137, 442);
-            this.lblFechaSeleccionada.Name = "lblFechaSeleccionada";
-            this.lblFechaSeleccionada.Size = new System.Drawing.Size(15, 23);
-            this.lblFechaSeleccionada.TabIndex = 19;
-            this.lblFechaSeleccionada.Text = ".";
-            // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(172, 490);
+            this.txtDomicilio.Location = new System.Drawing.Point(175, 466);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(147, 22);
             this.txtDomicilio.TabIndex = 20;
@@ -235,7 +220,7 @@
             // 
             this.lblDomicilio.AutoSize = true;
             this.lblDomicilio.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDomicilio.Location = new System.Drawing.Point(35, 490);
+            this.lblDomicilio.Location = new System.Drawing.Point(35, 464);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(102, 23);
             this.lblDomicilio.TabIndex = 21;
@@ -245,7 +230,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDescripcion.Location = new System.Drawing.Point(35, 535);
+            this.lblDescripcion.Location = new System.Drawing.Point(35, 509);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(119, 23);
             this.lblDescripcion.TabIndex = 22;
@@ -253,14 +238,14 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(172, 535);
+            this.txtDescripcion.Location = new System.Drawing.Point(175, 509);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(147, 22);
             this.txtDescripcion.TabIndex = 23;
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(175, 581);
+            this.txtSubtotal.Location = new System.Drawing.Point(175, 556);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(147, 22);
             this.txtSubtotal.TabIndex = 25;
@@ -269,7 +254,7 @@
             // 
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblSubtotal.Location = new System.Drawing.Point(35, 581);
+            this.lblSubtotal.Location = new System.Drawing.Point(35, 555);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(90, 23);
             this.lblSubtotal.TabIndex = 24;
@@ -297,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(440, 737);
+            this.ClientSize = new System.Drawing.Size(397, 737);
             this.Controls.Add(this.txtIDPaciente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSubtotal);
@@ -306,7 +291,6 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblDomicilio);
             this.Controls.Add(this.txtDomicilio);
-            this.Controls.Add(this.lblFechaSeleccionada);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.txtServicio);
             this.Controls.Add(this.txtInsumo);
@@ -352,7 +336,6 @@
         private System.Windows.Forms.TextBox txtInsumo;
         private System.Windows.Forms.TextBox txtServicio;
         private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.Label lblFechaSeleccionada;
         private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Label lblDomicilio;
         private System.Windows.Forms.Label lblDescripcion;

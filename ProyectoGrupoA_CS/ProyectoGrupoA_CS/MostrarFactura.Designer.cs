@@ -267,7 +267,7 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(106, 12);
+            this.LogoPictureBox.Location = new System.Drawing.Point(199, 12);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(238, 118);
             this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -290,7 +290,7 @@
             // 
             this.DgvFacturas.BackgroundColor = System.Drawing.Color.White;
             this.DgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvFacturas.Location = new System.Drawing.Point(536, 179);
+            this.DgvFacturas.Location = new System.Drawing.Point(627, 187);
             this.DgvFacturas.Name = "DgvFacturas";
             this.DgvFacturas.RowHeadersWidth = 51;
             this.DgvFacturas.RowTemplate.Height = 24;
@@ -382,7 +382,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 732);
+            this.ClientSize = new System.Drawing.Size(592, 732);
             this.Controls.Add(this.lblIDPaciente);
             this.Controls.Add(this.lblPaciente);
             this.Controls.Add(this.lblIDServicio);

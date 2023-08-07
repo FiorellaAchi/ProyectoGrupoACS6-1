@@ -62,11 +62,11 @@
             // 
             this.dgvPacientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPacientes.Location = new System.Drawing.Point(488, 146);
+            this.dgvPacientes.Location = new System.Drawing.Point(462, 89);
             this.dgvPacientes.Name = "dgvPacientes";
             this.dgvPacientes.RowHeadersWidth = 51;
             this.dgvPacientes.RowTemplate.Height = 24;
-            this.dgvPacientes.Size = new System.Drawing.Size(826, 283);
+            this.dgvPacientes.Size = new System.Drawing.Size(615, 292);
             this.dgvPacientes.TabIndex = 29;
             // 
             // txtDireccion
@@ -161,7 +161,7 @@
             this.BtnIngresarDatosPacientes.FlatAppearance.BorderSize = 0;
             this.BtnIngresarDatosPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnIngresarDatosPacientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnIngresarDatosPacientes.Image")));
-            this.BtnIngresarDatosPacientes.Location = new System.Drawing.Point(197, 527);
+            this.BtnIngresarDatosPacientes.Location = new System.Drawing.Point(724, 408);
             this.BtnIngresarDatosPacientes.Name = "BtnIngresarDatosPacientes";
             this.BtnIngresarDatosPacientes.Size = new System.Drawing.Size(107, 73);
             this.BtnIngresarDatosPacientes.TabIndex = 36;
@@ -172,7 +172,7 @@
             // 
             this.DateIngreso.Location = new System.Drawing.Point(179, 340);
             this.DateIngreso.Name = "DateIngreso";
-            this.DateIngreso.Size = new System.Drawing.Size(268, 37);
+            this.DateIngreso.Size = new System.Drawing.Size(258, 37);
             this.DateIngreso.TabIndex = 37;
             // 
             // txtEdad
@@ -211,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1340, 676);
+            this.ClientSize = new System.Drawing.Size(1116, 496);
             this.Controls.Add(this.BtnReturn);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.label4);

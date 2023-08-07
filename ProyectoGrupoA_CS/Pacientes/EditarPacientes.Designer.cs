@@ -190,7 +190,7 @@
             this.BtnEditarPacientes.FlatAppearance.BorderSize = 0;
             this.BtnEditarPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditarPacientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnEditarPacientes.Image")));
-            this.BtnEditarPacientes.Location = new System.Drawing.Point(393, 484);
+            this.BtnEditarPacientes.Location = new System.Drawing.Point(878, 348);
             this.BtnEditarPacientes.Name = "BtnEditarPacientes";
             this.BtnEditarPacientes.Size = new System.Drawing.Size(86, 87);
             this.BtnEditarPacientes.TabIndex = 56;
@@ -201,19 +201,20 @@
             // 
             this.dgvPacientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPacientes.Location = new System.Drawing.Point(706, 187);
+            this.dgvPacientes.Location = new System.Drawing.Point(704, 113);
             this.dgvPacientes.Name = "dgvPacientes";
             this.dgvPacientes.RowHeadersWidth = 51;
             this.dgvPacientes.RowTemplate.Height = 24;
-            this.dgvPacientes.Size = new System.Drawing.Size(641, 193);
+            this.dgvPacientes.Size = new System.Drawing.Size(502, 193);
             this.dgvPacientes.TabIndex = 57;
+            this.dgvPacientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellClick);
             // 
             // EditarPacientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1506, 619);
+            this.ClientSize = new System.Drawing.Size(1229, 461);
             this.Controls.Add(this.dgvPacientes);
             this.Controls.Add(this.BtnEditarPacientes);
             this.Controls.Add(this.BtnReturn);

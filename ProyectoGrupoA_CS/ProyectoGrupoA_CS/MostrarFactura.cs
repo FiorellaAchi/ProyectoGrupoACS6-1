@@ -34,9 +34,8 @@ namespace ProyectoGrupoA_CS
         {
             DataGridViewRow selectedRow = DgvFacturas.Rows[rowIndex];
           
-                lblFactura.Text = selectedRow.Cells["id_factura"].Value.ToString();
+                lblFactura.Text = selectedRow.Cells["id_Factura"].Value.ToString();
                 lblConductor.Text = selectedRow.Cells["nombre_conductor"].Value.ToString();
-                lblIDPaciente.Text = selectedRow.Cells["nombre_paciente"].Value.ToString();
                 lblIDConductor.Text = selectedRow.Cells["id_conductor"].Value.ToString();
                 lblIdAmbulancia.Text = selectedRow.Cells["codigo_ambulancia"].Value.ToString();
                 lblPlaca.Text = selectedRow.Cells["numero_placa"].Value.ToString();
@@ -49,7 +48,8 @@ namespace ProyectoGrupoA_CS
                 lblEmision.Text = selectedRow.Cells["emision"].Value.ToString();
                 lblSubtotal.Text = selectedRow.Cells["subtotal"].Value.ToString();
                 lblTotal.Text = selectedRow.Cells["total"].Value.ToString();
-            
+                lblIDPaciente.Text = selectedRow.Cells["nombre"].Value.ToString();
+
         }
 
         private void MostrarFactura_Load(object sender, EventArgs e)

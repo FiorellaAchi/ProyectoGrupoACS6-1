@@ -43,6 +43,8 @@ namespace Pacientes
             txtNombre.Text = "";
             txtApellido.Text = "";
             txtDireccion.Text = "";
+            txtEdad.Text = "";
+            
             
         }
 
