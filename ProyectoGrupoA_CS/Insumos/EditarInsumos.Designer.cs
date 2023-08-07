@@ -163,11 +163,10 @@
             this.BtnRegresar.FlatAppearance.BorderSize = 0;
             this.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegresar.Image")));
-            this.BtnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnRegresar.Location = new System.Drawing.Point(23, 11);
+            this.BtnRegresar.Location = new System.Drawing.Point(32, 24);
             this.BtnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnRegresar.Name = "BtnRegresar";
-            this.BtnRegresar.Size = new System.Drawing.Size(76, 73);
+            this.BtnRegresar.Size = new System.Drawing.Size(35, 33);
             this.BtnRegresar.TabIndex = 41;
             this.BtnRegresar.UseVisualStyleBackColor = true;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
@@ -182,6 +181,7 @@
             this.DgvListadoEditar.RowTemplate.Height = 24;
             this.DgvListadoEditar.Size = new System.Drawing.Size(509, 259);
             this.DgvListadoEditar.TabIndex = 42;
+            this.DgvListadoEditar.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListadoEditar_CellClick);
             // 
             // EditarInsumos
             // 

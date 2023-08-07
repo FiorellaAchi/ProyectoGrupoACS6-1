@@ -26,14 +26,18 @@ namespace Facturas
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            
+            string insumosInput = txtInsumo.Text; // Contenido de la caja de texto
+            string[] insumoIds = insumosInput.Split(','); // Separar los IDs utilizando la coma como separador
             try // Try para capturar errores de formato
             {
-                DateTime fechaSeleccionada = DTPEmision.Value; //Aqui dentro obtenemos lo que es la transformacion de datapicker a string
-                string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
-                lblFechaSeleccionada.Text = fechaFormateada; //Aqui se muestra la fecha seleccionada en el DTP
-                datos.CrearFactura(TxtCodigo.Text, TxtCedula.Text, txtConductorID.Text, TxtAmbulancia.Text, txtInsumo.Text, 
-                    txtServicio.Text, fechaFormateada, txtDomicilio.Text, txtDescripcion.Text, Convert.ToDouble(txtSubtotal.Text));
+                foreach (string insumoId in insumoIds)
+                {
+                    DateTime fechaSeleccionada = DTPEmision.Value; //Aqui dentro obtenemos lo que es la transformacion de datapicker a string
+                    string fechaFormateada = fechaSeleccionada.ToString("yyyy-MM-dd"); // Formato: AAAA-MM-DD
+                    lblFechaSeleccionada.Text = fechaFormateada; //Aqui se muestra la fecha seleccionada en el DTP
+                    datos.CrearFactura(TxtCodigo.Text, TxtCedula.Text, txtConductorID.Text, txtIDPaciente.Text, TxtAmbulancia.Text, txtInsumo.Text,
+                        txtServicio.Text, fechaFormateada, txtDomicilio.Text, txtDescripcion.Text, Convert.ToDouble(txtSubtotal.Text));
+                }
             }
             catch (FormatException)
             {
@@ -44,7 +48,16 @@ namespace Facturas
                 MessageBox.Show(ex.Message); // Mensaje de error
             }
 
-            // Limpiar los campos
+            txtInsumo.Text = ""; // Limpiar la caja de texto
+            TxtCodigo.Text= "";
+            TxtCedula.Text = "";
+            txtConductorID.Text = "";
+            txtIDPaciente.Text = "";
+            TxtAmbulancia.Text = "";
+            txtServicio.Text = "";
+            txtDomicilio.Text = "";
+            txtDescripcion.Text = "";
+            txtSubtotal.Text = "";
             
         }
 

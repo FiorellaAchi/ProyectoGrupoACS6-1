@@ -17,7 +17,7 @@ namespace ProyectoGrupoA_CS
         public MostrarFactura()
         {
             InitializeComponent();
-            dgvFacturas.DataSource = datos.ListarFactura();
+            DgvFacturas.DataSource = datos.ListarFactura();
         }
 
 
@@ -30,12 +30,13 @@ namespace ProyectoGrupoA_CS
         }
 
         
-        public void llenarFactura(int rowIndex)
+        public void LlenarFactura(int rowIndex)
         {
-            DataGridViewRow selectedRow = dgvFacturas.Rows[rowIndex];
+            DataGridViewRow selectedRow = DgvFacturas.Rows[rowIndex];
           
                 lblFactura.Text = selectedRow.Cells["id_factura"].Value.ToString();
                 lblConductor.Text = selectedRow.Cells["nombre_conductor"].Value.ToString();
+                lblIDPaciente.Text = selectedRow.Cells["nombre_paciente"].Value.ToString();
                 lblIDConductor.Text = selectedRow.Cells["id_conductor"].Value.ToString();
                 lblIdAmbulancia.Text = selectedRow.Cells["codigo_ambulancia"].Value.ToString();
                 lblPlaca.Text = selectedRow.Cells["numero_placa"].Value.ToString();
@@ -53,23 +54,23 @@ namespace ProyectoGrupoA_CS
 
         private void MostrarFactura_Load(object sender, EventArgs e)
         {
-            if (dgvFacturas.Rows.Count > 0)
+            if (DgvFacturas.Rows.Count > 0)
             {
                 int rowIndexToSelect = 0; // Índice de la fila que deseas seleccionar
-                dgvFacturas.Rows[rowIndexToSelect].Selected = true;
+                DgvFacturas.Rows[rowIndexToSelect].Selected = true;
 
                 // Luego puedes llamar a la función para mostrar los datos de la fila seleccionada
-                llenarFactura(rowIndexToSelect);
+                LlenarFactura(rowIndexToSelect);
             }
 
         }
 
-        private void dgvFacturas_SelectionChanged(object sender, EventArgs e)
+        private void DgvFacturas_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvFacturas.SelectedRows.Count > 0)
+            if (DgvFacturas.SelectedRows.Count > 0)
             {
-                int selectedRowIndex = dgvFacturas.SelectedRows[0].Index;
-                llenarFactura(selectedRowIndex);
+                int selectedRowIndex = DgvFacturas.SelectedRows[0].Index;
+                LlenarFactura(selectedRowIndex);
             }
         }
     }

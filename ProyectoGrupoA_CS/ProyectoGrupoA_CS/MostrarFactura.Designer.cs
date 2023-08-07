@@ -51,15 +51,17 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.BtnRegresar = new System.Windows.Forms.Button();
-            this.dgvFacturas = new System.Windows.Forms.DataGridView();
+            this.DgvFacturas = new System.Windows.Forms.DataGridView();
             this.lblIDConductor = new System.Windows.Forms.Label();
             this.idConductorName = new System.Windows.Forms.Label();
             this.lblCodigoAmbulancia = new System.Windows.Forms.Label();
             this.lblIdAmbulancia = new System.Windows.Forms.Label();
             this.lblIDInsumo = new System.Windows.Forms.Label();
             this.lblIDServicio = new System.Windows.Forms.Label();
+            this.lblPaciente = new System.Windows.Forms.Label();
+            this.lblIDPaciente = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblParaFactura
@@ -86,7 +88,7 @@
             // 
             this.lblConductorID.AutoSize = true;
             this.lblConductorID.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConductorID.Location = new System.Drawing.Point(47, 200);
+            this.lblConductorID.Location = new System.Drawing.Point(47, 226);
             this.lblConductorID.Name = "lblConductorID";
             this.lblConductorID.Size = new System.Drawing.Size(106, 24);
             this.lblConductorID.TabIndex = 2;
@@ -96,7 +98,7 @@
             // 
             this.lblAmbulancia.AutoSize = true;
             this.lblAmbulancia.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmbulancia.Location = new System.Drawing.Point(47, 244);
+            this.lblAmbulancia.Location = new System.Drawing.Point(47, 270);
             this.lblAmbulancia.Name = "lblAmbulancia";
             this.lblAmbulancia.Size = new System.Drawing.Size(125, 24);
             this.lblAmbulancia.TabIndex = 3;
@@ -106,7 +108,7 @@
             // 
             this.lblInsumosUtilizados.AutoSize = true;
             this.lblInsumosUtilizados.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsumosUtilizados.Location = new System.Drawing.Point(47, 296);
+            this.lblInsumosUtilizados.Location = new System.Drawing.Point(47, 322);
             this.lblInsumosUtilizados.Name = "lblInsumosUtilizados";
             this.lblInsumosUtilizados.Size = new System.Drawing.Size(188, 24);
             this.lblInsumosUtilizados.TabIndex = 4;
@@ -116,7 +118,7 @@
             // 
             this.ServiciosOcupados.AutoSize = true;
             this.ServiciosOcupados.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServiciosOcupados.Location = new System.Drawing.Point(47, 341);
+            this.ServiciosOcupados.Location = new System.Drawing.Point(47, 367);
             this.ServiciosOcupados.Name = "ServiciosOcupados";
             this.ServiciosOcupados.Size = new System.Drawing.Size(95, 24);
             this.ServiciosOcupados.TabIndex = 5;
@@ -126,7 +128,7 @@
             // 
             this.lblDomicilioCliente.AutoSize = true;
             this.lblDomicilioCliente.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDomicilioCliente.Location = new System.Drawing.Point(47, 384);
+            this.lblDomicilioCliente.Location = new System.Drawing.Point(47, 410);
             this.lblDomicilioCliente.Name = "lblDomicilioCliente";
             this.lblDomicilioCliente.Size = new System.Drawing.Size(103, 24);
             this.lblDomicilioCliente.TabIndex = 6;
@@ -136,7 +138,7 @@
             // 
             this.lblDescripcionFactura.AutoSize = true;
             this.lblDescripcionFactura.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionFactura.Location = new System.Drawing.Point(47, 423);
+            this.lblDescripcionFactura.Location = new System.Drawing.Point(47, 449);
             this.lblDescripcionFactura.Name = "lblDescripcionFactura";
             this.lblDescripcionFactura.Size = new System.Drawing.Size(121, 24);
             this.lblDescripcionFactura.TabIndex = 7;
@@ -146,7 +148,7 @@
             // 
             this.lblEmisionFactura.AutoSize = true;
             this.lblEmisionFactura.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmisionFactura.Location = new System.Drawing.Point(47, 462);
+            this.lblEmisionFactura.Location = new System.Drawing.Point(47, 488);
             this.lblEmisionFactura.Name = "lblEmisionFactura";
             this.lblEmisionFactura.Size = new System.Drawing.Size(88, 24);
             this.lblEmisionFactura.TabIndex = 8;
@@ -156,7 +158,7 @@
             // 
             this.lblSubtotalFactura.AutoSize = true;
             this.lblSubtotalFactura.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotalFactura.Location = new System.Drawing.Point(47, 502);
+            this.lblSubtotalFactura.Location = new System.Drawing.Point(47, 528);
             this.lblSubtotalFactura.Name = "lblSubtotalFactura";
             this.lblSubtotalFactura.Size = new System.Drawing.Size(132, 24);
             this.lblSubtotalFactura.TabIndex = 9;
@@ -166,7 +168,7 @@
             // 
             this.lblTotalAPagarFactura.AutoSize = true;
             this.lblTotalAPagarFactura.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAPagarFactura.Location = new System.Drawing.Point(47, 552);
+            this.lblTotalAPagarFactura.Location = new System.Drawing.Point(47, 578);
             this.lblTotalAPagarFactura.Name = "lblTotalAPagarFactura";
             this.lblTotalAPagarFactura.Size = new System.Drawing.Size(61, 24);
             this.lblTotalAPagarFactura.TabIndex = 10;
@@ -176,7 +178,7 @@
             // 
             this.lblConductor.AutoSize = true;
             this.lblConductor.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConductor.Location = new System.Drawing.Point(252, 200);
+            this.lblConductor.Location = new System.Drawing.Point(252, 226);
             this.lblConductor.Name = "lblConductor";
             this.lblConductor.Size = new System.Drawing.Size(15, 24);
             this.lblConductor.TabIndex = 11;
@@ -186,7 +188,7 @@
             // 
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.Location = new System.Drawing.Point(252, 244);
+            this.lblPlaca.Location = new System.Drawing.Point(252, 270);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(15, 24);
             this.lblPlaca.TabIndex = 12;
@@ -196,7 +198,7 @@
             // 
             this.lblInsumos.AutoSize = true;
             this.lblInsumos.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsumos.Location = new System.Drawing.Point(252, 292);
+            this.lblInsumos.Location = new System.Drawing.Point(252, 318);
             this.lblInsumos.Name = "lblInsumos";
             this.lblInsumos.Size = new System.Drawing.Size(15, 24);
             this.lblInsumos.TabIndex = 13;
@@ -206,7 +208,7 @@
             // 
             this.lblServicios.AutoSize = true;
             this.lblServicios.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServicios.Location = new System.Drawing.Point(252, 341);
+            this.lblServicios.Location = new System.Drawing.Point(252, 367);
             this.lblServicios.Name = "lblServicios";
             this.lblServicios.Size = new System.Drawing.Size(15, 24);
             this.lblServicios.TabIndex = 14;
@@ -216,7 +218,7 @@
             // 
             this.lblDomicilio.AutoSize = true;
             this.lblDomicilio.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDomicilio.Location = new System.Drawing.Point(252, 384);
+            this.lblDomicilio.Location = new System.Drawing.Point(252, 410);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(15, 24);
             this.lblDomicilio.TabIndex = 15;
@@ -226,7 +228,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(252, 423);
+            this.lblDescripcion.Location = new System.Drawing.Point(252, 449);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(15, 24);
             this.lblDescripcion.TabIndex = 16;
@@ -236,7 +238,7 @@
             // 
             this.lblEmision.AutoSize = true;
             this.lblEmision.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmision.Location = new System.Drawing.Point(252, 462);
+            this.lblEmision.Location = new System.Drawing.Point(252, 488);
             this.lblEmision.Name = "lblEmision";
             this.lblEmision.Size = new System.Drawing.Size(15, 24);
             this.lblEmision.TabIndex = 17;
@@ -246,7 +248,7 @@
             // 
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotal.Location = new System.Drawing.Point(252, 502);
+            this.lblSubtotal.Location = new System.Drawing.Point(252, 528);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(15, 24);
             this.lblSubtotal.TabIndex = 18;
@@ -256,7 +258,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(252, 552);
+            this.lblTotal.Location = new System.Drawing.Point(252, 578);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(15, 24);
             this.lblTotal.TabIndex = 19;
@@ -265,7 +267,7 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(136, 12);
+            this.LogoPictureBox.Location = new System.Drawing.Point(106, 12);
             this.LogoPictureBox.Name = "LogoPictureBox";
             this.LogoPictureBox.Size = new System.Drawing.Size(238, 118);
             this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -284,17 +286,17 @@
             this.BtnRegresar.UseVisualStyleBackColor = true;
             this.BtnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click_1);
             // 
-            // dgvFacturas
+            // DgvFacturas
             // 
-            this.dgvFacturas.BackgroundColor = System.Drawing.Color.White;
-            this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(424, 178);
-            this.dgvFacturas.Name = "dgvFacturas";
-            this.dgvFacturas.RowHeadersWidth = 51;
-            this.dgvFacturas.RowTemplate.Height = 24;
-            this.dgvFacturas.Size = new System.Drawing.Size(252, 155);
-            this.dgvFacturas.TabIndex = 22;
-            this.dgvFacturas.SelectionChanged += new System.EventHandler(this.dgvFacturas_SelectionChanged);
+            this.DgvFacturas.BackgroundColor = System.Drawing.Color.White;
+            this.DgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvFacturas.Location = new System.Drawing.Point(536, 179);
+            this.DgvFacturas.Name = "DgvFacturas";
+            this.DgvFacturas.RowHeadersWidth = 51;
+            this.DgvFacturas.RowTemplate.Height = 24;
+            this.DgvFacturas.Size = new System.Drawing.Size(252, 155);
+            this.DgvFacturas.TabIndex = 22;
+            this.DgvFacturas.SelectionChanged += new System.EventHandler(this.DgvFacturas_SelectionChanged);
             // 
             // lblIDConductor
             // 
@@ -356,18 +358,40 @@
             this.lblIDServicio.TabIndex = 29;
             this.lblIDServicio.Text = "Servicios:";
             // 
+            // lblPaciente
+            // 
+            this.lblPaciente.AutoSize = true;
+            this.lblPaciente.Font = new System.Drawing.Font("Book Antiqua", 12F);
+            this.lblPaciente.Location = new System.Drawing.Point(49, 189);
+            this.lblPaciente.Name = "lblPaciente";
+            this.lblPaciente.Size = new System.Drawing.Size(86, 24);
+            this.lblPaciente.TabIndex = 30;
+            this.lblPaciente.Text = "Paciente";
+            // 
+            // lblIDPaciente
+            // 
+            this.lblIDPaciente.AutoSize = true;
+            this.lblIDPaciente.Font = new System.Drawing.Font("Book Antiqua", 12F);
+            this.lblIDPaciente.Location = new System.Drawing.Point(252, 189);
+            this.lblIDPaciente.Name = "lblIDPaciente";
+            this.lblIDPaciente.Size = new System.Drawing.Size(15, 24);
+            this.lblIDPaciente.TabIndex = 31;
+            this.lblIDPaciente.Text = ".";
+            // 
             // MostrarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 678);
+            this.ClientSize = new System.Drawing.Size(406, 732);
+            this.Controls.Add(this.lblIDPaciente);
+            this.Controls.Add(this.lblPaciente);
             this.Controls.Add(this.lblIDServicio);
             this.Controls.Add(this.lblIDInsumo);
             this.Controls.Add(this.lblIdAmbulancia);
             this.Controls.Add(this.lblCodigoAmbulancia);
             this.Controls.Add(this.idConductorName);
             this.Controls.Add(this.lblIDConductor);
-            this.Controls.Add(this.dgvFacturas);
+            this.Controls.Add(this.DgvFacturas);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.LogoPictureBox);
             this.Controls.Add(this.lblTotal);
@@ -397,7 +421,7 @@
             this.Text = "MostrarFactura";
             this.Load += new System.EventHandler(this.MostrarFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvFacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,12 +451,14 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.Button BtnRegresar;
-        private System.Windows.Forms.DataGridView dgvFacturas;
+        private System.Windows.Forms.DataGridView DgvFacturas;
         private System.Windows.Forms.Label lblIDConductor;
         private System.Windows.Forms.Label idConductorName;
         private System.Windows.Forms.Label lblCodigoAmbulancia;
         private System.Windows.Forms.Label lblIdAmbulancia;
         private System.Windows.Forms.Label lblIDInsumo;
         private System.Windows.Forms.Label lblIDServicio;
+        private System.Windows.Forms.Label lblPaciente;
+        private System.Windows.Forms.Label lblIDPaciente;
     }
 }

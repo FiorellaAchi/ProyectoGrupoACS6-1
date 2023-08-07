@@ -85,6 +85,7 @@
             this.dgvAmbulancia.RowTemplate.Height = 24;
             this.dgvAmbulancia.Size = new System.Drawing.Size(557, 272);
             this.dgvAmbulancia.TabIndex = 43;
+            this.dgvAmbulancia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAmbulancia_CellClick);
             // 
             // BtnRegresar
             // 

@@ -227,7 +227,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(407, 35);
             this.label10.TabIndex = 30;
-            this.label10.Text = "CREACION DE USUARIOS";
+            this.label10.Text = "CREACIÓN DE USUARIOS";
             // 
             // DGVUsuario
             // 

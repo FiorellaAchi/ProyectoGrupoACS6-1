@@ -46,14 +46,14 @@
             this.dgvAmbulancia.Name = "dgvAmbulancia";
             this.dgvAmbulancia.RowHeadersWidth = 51;
             this.dgvAmbulancia.RowTemplate.Height = 24;
-            this.dgvAmbulancia.Size = new System.Drawing.Size(693, 351);
+            this.dgvAmbulancia.Size = new System.Drawing.Size(553, 234);
             this.dgvAmbulancia.TabIndex = 0;
             // 
             // LblMenu
             // 
             this.LblMenu.AutoSize = true;
             this.LblMenu.Font = new System.Drawing.Font("Book Antiqua", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMenu.Location = new System.Drawing.Point(370, 28);
+            this.LblMenu.Location = new System.Drawing.Point(258, 20);
             this.LblMenu.Name = "LblMenu";
             this.LblMenu.Size = new System.Drawing.Size(186, 29);
             this.LblMenu.TabIndex = 1;
@@ -105,7 +105,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(775, 591);
+            this.ClientSize = new System.Drawing.Size(652, 496);
             this.Controls.Add(this.BtnRegresar);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.txtCodigoAEliminar);

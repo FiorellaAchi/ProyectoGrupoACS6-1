@@ -58,7 +58,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::Conductor.Properties.Resources.atras__1_;
             this.button2.Location = new System.Drawing.Point(28, 30);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(55, 46);
             this.button2.TabIndex = 39;
@@ -82,7 +82,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Conductor.Properties.Resources.Modificar;
             this.button1.Location = new System.Drawing.Point(1159, 136);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 97);
             this.button1.TabIndex = 37;
@@ -92,7 +92,7 @@
             // txtDiasLaborados
             // 
             this.txtDiasLaborados.Location = new System.Drawing.Point(717, 309);
-            this.txtDiasLaborados.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDiasLaborados.Margin = new System.Windows.Forms.Padding(5);
             this.txtDiasLaborados.Name = "txtDiasLaborados";
             this.txtDiasLaborados.Size = new System.Drawing.Size(396, 22);
             this.txtDiasLaborados.TabIndex = 36;
@@ -100,7 +100,7 @@
             // txtUnidad
             // 
             this.txtUnidad.Location = new System.Drawing.Point(717, 233);
-            this.txtUnidad.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUnidad.Margin = new System.Windows.Forms.Padding(5);
             this.txtUnidad.Name = "txtUnidad";
             this.txtUnidad.Size = new System.Drawing.Size(396, 22);
             this.txtUnidad.TabIndex = 35;
@@ -108,7 +108,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(717, 167);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(5);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(396, 22);
             this.txtDireccion.TabIndex = 34;
@@ -116,7 +116,7 @@
             // txtLicencia
             // 
             this.txtLicencia.Location = new System.Drawing.Point(717, 96);
-            this.txtLicencia.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtLicencia.Margin = new System.Windows.Forms.Padding(5);
             this.txtLicencia.Name = "txtLicencia";
             this.txtLicencia.Size = new System.Drawing.Size(396, 22);
             this.txtLicencia.TabIndex = 33;
@@ -124,7 +124,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(121, 309);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(5);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(396, 22);
             this.txtTelefono.TabIndex = 32;
@@ -132,7 +132,7 @@
             // txtCedula
             // 
             this.txtCedula.Location = new System.Drawing.Point(121, 233);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(5);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(396, 22);
             this.txtCedula.TabIndex = 31;
@@ -140,7 +140,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(121, 167);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(396, 22);
             this.txtNombre.TabIndex = 30;
@@ -148,7 +148,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(121, 101);
-            this.txtId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtId.Margin = new System.Windows.Forms.Padding(5);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(396, 22);
             this.txtId.TabIndex = 29;
@@ -262,6 +262,7 @@
             this.dgvConductores.RowTemplate.Height = 24;
             this.dgvConductores.Size = new System.Drawing.Size(946, 238);
             this.dgvConductores.TabIndex = 40;
+            this.dgvConductores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConductores_CellClick);
             // 
             // FrmModificarCond
             // 
@@ -291,7 +292,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmModificarCond";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormModificarCond";

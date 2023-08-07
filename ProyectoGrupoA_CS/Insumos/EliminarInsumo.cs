@@ -34,6 +34,7 @@ namespace Insumos
             try
             {
                 DgvListadoEliminar.DataSource = datos.ListarInsumos();
+                txtInsumo.Text = "";
             }
             catch (Exception ex)
             {

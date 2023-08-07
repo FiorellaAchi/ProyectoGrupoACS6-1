@@ -46,6 +46,12 @@ namespace Insumos
             }
 
             MessageBox.Show("Insumo agregado correctamente");
+
+            //Se limpian los campos de texto
+            txtCodigo.Text = ""; 
+            txtInsumo.Text = "";
+            txtProveedor.Text = "";
+            CmbEstado.Text = "";
         }
     }
 }

@@ -18,6 +18,9 @@ namespace Ambulancias
         {
             InitializeComponent();
             dgvAmbulancia.DataSource = Datos.ListarAmbulancias(); //Muestra los datos de la tabla en el DataGridView
+            dgvAmbulancia.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //Selecciona toda la fila
+            dgvAmbulancia.CellClick += dgvAmbulancia_CellClick; //Agrega un evento al DGV
+
         }
 
         private void BtnRegresar_Click(object sender, EventArgs e)
@@ -35,6 +38,20 @@ namespace Ambulancias
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
+        private void dgvAmbulancia_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya seleccionado una fila válida
+            {
+                DataGridViewRow row = dgvAmbulancia.Rows[e.RowIndex];
+                txtCodigo.Text = row.Cells["codigo"].Value.ToString();
+                txtMarcaAmbulancias.Text = row.Cells["marca"].Value.ToString();
+                txtPlaca.Text = row.Cells["numero_placa"].Value.ToString();
+                txtAnioAmbulancia.Text = row.Cells["anio"].Value.ToString();
+                txtConductorID.Text = row.Cells["nombre_conductor"].Value.ToString();
+                
             }
         }
     }

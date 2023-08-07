@@ -147,9 +147,9 @@
             this.label6.Location = new System.Drawing.Point(207, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(241, 35);
+            this.label6.Size = new System.Drawing.Size(375, 35);
             this.label6.TabIndex = 22;
-            this.label6.Text = "Menu Modificar";
+            this.label6.Text = "MODIFICAR USUARIOS";
             // 
             // label7
             // 
@@ -215,6 +215,7 @@
             this.DGVUsuarios.RowTemplate.Height = 24;
             this.DGVUsuarios.Size = new System.Drawing.Size(762, 373);
             this.DGVUsuarios.TabIndex = 29;
+            this.DGVUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVUsuarios_CellClick);
             // 
             // label9
             // 

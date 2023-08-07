@@ -53,6 +53,8 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.lblSubtotal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIDPaciente = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // BtnIngresar
@@ -101,7 +103,7 @@
             // 
             this.LblIdConductores.AutoSize = true;
             this.LblIdConductores.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.LblIdConductores.Location = new System.Drawing.Point(26, 176);
+            this.LblIdConductores.Location = new System.Drawing.Point(25, 172);
             this.LblIdConductores.Name = "LblIdConductores";
             this.LblIdConductores.Size = new System.Drawing.Size(132, 23);
             this.LblIdConductores.TabIndex = 6;
@@ -111,7 +113,7 @@
             // 
             this.lblEmision.AutoSize = true;
             this.lblEmision.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblEmision.Location = new System.Drawing.Point(28, 391);
+            this.lblEmision.Location = new System.Drawing.Point(28, 413);
             this.lblEmision.Name = "lblEmision";
             this.lblEmision.Size = new System.Drawing.Size(87, 23);
             this.lblEmision.TabIndex = 7;
@@ -121,7 +123,7 @@
             // 
             this.lblAmbulancia.AutoSize = true;
             this.lblAmbulancia.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblAmbulancia.Location = new System.Drawing.Point(28, 230);
+            this.lblAmbulancia.Location = new System.Drawing.Point(28, 252);
             this.lblAmbulancia.Name = "lblAmbulancia";
             this.lblAmbulancia.Size = new System.Drawing.Size(188, 23);
             this.lblAmbulancia.TabIndex = 8;
@@ -131,7 +133,7 @@
             // 
             this.lblInsumo.AutoSize = true;
             this.lblInsumo.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblInsumo.Location = new System.Drawing.Point(28, 281);
+            this.lblInsumo.Location = new System.Drawing.Point(28, 303);
             this.lblInsumo.Name = "lblInsumo";
             this.lblInsumo.Size = new System.Drawing.Size(106, 23);
             this.lblInsumo.TabIndex = 9;
@@ -141,7 +143,7 @@
             // 
             this.lblServicio.AutoSize = true;
             this.lblServicio.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblServicio.Location = new System.Drawing.Point(28, 334);
+            this.lblServicio.Location = new System.Drawing.Point(28, 356);
             this.lblServicio.Name = "lblServicio";
             this.lblServicio.Size = new System.Drawing.Size(114, 23);
             this.lblServicio.TabIndex = 10;
@@ -165,7 +167,7 @@
             // 
             // txtConductorID
             // 
-            this.txtConductorID.Location = new System.Drawing.Point(165, 176);
+            this.txtConductorID.Location = new System.Drawing.Point(164, 172);
             this.txtConductorID.Name = "txtConductorID";
             this.txtConductorID.Size = new System.Drawing.Size(147, 22);
             this.txtConductorID.TabIndex = 13;
@@ -173,14 +175,14 @@
             // 
             // DTPEmision
             // 
-            this.DTPEmision.Location = new System.Drawing.Point(140, 391);
+            this.DTPEmision.Location = new System.Drawing.Point(140, 413);
             this.DTPEmision.Name = "DTPEmision";
             this.DTPEmision.Size = new System.Drawing.Size(182, 22);
             this.DTPEmision.TabIndex = 14;
             // 
             // TxtAmbulancia
             // 
-            this.TxtAmbulancia.Location = new System.Drawing.Point(222, 232);
+            this.TxtAmbulancia.Location = new System.Drawing.Point(222, 254);
             this.TxtAmbulancia.Name = "TxtAmbulancia";
             this.TxtAmbulancia.Size = new System.Drawing.Size(147, 22);
             this.TxtAmbulancia.TabIndex = 15;
@@ -188,14 +190,14 @@
             // 
             // txtInsumo
             // 
-            this.txtInsumo.Location = new System.Drawing.Point(165, 281);
+            this.txtInsumo.Location = new System.Drawing.Point(165, 303);
             this.txtInsumo.Name = "txtInsumo";
             this.txtInsumo.Size = new System.Drawing.Size(147, 22);
             this.txtInsumo.TabIndex = 16;
             // 
             // txtServicio
             // 
-            this.txtServicio.Location = new System.Drawing.Point(165, 334);
+            this.txtServicio.Location = new System.Drawing.Point(165, 356);
             this.txtServicio.Name = "txtServicio";
             this.txtServicio.Size = new System.Drawing.Size(147, 22);
             this.txtServicio.TabIndex = 17;
@@ -216,7 +218,7 @@
             // 
             this.lblFechaSeleccionada.AutoSize = true;
             this.lblFechaSeleccionada.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblFechaSeleccionada.Location = new System.Drawing.Point(136, 416);
+            this.lblFechaSeleccionada.Location = new System.Drawing.Point(137, 442);
             this.lblFechaSeleccionada.Name = "lblFechaSeleccionada";
             this.lblFechaSeleccionada.Size = new System.Drawing.Size(15, 23);
             this.lblFechaSeleccionada.TabIndex = 19;
@@ -224,7 +226,7 @@
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(172, 468);
+            this.txtDomicilio.Location = new System.Drawing.Point(172, 490);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(147, 22);
             this.txtDomicilio.TabIndex = 20;
@@ -233,7 +235,7 @@
             // 
             this.lblDomicilio.AutoSize = true;
             this.lblDomicilio.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDomicilio.Location = new System.Drawing.Point(35, 468);
+            this.lblDomicilio.Location = new System.Drawing.Point(35, 490);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(102, 23);
             this.lblDomicilio.TabIndex = 21;
@@ -243,7 +245,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblDescripcion.Location = new System.Drawing.Point(35, 513);
+            this.lblDescripcion.Location = new System.Drawing.Point(35, 535);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(119, 23);
             this.lblDescripcion.TabIndex = 22;
@@ -251,14 +253,14 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(172, 513);
+            this.txtDescripcion.Location = new System.Drawing.Point(172, 535);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(147, 22);
             this.txtDescripcion.TabIndex = 23;
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(175, 559);
+            this.txtSubtotal.Location = new System.Drawing.Point(175, 581);
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(147, 22);
             this.txtSubtotal.TabIndex = 25;
@@ -267,18 +269,37 @@
             // 
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblSubtotal.Location = new System.Drawing.Point(35, 559);
+            this.lblSubtotal.Location = new System.Drawing.Point(35, 581);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(90, 23);
             this.lblSubtotal.TabIndex = 24;
             this.lblSubtotal.Text = "Subtotal:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(26, 217);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 23);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Id Paciente:";
+            // 
+            // txtIDPaciente
+            // 
+            this.txtIDPaciente.Location = new System.Drawing.Point(164, 219);
+            this.txtIDPaciente.Name = "txtIDPaciente";
+            this.txtIDPaciente.Size = new System.Drawing.Size(148, 22);
+            this.txtIDPaciente.TabIndex = 27;
             // 
             // FrmCrearFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(440, 608);
+            this.ClientSize = new System.Drawing.Size(440, 737);
+            this.Controls.Add(this.txtIDPaciente);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.txtDescripcion);
@@ -338,5 +359,7 @@
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtSubtotal;
         private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtIDPaciente;
     }
 }

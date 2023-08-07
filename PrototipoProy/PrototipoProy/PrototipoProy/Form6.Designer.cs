@@ -64,9 +64,9 @@
             this.label1.Location = new System.Drawing.Point(207, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 35);
+            this.label1.Size = new System.Drawing.Size(347, 35);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Eliminar usuario";
+            this.label1.Text = "ELIMINAR USUARIOS";
             // 
             // btnEliminarUsuario
             // 

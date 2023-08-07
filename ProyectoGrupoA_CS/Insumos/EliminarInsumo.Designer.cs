@@ -64,7 +64,6 @@
             this.BtnRegresar.FlatAppearance.BorderSize = 0;
             this.BtnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegresar.Image")));
-            this.BtnRegresar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.BtnRegresar.Location = new System.Drawing.Point(38, 23);
             this.BtnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnRegresar.Name = "BtnRegresar";

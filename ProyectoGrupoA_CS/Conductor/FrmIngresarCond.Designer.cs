@@ -241,10 +241,10 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::Conductor.Properties.Resources.Registrar;
-            this.button1.Location = new System.Drawing.Point(978, 67);
+            this.button1.Location = new System.Drawing.Point(960, 86);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 79);
+            this.button1.Size = new System.Drawing.Size(85, 80);
             this.button1.TabIndex = 17;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

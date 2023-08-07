@@ -18,6 +18,8 @@ namespace Conductor
         {
             InitializeComponent();
             dgvConductores.DataSource = datos.ListarConductores(); //Lista a los conductores disponibles
+            dgvConductores.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //Selecciona toda la fila
+            dgvConductores.CellClick += dgvConductores_CellClick; //Agrega un evento al DGV
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,6 +49,22 @@ namespace Conductor
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvConductores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya seleccionado una fila válida
+            {
+                DataGridViewRow row = dgvConductores.Rows[e.RowIndex];
+                txtId.Text = row.Cells["id_conductor"].Value.ToString();
+                txtNombre.Text = row.Cells["Nombre"].Value.ToString();
+                txtCedula.Text = row.Cells["Cedula"].Value.ToString();
+                txtTelefono.Text = row.Cells["Telefono"].Value.ToString();
+                txtLicencia.Text = row.Cells["Licencia"].Value.ToString();
+                txtDireccion.Text = row.Cells["Direccion"].Value.ToString();
+                txtUnidad.Text = row.Cells["Unidad"].Value.ToString();
+                txtDiasLaborados.Text = row.Cells["DiasLaborados"].Value.ToString();
+            }
         }
     }
 }

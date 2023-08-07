@@ -250,7 +250,7 @@ namespace Data
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@codigo", codigo);
+                    command.Parameters.AddWithValue("@id_Insumo", codigo);
                     command.Parameters.AddWithValue("@insumo", insumo);
                     command.Parameters.AddWithValue("@fecha", fecha);
                     command.Parameters.AddWithValue("@proveedor", proveedor);
@@ -312,7 +312,7 @@ namespace Data
             }
         }
 
-        public void CrearFactura(string id_factura, string cedula, string id_conductor, string codigo_ambulancia, string id_consumo, string codigo_servicio, string emision,
+        public void CrearFactura(string id_factura, string cedula, string id_conductor,string paciente, string codigo_ambulancia, string id_consumo, string codigo_servicio, string emision,
             string domicilio, string descripcion, double subtotal)
         {
             String nombreSp = "sp_crear_factura";
@@ -324,6 +324,7 @@ namespace Data
                     command.Parameters.AddWithValue("@id_factura", id_factura);
                     command.Parameters.AddWithValue("@cedula", cedula);
                     command.Parameters.AddWithValue("@id_conductor", id_conductor);
+                    command.Parameters.AddWithValue("@id_paciente", paciente);
                     command.Parameters.AddWithValue("@codigo_ambulancia", codigo_ambulancia);
                     command.Parameters.AddWithValue("@id_insumo", id_consumo);
                     command.Parameters.AddWithValue("@codigo_servicio", codigo_servicio);
