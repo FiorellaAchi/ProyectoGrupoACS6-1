@@ -17,11 +17,15 @@ namespace ProyectoGrupoA_CS
 {
     public partial class MostrarFactura : Form
     {
-        Datos datos = new Datos();
+        Datos datos = new Datos(); // Instancia de la clase Datos
+        private Random random = new Random(); // Instancia de la clase Random
+        private int totalFacturas;  // Variable para almacenar el total de facturas
         public MostrarFactura()
         {
             InitializeComponent();
-            DgvFacturas.DataSource = datos.ListarFactura();
+            DataTable facturasTable = datos.ListarFactura(); // Llamada al método ListarFactura de la clase Datos
+            DgvFacturas.DataSource = facturasTable; // Asignación de la tabla devuelta por el método ListarFactura al DataGridView
+            totalFacturas = facturasTable.Rows.Count; // Asignación del total de facturas
         }
 
 
@@ -58,20 +62,16 @@ namespace ProyectoGrupoA_CS
 
         private void MostrarFactura_Load(object sender, EventArgs e)
         {
-            if (DgvFacturas.Rows.Count > 0)
-            {
-                int rowIndexToSelect = 0; // Índice de la fila que deseas seleccionar
-                DgvFacturas.Rows[rowIndexToSelect].Selected = true;
-
-                // Luego puedes llamar a la función para mostrar los datos de la fila seleccionada
-                LlenarFactura(rowIndexToSelect);
-            }
+            // Seleccionar una factura aleatoria al cargar el formulario
+            int randomIndex = random.Next(0, totalFacturas);
+            DgvFacturas.Rows[randomIndex].Selected = true;
+            LlenarFactura(randomIndex);
 
         }
 
         private void DgvFacturas_SelectionChanged(object sender, EventArgs e)
         {
-            if (DgvFacturas.SelectedRows.Count > 0)
+            if (DgvFacturas.SelectedRows.Count > 0) // Verificar que se haya seleccionado una fila
             {
                 int selectedRowIndex = DgvFacturas.SelectedRows[0].Index;
                 LlenarFactura(selectedRowIndex);
@@ -80,15 +80,16 @@ namespace ProyectoGrupoA_CS
 
         private void GenerarPDF(string outputPath)
         {
-            Document doc = new Document();
+            Document doc = new Document(); // Instancia de la clase Document
 
             try
             {
-                PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(outputPath, FileMode.Create));
-                doc.Open();
+                PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(outputPath, FileMode.Create)); // Instancia de la clase PdfWriter
+                doc.Open(); // Abrir el PDF
 
                 // Agregar contenido al PDF
                 doc.Add(new Paragraph($"Factura: {lblFactura.Text}"));
+                doc.Add(new Paragraph($"Nombre del Paciente: {lblIDPaciente.Text}")); // Agregar un párrafo al PDF
                 doc.Add(new Paragraph($"Conductor: {lblConductor.Text}"));
                 doc.Add(new Paragraph($"ID Conductor: {lblIDConductor.Text}"));
                 doc.Add(new Paragraph($"ID Ambulancia: {lblIdAmbulancia.Text}"));
@@ -102,24 +103,36 @@ namespace ProyectoGrupoA_CS
                 doc.Add(new Paragraph($"Emisión: {lblEmision.Text}"));
                 doc.Add(new Paragraph($"Subtotal: {lblSubtotal.Text}"));
                 doc.Add(new Paragraph($"Total: {lblTotal.Text}"));
-                doc.Add(new Paragraph($"ID Paciente: {lblIDPaciente.Text}"));
+               
 
-                doc.Close();
+                doc.Close(); // Cerrar el PDF
 
-                MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("PDF generado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information); // Mostrar mensaje de éxito
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al generar el PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // Mostrar mensaje de error
             }
         }
 
         private void BtnGenerarFactura_Click(object sender, EventArgs e)
         {
-            string baseFolderPath = @"C:\Users\Usuario\Desktop";
-            string fileName = "Factura.pdf";
+            string baseFolderPath = @"C:\Users\Usuario\Desktop"; // Ruta de la carpeta donde se guardará el PDF
+            string fileNameFormat = "Factura{0:D4}.pdf"; // Formato del nombre de archivo
+            int fileCounter = 1; // Contador para los nombres de archivo
+
+            string fileName = GetNextFileName();
             string outputPath = Path.Combine(baseFolderPath, fileName);
             GenerarPDF(outputPath);
+        }
+
+        string GetNextFileName()
+        {
+            string fileNameFormat = "Factura{0:D4}.pdf"; // Formato del nombre de archivo
+            int fileCounter = 1; // Contador para los nombres de archivo
+            string fileName = string.Format(fileNameFormat, fileCounter);
+            fileCounter++;
+            return fileName;
         }
     }
 }
