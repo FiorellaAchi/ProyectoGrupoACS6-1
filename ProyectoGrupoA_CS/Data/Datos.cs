@@ -399,9 +399,9 @@ namespace Data
 
         public void EliminarServicio() //Elimina los servicios
         {
-            String nombre = userName;
-            String nombreSp = "sp_eliminar_servicios";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            string nombre = userName;
+            string nombreSp = "sp_eliminar_servicios";
+            using(SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(nombreSp, connection))
                 {
