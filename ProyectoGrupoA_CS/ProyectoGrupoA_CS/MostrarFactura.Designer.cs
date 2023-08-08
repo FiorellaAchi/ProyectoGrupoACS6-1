@@ -60,6 +60,7 @@
             this.lblIDServicio = new System.Windows.Forms.Label();
             this.lblPaciente = new System.Windows.Forms.Label();
             this.lblIDPaciente = new System.Windows.Forms.Label();
+            this.BtnGenerarFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvFacturas)).BeginInit();
             this.SuspendLayout();
@@ -378,11 +379,24 @@
             this.lblIDPaciente.TabIndex = 31;
             this.lblIDPaciente.Text = ".";
             // 
+            // BtnGenerarFactura
+            // 
+            this.BtnGenerarFactura.FlatAppearance.BorderSize = 0;
+            this.BtnGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGenerarFactura.Image = ((System.Drawing.Image)(resources.GetObject("BtnGenerarFactura.Image")));
+            this.BtnGenerarFactura.Location = new System.Drawing.Point(199, 650);
+            this.BtnGenerarFactura.Name = "BtnGenerarFactura";
+            this.BtnGenerarFactura.Size = new System.Drawing.Size(94, 70);
+            this.BtnGenerarFactura.TabIndex = 32;
+            this.BtnGenerarFactura.UseVisualStyleBackColor = true;
+            this.BtnGenerarFactura.Click += new System.EventHandler(this.BtnGenerarFactura_Click);
+            // 
             // MostrarFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(592, 732);
+            this.Controls.Add(this.BtnGenerarFactura);
             this.Controls.Add(this.lblIDPaciente);
             this.Controls.Add(this.lblPaciente);
             this.Controls.Add(this.lblIDServicio);
@@ -460,5 +474,6 @@
         private System.Windows.Forms.Label lblIDServicio;
         private System.Windows.Forms.Label lblPaciente;
         private System.Windows.Forms.Label lblIDPaciente;
+        private System.Windows.Forms.Button BtnGenerarFactura;
     }
 }
