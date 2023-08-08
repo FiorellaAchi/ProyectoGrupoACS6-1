@@ -43,59 +43,6 @@ namespace Ambulancias
             }
         }
 
-        private void LblMenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblIdConductor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIdConductor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblConductor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblMarca_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMarca_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPlaca_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNumeroPlaca_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAnio_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAnio_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

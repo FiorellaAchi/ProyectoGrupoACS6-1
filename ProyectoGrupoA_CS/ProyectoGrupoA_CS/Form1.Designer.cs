@@ -53,7 +53,7 @@
             this.lblLABEL.AutoSize = true;
             this.lblLABEL.Font = new System.Drawing.Font("Book Antiqua", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLABEL.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblLABEL.Location = new System.Drawing.Point(243, 46);
+            this.lblLABEL.Location = new System.Drawing.Point(267, 37);
             this.lblLABEL.Name = "lblLABEL";
             this.lblLABEL.Size = new System.Drawing.Size(246, 41);
             this.lblLABEL.TabIndex = 0;
@@ -75,7 +75,7 @@
             this.lblAmbulancia.AutoSize = true;
             this.lblAmbulancia.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmbulancia.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAmbulancia.Location = new System.Drawing.Point(296, 210);
+            this.lblAmbulancia.Location = new System.Drawing.Point(241, 206);
             this.lblAmbulancia.Name = "lblAmbulancia";
             this.lblAmbulancia.Size = new System.Drawing.Size(148, 28);
             this.lblAmbulancia.TabIndex = 4;
@@ -97,7 +97,7 @@
             this.Salir2.AutoSize = true;
             this.Salir2.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Salir2.Location = new System.Drawing.Point(701, 363);
+            this.Salir2.Location = new System.Drawing.Point(661, 367);
             this.Salir2.Name = "Salir2";
             this.Salir2.Size = new System.Drawing.Size(59, 28);
             this.Salir2.TabIndex = 8;
@@ -108,7 +108,7 @@
             this.lblSalir.FlatAppearance.BorderSize = 0;
             this.lblSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSalir.Image = ((System.Drawing.Image)(resources.GetObject("lblSalir.Image")));
-            this.lblSalir.Location = new System.Drawing.Point(672, 266);
+            this.lblSalir.Location = new System.Drawing.Point(629, 284);
             this.lblSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblSalir.Name = "lblSalir";
             this.lblSalir.Size = new System.Drawing.Size(120, 80);
@@ -134,7 +134,7 @@
             this.btnAmbulancia.FlatAppearance.BorderSize = 0;
             this.btnAmbulancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmbulancia.Image = ((System.Drawing.Image)(resources.GetObject("btnAmbulancia.Image")));
-            this.btnAmbulancia.Location = new System.Drawing.Point(329, 137);
+            this.btnAmbulancia.Location = new System.Drawing.Point(274, 133);
             this.btnAmbulancia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAmbulancia.Name = "btnAmbulancia";
             this.btnAmbulancia.Size = new System.Drawing.Size(95, 71);
@@ -160,7 +160,7 @@
             this.BtnInsumos.FlatAppearance.BorderSize = 0;
             this.BtnInsumos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnInsumos.Image = ((System.Drawing.Image)(resources.GetObject("BtnInsumos.Image")));
-            this.BtnInsumos.Location = new System.Drawing.Point(301, 266);
+            this.BtnInsumos.Location = new System.Drawing.Point(246, 262);
             this.BtnInsumos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnInsumos.Name = "BtnInsumos";
             this.BtnInsumos.Size = new System.Drawing.Size(124, 84);
@@ -173,7 +173,7 @@
             this.LblInsumos.AutoSize = true;
             this.LblInsumos.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblInsumos.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblInsumos.Location = new System.Drawing.Point(312, 353);
+            this.LblInsumos.Location = new System.Drawing.Point(257, 349);
             this.LblInsumos.Name = "LblInsumos";
             this.LblInsumos.Size = new System.Drawing.Size(100, 28);
             this.LblInsumos.TabIndex = 10;
@@ -184,7 +184,7 @@
             this.BtnFacturas.FlatAppearance.BorderSize = 0;
             this.BtnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFacturas.Image = ((System.Drawing.Image)(resources.GetObject("BtnFacturas.Image")));
-            this.BtnFacturas.Location = new System.Drawing.Point(521, 129);
+            this.BtnFacturas.Location = new System.Drawing.Point(471, 128);
             this.BtnFacturas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnFacturas.Name = "BtnFacturas";
             this.BtnFacturas.Size = new System.Drawing.Size(100, 90);
@@ -197,7 +197,7 @@
             this.LblFacturas.AutoSize = true;
             this.LblFacturas.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblFacturas.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblFacturas.Location = new System.Drawing.Point(521, 219);
+            this.LblFacturas.Location = new System.Drawing.Point(471, 218);
             this.LblFacturas.Name = "LblFacturas";
             this.LblFacturas.Size = new System.Drawing.Size(100, 28);
             this.LblFacturas.TabIndex = 12;
@@ -208,7 +208,7 @@
             this.BtnListarServicios.FlatAppearance.BorderSize = 0;
             this.BtnListarServicios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnListarServicios.Image = ((System.Drawing.Image)(resources.GetObject("BtnListarServicios.Image")));
-            this.BtnListarServicios.Location = new System.Drawing.Point(501, 270);
+            this.BtnListarServicios.Location = new System.Drawing.Point(451, 269);
             this.BtnListarServicios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnListarServicios.Name = "BtnListarServicios";
             this.BtnListarServicios.Size = new System.Drawing.Size(120, 80);
@@ -221,7 +221,7 @@
             this.lblListar.AutoSize = true;
             this.lblListar.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblListar.Location = new System.Drawing.Point(469, 352);
+            this.lblListar.Location = new System.Drawing.Point(419, 351);
             this.lblListar.Name = "lblListar";
             this.lblListar.Size = new System.Drawing.Size(170, 28);
             this.lblListar.TabIndex = 14;
@@ -232,7 +232,7 @@
             this.BtnPacientes.FlatAppearance.BorderSize = 0;
             this.BtnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPacientes.Image = ((System.Drawing.Image)(resources.GetObject("BtnPacientes.Image")));
-            this.BtnPacientes.Location = new System.Drawing.Point(689, 139);
+            this.BtnPacientes.Location = new System.Drawing.Point(646, 139);
             this.BtnPacientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnPacientes.Name = "BtnPacientes";
             this.BtnPacientes.Size = new System.Drawing.Size(91, 69);
@@ -245,7 +245,7 @@
             this.lblPacientes.AutoSize = true;
             this.lblPacientes.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPacientes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPacientes.Location = new System.Drawing.Point(684, 219);
+            this.lblPacientes.Location = new System.Drawing.Point(641, 218);
             this.lblPacientes.Name = "lblPacientes";
             this.lblPacientes.Size = new System.Drawing.Size(108, 28);
             this.lblPacientes.TabIndex = 16;
@@ -256,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(78)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(934, 440);
+            this.ClientSize = new System.Drawing.Size(787, 440);
             this.Controls.Add(this.lblPacientes);
             this.Controls.Add(this.BtnPacientes);
             this.Controls.Add(this.lblListar);

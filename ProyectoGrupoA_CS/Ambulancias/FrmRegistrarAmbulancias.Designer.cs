@@ -53,7 +53,7 @@
             this.txtIdConductor.Name = "txtIdConductor";
             this.txtIdConductor.Size = new System.Drawing.Size(298, 29);
             this.txtIdConductor.TabIndex = 15;
-            this.txtIdConductor.TextChanged += new System.EventHandler(this.txtIdConductor_TextChanged);
+            
             // 
             // lblConductor
             // 
@@ -65,7 +65,7 @@
             this.lblConductor.Size = new System.Drawing.Size(80, 23);
             this.lblConductor.TabIndex = 25;
             this.lblConductor.Text = "Codigo:";
-            this.lblConductor.Click += new System.EventHandler(this.lblConductor_Click);
+           
             // 
             // lblAnio
             // 
@@ -77,7 +77,7 @@
             this.lblAnio.Size = new System.Drawing.Size(53, 23);
             this.lblAnio.TabIndex = 24;
             this.lblAnio.Text = "Año:";
-            this.lblAnio.Click += new System.EventHandler(this.lblAnio_Click);
+           
             // 
             // lblPlaca
             // 
@@ -89,7 +89,7 @@
             this.lblPlaca.Size = new System.Drawing.Size(166, 23);
             this.lblPlaca.TabIndex = 23;
             this.lblPlaca.Text = "Numero de placa:";
-            this.lblPlaca.Click += new System.EventHandler(this.lblPlaca_Click);
+            
             // 
             // lblMarca
             // 
@@ -101,7 +101,7 @@
             this.lblMarca.Size = new System.Drawing.Size(69, 23);
             this.lblMarca.TabIndex = 22;
             this.lblMarca.Text = "Marca:";
-            this.lblMarca.Click += new System.EventHandler(this.lblMarca_Click);
+            
             // 
             // lblIdConductor
             // 
@@ -113,7 +113,7 @@
             this.lblIdConductor.Size = new System.Drawing.Size(137, 23);
             this.lblIdConductor.TabIndex = 21;
             this.lblIdConductor.Text = "Id Conductor: ";
-            this.lblIdConductor.Click += new System.EventHandler(this.lblIdConductor_Click);
+           
             // 
             // LblMenu
             // 
@@ -125,7 +125,7 @@
             this.LblMenu.Size = new System.Drawing.Size(306, 35);
             this.LblMenu.TabIndex = 26;
             this.LblMenu.Text = "Menu Ingresar Datos";
-            this.LblMenu.Click += new System.EventHandler(this.LblMenu_Click);
+            
             // 
             // BtnAgregar
             // 
@@ -168,7 +168,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(298, 29);
             this.txtCodigo.TabIndex = 30;
-            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
+            
             // 
             // txtMarca
             // 
@@ -176,7 +176,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(298, 29);
             this.txtMarca.TabIndex = 31;
-            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
+
             // 
             // txtNumeroPlaca
             // 
@@ -184,7 +184,7 @@
             this.txtNumeroPlaca.Name = "txtNumeroPlaca";
             this.txtNumeroPlaca.Size = new System.Drawing.Size(255, 29);
             this.txtNumeroPlaca.TabIndex = 32;
-            this.txtNumeroPlaca.TextChanged += new System.EventHandler(this.txtNumeroPlaca_TextChanged);
+            
             // 
             // txtAnio
             // 
@@ -192,7 +192,6 @@
             this.txtAnio.Name = "txtAnio";
             this.txtAnio.Size = new System.Drawing.Size(298, 29);
             this.txtAnio.TabIndex = 33;
-            this.txtAnio.TextChanged += new System.EventHandler(this.txtAnio_TextChanged);
             // 
             // FrmRegistrarAmbulancias
             // 
